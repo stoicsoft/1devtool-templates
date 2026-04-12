@@ -4,6 +4,7 @@
   "templates": [
     {
       "id": "landing-page",
+      "category": "landing",
       "name": "Landing Page",
       "description": "Beautiful, responsive landing page. Just input your business name.",
       "preview": "previews/landing-page.png",
@@ -12,7 +13,18 @@
       "status": "available"
     },
     {
+      "id": "1devtool-landing-template",
+      "category": "landing",
+      "name": "1DevTool Landing Template",
+      "description": "Next.js landing page adapted from the 1DevTool launch page structure, with a single config file and a replaceable product screenshot.",
+      "preview": "previews/1devtool-landing-full-page.jpg",
+      "directory": "templates/1devtool-landing-template",
+      "tags": ["next.js", "tailwind", "landing", "seo"],
+      "status": "available"
+    },
+    {
       "id": "blog",
+      "category": "blog",
       "name": "Blog",
       "description": "Full-featured blog with markdown posts, syntax highlighting, and RSS.",
       "preview": "previews/blog.png",
@@ -22,6 +34,7 @@
     },
     {
       "id": "saas",
+      "category": "saas",
       "name": "SaaS",
       "description": "Full-stack SaaS starter with auth, billing, and dashboard.",
       "preview": "previews/saas.png",
@@ -31,6 +44,7 @@
     },
     {
       "id": "desktop-app",
+      "category": "desktop",
       "name": "Desktop App",
       "description": "Electron + React desktop application starter.",
       "preview": "previews/desktop-app.png",
