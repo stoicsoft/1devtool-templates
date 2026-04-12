@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "repo": "stoicsoft/1devtool-templates",
+  "templates": [
+    {
+      "id": "landing-page",
+      "name": "Landing Page",
+      "description": "Beautiful, responsive landing page. Just input your business name.",
+      "preview": "previews/landing-page.png",
+      "directory": "templates/landing-page",
+      "tags": ["html", "tailwind", "responsive"],
+      "status": "available"
+    },
+    {
+      "id": "blog",
+      "name": "Blog",
+      "description": "Full-featured blog with markdown posts, syntax highlighting, and RSS.",
+      "preview": "previews/blog.png",
+      "directory": "templates/blog",
+      "tags": ["next.js", "mdx", "tailwind"],
+      "status": "available"
+    },
+    {
+      "id": "saas",
+      "name": "SaaS",
+      "description": "Full-stack SaaS starter with auth, billing, and dashboard.",
+      "preview": "previews/saas.png",
+      "directory": "templates/saas",
+      "tags": ["next.js", "stripe", "auth"],
+      "status": "coming-soon"
+    },
+    {
+      "id": "desktop-app",
+      "name": "Desktop App",
+      "description": "Electron + React desktop application starter.",
+      "preview": "previews/desktop-app.png",
+      "directory": "templates/desktop-app",
+      "tags": ["electron", "react"],
+      "status": "coming-soon"
+    }
+  ]
+}

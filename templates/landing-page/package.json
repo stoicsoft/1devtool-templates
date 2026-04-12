@@ -1,0 +1,9 @@
+{
+  "name": "landing-page-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Single-page landing template for 1DevTool",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
