@@ -7,7 +7,7 @@
       "category": "landing",
       "name": "Landing Page",
       "description": "Beautiful, responsive landing page. Just input your business name.",
-      "preview": "previews/landing-page.png",
+      "preview": "previews/1devtool-landing-full-page.jpg",
       "directory": "templates/landing-page",
       "tags": ["html", "tailwind", "responsive"],
       "status": "available"
