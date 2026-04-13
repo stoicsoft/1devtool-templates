@@ -17,7 +17,7 @@
       "category": "blog",
       "name": "Simple Next.js Blog",
       "description": "Full-featured blog with markdown posts, syntax highlighting, and RSS.",
-      "preview": "previews/blog.png",
+      "preview": "previews/simple-nextjs-blog.jpg",
       "directory": "templates/simple-nextjs-blog",
       "tags": ["next.js", "mdx", "tailwind"],
       "status": "available"
