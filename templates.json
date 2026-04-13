@@ -3,16 +3,6 @@
   "repo": "stoicsoft/1devtool-templates",
   "templates": [
     {
-      "id": "landing-page",
-      "category": "landing",
-      "name": "Landing Page",
-      "description": "Beautiful, responsive landing page. Just input your business name.",
-      "preview": "previews/1devtool-landing-full-page.jpg",
-      "directory": "templates/landing-page",
-      "tags": ["html", "tailwind", "responsive"],
-      "status": "available"
-    },
-    {
       "id": "1devtool-landing-template",
       "category": "landing",
       "name": "1DevTool Landing Template",
@@ -23,12 +13,12 @@
       "status": "available"
     },
     {
-      "id": "blog",
+      "id": "simple-nextjs-blog",
       "category": "blog",
-      "name": "Blog",
+      "name": "Simple Next.js Blog",
       "description": "Full-featured blog with markdown posts, syntax highlighting, and RSS.",
       "preview": "previews/blog.png",
-      "directory": "templates/blog",
+      "directory": "templates/simple-nextjs-blog",
       "tags": ["next.js", "mdx", "tailwind"],
       "status": "available"
     },
