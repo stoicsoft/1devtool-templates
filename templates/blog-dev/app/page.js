@@ -1,5 +1,8 @@
+import Link from "next/link"
+
 const featured = {
-  tag: "server compass",
+  slug: "synthetic-probe-that-outlasted-the-cron-job",
+  tag: "server-compass",
   title: "Writing a synthetic probe that outlasted the cron job",
   dek: "How we replaced 114 cron-scheduled curl checks with a single 220-line Go service — and what we learned about liveness, jitter, and boring reliability.",
   date: "Apr 11, 2026",
@@ -9,12 +12,12 @@ const featured = {
 }
 
 const posts = [
-  { tag: "next.js", title: "Why we rewrote our App Router data layer in a weekend", date: "Apr 06, 2026", read: "9 min", author: "Mei Wong" },
-  { tag: "postgres", title: "A practical guide to `pg_stat_statements` for small teams", date: "Mar 29, 2026", read: "12 min", author: "Clara Figueira" },
-  { tag: "infra", title: "Our Cloudflare Workers bill, one year in", date: "Mar 22, 2026", read: "7 min", author: "Dante Okafor" },
-  { tag: "ai", title: "Shipping retrieval-augmented answers with citations you can trust", date: "Mar 15, 2026", read: "16 min", author: "Amara Reyes" },
-  { tag: "rust", title: "Rewriting a 40ms hot path in Rust (spoiler: it wasn&apos;t the answer)", date: "Mar 08, 2026", read: "11 min", author: "Jonas Park" },
-  { tag: "ops", title: "The five alerts that actually wake our on-call", date: "Mar 01, 2026", read: "6 min", author: "Nadia Reyes" },
+  { slug: "app-router-data-layer-rewrite", tag: "next.js", title: "Why we rewrote our App Router data layer in a weekend", date: "Apr 06, 2026", read: "9 min", author: "Mei Wong" },
+  { slug: "pg-stat-statements-for-small-teams", tag: "postgres", title: "A practical guide to pg_stat_statements for small teams", date: "Mar 29, 2026", read: "12 min", author: "Clara Figueira" },
+  { slug: "cloudflare-workers-bill-one-year", tag: "infra", title: "Our Cloudflare Workers bill, one year in", date: "Mar 22, 2026", read: "7 min", author: "Dante Okafor" },
+  { slug: "retrieval-augmented-answers-citations", tag: "ai", title: "Shipping retrieval-augmented answers with citations you can trust", date: "Mar 15, 2026", read: "16 min", author: "Amara Reyes" },
+  { slug: "rewriting-40ms-hot-path-in-rust", tag: "rust", title: "Rewriting a 40ms hot path in Rust (spoiler: it wasn&apos;t the answer)", date: "Mar 08, 2026", read: "11 min", author: "Jonas Park" },
+  { slug: "five-alerts-that-wake-our-oncall", tag: "ops", title: "The five alerts that actually wake our on-call", date: "Mar 01, 2026", read: "6 min", author: "Nadia Reyes" },
 ]
 
 const tags = [
@@ -103,11 +106,11 @@ export default function Home() {
             <span className="caret h-4 w-1.5 bg-[#7cf2a0]" />
           </a>
           <nav className="hidden items-center gap-6 font-mono text-xs text-[#b4bac2] md:flex">
-            <a href="#posts" className="hover:text-[#7cf2a0]">./posts</a>
-            <a href="#tags" className="hover:text-[#7cf2a0]">./tags</a>
+            <Link href="/posts" className="hover:text-[#7cf2a0]">./posts</Link>
+            <Link href="/tags" className="hover:text-[#7cf2a0]">./tags</Link>
             <a href="#series" className="hover:text-[#7cf2a0]">./series</a>
             <a href="#subscribe" className="hover:text-[#7cf2a0]">./subscribe</a>
-            <a href="#" className="hover:text-[#7cf2a0]">./about</a>
+            <Link href="/about" className="hover:text-[#7cf2a0]">./about</Link>
           </nav>
           <div className="flex items-center gap-2">
             <button className="grid h-8 w-8 place-items-center rounded-md border border-[#222429] text-[#b4bac2] hover:border-[#7cf2a0] hover:text-[#7cf2a0]">
@@ -171,9 +174,9 @@ export default function Home() {
                 <span className="flex items-center gap-1"><Icon name="branch" className="h-3.5 w-3.5" /> commit {featured.commit}</span>
               </div>
 
-              <a href="#" className="mt-8 inline-flex items-center gap-2 rounded-md bg-[#7cf2a0] px-5 py-3 text-sm font-semibold text-[#070809] transition hover:bg-white">
+              <Link href={`/posts/${featured.slug}`} className="mt-8 inline-flex items-center gap-2 rounded-md bg-[#7cf2a0] px-5 py-3 text-sm font-semibold text-[#070809] transition hover:bg-white">
                 <Icon name="terminal" className="h-4 w-4" /> Read the post
-              </a>
+              </Link>
             </div>
 
             <CodeBlock />
@@ -191,13 +194,13 @@ export default function Home() {
                   <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#7cf2a0]">./posts</p>
                   <h2 className="mt-2 text-3xl font-semibold">Recent entries</h2>
                 </div>
-                <a href="#" className="font-mono text-xs text-[#b4bac2] hover:text-[#7cf2a0]">view all 214 →</a>
+                <Link href="/posts" className="font-mono text-xs text-[#b4bac2] hover:text-[#7cf2a0]">view all 214 →</Link>
               </div>
 
               <ul className="mt-8 divide-y divide-[#222429] border-t border-b border-[#222429]">
                 {posts.map((p) => (
                   <li key={p.title} className="group">
-                    <a href="#" className="grid grid-cols-[auto_1fr_auto] items-center gap-5 py-5 hover-line border border-transparent px-3 rounded-md">
+                    <Link href={`/posts/${p.slug}`} className="grid grid-cols-[auto_1fr_auto] items-center gap-5 py-5 hover-line border border-transparent px-3 rounded-md">
                       <span className="rounded-md border border-[#222429] bg-[#0d0e11] px-2 py-1 font-mono text-[10px] text-[#7cf2a0]">#{p.tag}</span>
                       <div>
                         <h3 className="text-lg font-medium leading-snug transition group-hover:text-[#7cf2a0]" dangerouslySetInnerHTML={{__html: p.title.replaceAll("'", "&rsquo;")}} />
@@ -208,7 +211,7 @@ export default function Home() {
                         <span className="flex items-center gap-1"><Icon name="clock" className="h-3 w-3" /> {p.read}</span>
                         <Icon name="arrow-up" className="h-4 w-4 text-[#6a6d75] transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-[#7cf2a0]" />
                       </div>
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -226,9 +229,9 @@ export default function Home() {
                 <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#7cf2a0]">./tags</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {tags.map((t) => (
-                    <a key={t.n} href="#" className="inline-flex items-center gap-1.5 rounded-md border border-[#222429] bg-[#141519] px-2.5 py-1.5 font-mono text-xs text-[#b4bac2] hover:border-[#7cf2a0] hover:text-[#7cf2a0]">
+                    <Link key={t.n} href={`/tags#${t.n}`} className="inline-flex items-center gap-1.5 rounded-md border border-[#222429] bg-[#141519] px-2.5 py-1.5 font-mono text-xs text-[#b4bac2] hover:border-[#7cf2a0] hover:text-[#7cf2a0]">
                       #{t.n} <span className="text-[#6a6d75]">{t.c}</span>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

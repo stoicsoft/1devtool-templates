@@ -1,4 +1,7 @@
+import Link from "next/link"
+
 const featured = {
+  slug: "the-case-for-quieter-software",
   n: "XLIX",
   title: "The case for quieter software",
   dek: "An argument for tools that stop competing for your attention — and the slow work of building them when every product incentive points the other way.",
@@ -10,9 +13,9 @@ const featured = {
 
 const essays = {
   "2026": [
-    { n: "XLIX", t: "The case for quieter software", d: "Apr 12", read: "24 min", cat: "Essay" },
-    { n: "XLVIII", t: "On the kind of attention a book wants", d: "Mar 01", read: "14 min", cat: "Essay" },
-    { n: "XLVII", t: "Some notes on finishing", d: "Feb 08", read: "9 min", cat: "Note" },
+    { slug: "the-case-for-quieter-software", n: "XLIX", t: "The case for quieter software", d: "Apr 12", read: "24 min", cat: "Essay" },
+    { slug: "on-the-kind-of-attention-a-book-wants", n: "XLVIII", t: "On the kind of attention a book wants", d: "Mar 01", read: "14 min", cat: "Essay" },
+    { slug: "some-notes-on-finishing", n: "XLVII", t: "Some notes on finishing", d: "Feb 08", read: "9 min", cat: "Note" },
   ],
   "2025": [
     { n: "XLVI", t: "What I meant when I said &lsquo;small&rsquo;", d: "Dec 15", read: "18 min", cat: "Essay" },
@@ -79,10 +82,10 @@ export default function Home() {
 
         <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-3 font-sans text-xs uppercase tracking-[0.22em]">
           <nav className="flex gap-5 text-[#2a2520]">
-            <a href="#essays" className="underline-grow">Essays</a>
-            <a href="#archive" className="underline-grow">Archive</a>
-            <a href="#reading" className="underline-grow">Reading</a>
-            <a href="#about" className="underline-grow">About</a>
+            <Link href="/posts" className="underline-grow">Essays</Link>
+            <Link href="/posts" className="underline-grow">Archive</Link>
+            <Link href="/reading" className="underline-grow">Reading</Link>
+            <Link href="/about" className="underline-grow">About</Link>
           </nav>
           <div className="flex items-center gap-4 text-[#6e6558]">
             <a href="#" className="flex items-center gap-1.5 underline-grow"><Icon name="rss" className="h-3.5 w-3.5" /> RSS</a>
@@ -129,9 +132,9 @@ export default function Home() {
             a mill in Évora, I finally decided to finish.
           </p>
 
-          <a href="#" className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#181512] px-5 py-3 font-sans text-sm font-semibold text-[#fbf7ed] hover:bg-[#9d3216]">
+          <Link href={`/posts/${featured.slug}`} className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#181512] px-5 py-3 font-sans text-sm font-semibold text-[#fbf7ed] hover:bg-[#9d3216]">
             Continue reading — 24 minutes <Icon name="arrow" className="h-4 w-4" />
-          </a>
+          </Link>
 
           <div className="rule mt-14 h-px" />
 
@@ -163,26 +166,37 @@ export default function Home() {
                 </div>
                 <div className="rule mt-4 h-px" />
                 <ul className="mt-6 divide-y divide-[#d9cfb8]">
-                  {items.map((e) => (
-                    <li key={e.n} className="group grid grid-cols-[60px_1fr_auto_auto] items-start gap-6 py-5">
-                      <span className="font-sans text-[10px] uppercase tracking-[0.22em] text-[#6e6558]">N°. {e.n}</span>
-                      <div>
-                        <h4 className="text-2xl leading-snug underline-grow" dangerouslySetInnerHTML={{__html: e.t.replaceAll("&lsquo;", "&lsquo;").replaceAll("&rsquo;", "&rsquo;")}} />
-                        <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.22em] text-[#6e6558]">{e.cat}</p>
-                      </div>
-                      <span className="font-sans text-xs text-[#6e6558]">{e.d}</span>
-                      <span className="font-sans text-xs text-[#6e6558]">{e.read}</span>
-                    </li>
-                  ))}
+                  {items.map((e) => {
+                    const inner = (
+                      <>
+                        <span className="font-sans text-[10px] uppercase tracking-[0.22em] text-[#6e6558]">N°. {e.n}</span>
+                        <div>
+                          <h4 className="text-2xl leading-snug underline-grow" dangerouslySetInnerHTML={{__html: e.t.replaceAll("&lsquo;", "&lsquo;").replaceAll("&rsquo;", "&rsquo;")}} />
+                          <p className="mt-1 font-sans text-[10px] uppercase tracking-[0.22em] text-[#6e6558]">{e.cat}</p>
+                        </div>
+                        <span className="font-sans text-xs text-[#6e6558]">{e.d}</span>
+                        <span className="font-sans text-xs text-[#6e6558]">{e.read}</span>
+                      </>
+                    )
+                    return (
+                      <li key={e.n} className="group">
+                        {e.slug ? (
+                          <Link href={`/posts/${e.slug}`} className="grid grid-cols-[60px_1fr_auto_auto] items-start gap-6 py-5 -mx-3 px-3 rounded-md hover:bg-[#f3ecd9]/50">{inner}</Link>
+                        ) : (
+                          <div className="grid grid-cols-[60px_1fr_auto_auto] items-start gap-6 py-5 opacity-70">{inner}</div>
+                        )}
+                      </li>
+                    )
+                  })}
                 </ul>
               </div>
             ))}
           </div>
 
           <div className="mt-14 text-center">
-            <a href="#" className="inline-flex items-center gap-2 rounded-full border border-[#181512]/20 px-5 py-3 font-sans text-sm hover:bg-[#181512] hover:text-[#fbf7ed]">
-              Open the pre-2024 archive <Icon name="arrow" className="h-4 w-4" />
-            </a>
+            <Link href="/posts" className="inline-flex items-center gap-2 rounded-full border border-[#181512]/20 px-5 py-3 font-sans text-sm hover:bg-[#181512] hover:text-[#fbf7ed]">
+              Open the full archive <Icon name="arrow" className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </section>

@@ -1,13 +1,15 @@
+import Link from "next/link"
+
 const essays = [
-  { d: "Apr 11, 2026", t: "What it costs to keep a website for ten years", k: "essay · 11 min" },
-  { d: "Mar 04, 2026", t: "Three years of mornings before email", k: "essay · 7 min" },
-  { d: "Feb 01, 2026", t: "On letting a project finish you", k: "essay · 14 min" },
+  { slug: "what-it-costs-to-keep-a-website-for-ten-years", d: "Apr 11, 2026", t: "What it costs to keep a website for ten years", k: "essay · 11 min" },
+  { slug: "three-years-of-mornings-before-email", d: "Mar 04, 2026", t: "Three years of mornings before email", k: "essay · 7 min" },
+  { slug: "on-letting-a-project-finish-you", d: "Feb 01, 2026", t: "On letting a project finish you", k: "essay · 14 min" },
 ]
 
 const notes = [
-  { d: "Apr 13", t: "A footnote on Pessoa, in the metro" },
-  { d: "Apr 09", t: "Why I keep printing things I&apos;ve already read on screen" },
-  { d: "Apr 02", t: "The exact shape of a Tuesday" },
+  { slug: "a-footnote-on-pessoa", d: "Apr 13", t: "A footnote on Pessoa, in the metro" },
+  { slug: "why-i-keep-printing-things", d: "Apr 09", t: "Why I keep printing things I&apos;ve already read on screen" },
+  { slug: "exact-shape-of-a-tuesday", d: "Apr 02", t: "The exact shape of a Tuesday" },
   { d: "Mar 28", t: "Two paragraphs on the colour of new leaves" },
   { d: "Mar 21", t: "What my reading log actually tracks" },
   { d: "Mar 14", t: "On putting the laptop on a different floor" },
@@ -73,16 +75,16 @@ export default function Home() {
             <span>anya.garden</span>
           </a>
           <nav className="hidden items-center gap-6 font-mono text-xs text-[#2a2620] md:flex">
-            <a href="#essays" className="underline-grow">essays</a>
-            <a href="#notes" className="underline-grow">notes</a>
+            <Link href="/posts" className="underline-grow">essays</Link>
+            <Link href="/notes" className="underline-grow">notes</Link>
             <a href="#links" className="underline-grow">links</a>
-            <a href="#bookshelf" className="underline-grow">bookshelf</a>
+            <Link href="/bookshelf" className="underline-grow">bookshelf</Link>
             <a href="#now" className="underline-grow">now</a>
-            <a href="#projects" className="underline-grow">projects</a>
+            <Link href="/about" className="underline-grow">about</Link>
           </nav>
           <div className="flex items-center gap-2 font-mono text-[10px] text-[#6f6757]">
             <span className="hidden md:inline">press <span className="kbd">⌘ K</span> to search</span>
-            <a href="#contact" className="rounded-full bg-[#1d1a16] px-3 py-1.5 text-xs font-medium text-[#f9f6f0] hover:bg-[#4a6135]">say hi</a>
+            <Link href="/about" className="rounded-full bg-[#1d1a16] px-3 py-1.5 text-xs font-medium text-[#f9f6f0] hover:bg-[#4a6135]">say hi</Link>
           </div>
         </div>
       </header>
@@ -133,17 +135,17 @@ export default function Home() {
 
               <ul className="mt-8 space-y-6">
                 {essays.map((e) => (
-                  <li key={e.t} className="border-l-2 border-[#b85429]/30 pl-5">
+                  <li key={e.t} className="border-l-2 border-[#b85429]/30 pl-5 transition hover:border-[#b85429]">
                     <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#6f6757]">{e.d} · {e.k}</p>
                     <h3 className="font-serif mt-2 text-2xl leading-snug">
-                      <a href="#" className="underline-grow">{e.t}</a>
+                      <Link href={`/posts/${e.slug}`} className="underline-grow">{e.t}</Link>
                     </h3>
                   </li>
                 ))}
               </ul>
-              <a href="#" className="mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-[#b85429] underline-grow">
+              <Link href="/posts" className="mt-6 inline-flex items-center gap-1.5 font-mono text-xs text-[#b85429] underline-grow">
                 all essays → <Icon name="arrow" className="h-3.5 w-3.5" />
-              </a>
+              </Link>
             </div>
 
             <div id="notes">
@@ -154,16 +156,20 @@ export default function Home() {
               <p className="font-serif mt-3 text-3xl italic">When something is just enough.</p>
 
               <ul className="mt-8 divide-y divide-[#ddd5be]">
-                {notes.map((n) => (
-                  <li key={n.d} className="flex items-baseline gap-4 py-3">
+                {notes.map((n, i) => (
+                  <li key={i} className="flex items-baseline gap-4 py-3">
                     <span className="w-16 shrink-0 font-mono text-xs text-[#6f6757]">{n.d}</span>
-                    <a href="#" className="font-serif text-lg leading-snug underline-grow" dangerouslySetInnerHTML={{__html: n.t.replaceAll("&apos;", "&rsquo;")}} />
+                    {n.slug ? (
+                      <Link href={`/posts/${n.slug}`} className="font-serif text-lg leading-snug underline-grow" dangerouslySetInnerHTML={{__html: n.t.replaceAll("&apos;", "&rsquo;")}} />
+                    ) : (
+                      <span className="font-serif text-lg leading-snug text-[#6f6757]" dangerouslySetInnerHTML={{__html: n.t.replaceAll("&apos;", "&rsquo;")}} />
+                    )}
                   </li>
                 ))}
               </ul>
-              <a href="#" className="mt-4 inline-flex items-center gap-1.5 font-mono text-xs text-[#4a6135] underline-grow">
-                all 142 notes → <Icon name="arrow" className="h-3.5 w-3.5" />
-              </a>
+              <Link href="/notes" className="mt-4 inline-flex items-center gap-1.5 font-mono text-xs text-[#4a6135] underline-grow">
+                all notes → <Icon name="arrow" className="h-3.5 w-3.5" />
+              </Link>
             </div>
           </div>
 
@@ -199,10 +205,10 @@ export default function Home() {
             </div>
 
             <div id="bookshelf">
-              <div className="flex items-center gap-3">
+              <Link href="/bookshelf" className="flex items-center gap-3 underline-grow">
                 <Icon name="book" className="h-4 w-4 text-[#c89a3b]" />
                 <h2 className="font-mono text-xs uppercase tracking-[0.22em] text-[#c89a3b]">bookshelf</h2>
-              </div>
+              </Link>
               <p className="font-serif mt-3 text-3xl italic">What I&apos;m reading now.</p>
 
               <div className="mt-8 rounded-md border border-[#ddd5be] bg-[#efeadb] p-4">

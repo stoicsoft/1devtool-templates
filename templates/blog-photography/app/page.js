@@ -1,7 +1,9 @@
+import Link from "next/link"
+
 const features = [
-  { n: "No. 142", title: "A week in Évora, in quiet light", date: "Apr 13, 2026", loc: "Évora · PT", shots: 18, art: "ph-3", size: "md:col-span-7 md:row-span-2" },
-  { n: "No. 141", title: "Madrileños, off the plaza", date: "Apr 06, 2026", loc: "Madrid · ES", shots: 12, art: "ph-6", size: "md:col-span-5" },
-  { n: "No. 140", title: "Low tide, long exposure", date: "Mar 30, 2026", loc: "Comporta · PT", shots: 9, art: "ph-11", size: "md:col-span-5" },
+  { slug: "a-week-in-evora", n: "No. 142", title: "A week in Évora, in quiet light", date: "Apr 13, 2026", loc: "Évora · PT", shots: 18, art: "ph-3", size: "md:col-span-7 md:row-span-2" },
+  { slug: "madrilenos-off-the-plaza", n: "No. 141", title: "Madrileños, off the plaza", date: "Apr 06, 2026", loc: "Madrid · ES", shots: 12, art: "ph-6", size: "md:col-span-5" },
+  { slug: "low-tide-long-exposure", n: "No. 140", title: "Low tide, long exposure", date: "Mar 30, 2026", loc: "Comporta · PT", shots: 9, art: "ph-11", size: "md:col-span-5" },
 ]
 
 const grid = [
@@ -71,11 +73,11 @@ export default function Home() {
             <span className="hidden font-mono text-[10px] uppercase tracking-[0.3em] text-[#7a7a7a] md:inline">— photo journal</span>
           </a>
           <nav className="hidden items-center gap-7 font-mono text-xs uppercase tracking-[0.22em] text-[#bebebe] md:flex">
-            <a href="#feed" className="underline-grow">Feed</a>
-            <a href="#archive" className="underline-grow">Archive</a>
-            <a href="#about" className="underline-grow">About</a>
-            <a href="#prints" className="underline-grow">Prints</a>
-            <a href="#" className="underline-grow">Contact</a>
+            <Link href="/posts" className="underline-grow">Feed</Link>
+            <Link href="/posts" className="underline-grow">Archive</Link>
+            <Link href="/about" className="underline-grow">About</Link>
+            <Link href="/prints" className="underline-grow">Prints</Link>
+            <a href="mailto:elena@elenafaro.photo" className="underline-grow">Contact</a>
           </nav>
           <div className="flex items-center gap-2">
             <button className="grid h-8 w-8 place-items-center rounded-full border border-[#262626] text-[#7a7a7a] hover:border-[#e4c290] hover:text-[#e4c290]">
@@ -102,7 +104,7 @@ export default function Home() {
             <span className="text-[#262626]">·</span>
             <span>No. 142 · Apr 13, 2026</span>
             <span className="text-[#262626]">·</span>
-            <a href="#about" className="underline-grow">About Elena</a>
+            <Link href="/about" className="underline-grow">About Elena</Link>
           </div>
         </div>
       </section>
@@ -112,7 +114,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 pb-16">
           <div className="grid gap-3 md:auto-rows-[280px] md:grid-cols-12">
             {features.map((f, i) => (
-              <a key={f.n} href="#" className={`group relative ${f.size || "md:col-span-6"}`}>
+              <Link key={f.n} href={`/posts/${f.slug}`} className={`group relative ${f.size || "md:col-span-6"}`}>
                 <div className={`absolute inset-0 ${f.art}`} />
                 <div className="absolute inset-0 grain mix-blend-overlay opacity-40" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/20 to-transparent" />
@@ -131,7 +133,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -162,9 +164,9 @@ export default function Home() {
           </div>
 
           <div className="mt-8 flex items-center justify-center">
-            <a href="#" className="inline-flex items-center gap-2 rounded-full border border-[#262626] px-5 py-3 font-mono text-xs uppercase tracking-[0.22em] text-[#bebebe] hover:border-[#e4c290] hover:text-[#e4c290]">
+            <Link href="/posts" className="inline-flex items-center gap-2 rounded-full border border-[#262626] px-5 py-3 font-mono text-xs uppercase tracking-[0.22em] text-[#bebebe] hover:border-[#e4c290] hover:text-[#e4c290]">
               Open the full archive <Icon name="arrow" className="h-3.5 w-3.5" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -223,9 +225,9 @@ export default function Home() {
                   A small selection of plates are printed on Hahnemühle Photo Rag in an edition of twenty-five.
                   Each print is signed, numbered, and shipped in a tube, anywhere in the EU and the US.
                 </p>
-                <a href="#" className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#e4c290] px-5 py-3 text-sm font-semibold text-[#0a0a0a] hover:bg-white">
+                <Link href="/prints" className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#e4c290] px-5 py-3 text-sm font-semibold text-[#0a0a0a] hover:bg-white">
                   Browse the print shop <Icon name="arrow" className="h-4 w-4" />
-                </a>
+                </Link>
               </div>
 
               <div className="grid grid-cols-2 gap-2">

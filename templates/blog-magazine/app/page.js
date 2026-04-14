@@ -1,5 +1,8 @@
+import Link from "next/link"
+
 const featured = {
   kicker: "Cover story",
+  slug: "the-slow-software-essay",
   title: "The slow software essay",
   dek: "On building the kind of product that deepens with years rather than shipping for the quarterly review. A long letter from a studio that quit the roadmap and took up gardening.",
   author: "Clara Figueira",
@@ -9,9 +12,9 @@ const featured = {
 }
 
 const leadStories = [
-  { cat: "Craft", art: "art-moss", title: "A field guide to paper", dek: "Why the 120gsm cream stock in our Field notebook was worth a six-month search across the mills of northern Portugal.", author: "Ricardo Santos", read: "9 min" },
-  { cat: "Software", art: "art-ink", title: "Pricing as a moral question", dek: "What a decade of indie launches taught us about charging honestly — and the day we raised our prices and apologised to no one.", author: "Jonas Park", read: "12 min" },
-  { cat: "Places", art: "art-dune", title: "Notes from Évora, quietly", dek: "A week of living in a 16th-century whitewashed flat, reading Pessoa, and not opening the laptop until the espresso cooled.", author: "Mei Wong", read: "7 min" },
+  { slug: "a-field-guide-to-paper", cat: "Craft", art: "art-moss", title: "A field guide to paper", dek: "Why the 120gsm cream stock in our Field notebook was worth a six-month search across the mills of northern Portugal.", author: "Ricardo Santos", read: "9 min" },
+  { slug: "pricing-as-a-moral-question", cat: "Software", art: "art-ink", title: "Pricing as a moral question", dek: "What a decade of indie launches taught us about charging honestly — and the day we raised our prices and apologised to no one.", author: "Jonas Park", read: "12 min" },
+  { slug: "notes-from-evora", cat: "Places", art: "art-dune", title: "Notes from Évora, quietly", dek: "A week of living in a 16th-century whitewashed flat, reading Pessoa, and not opening the laptop until the espresso cooled.", author: "Mei Wong", read: "7 min" },
 ]
 
 const columns = [
@@ -89,9 +92,13 @@ export default function Home() {
         <div className="rule h-px" />
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
           <nav className="flex flex-wrap gap-5 text-xs uppercase tracking-[0.18em] text-[#3a3329]">
-            {["Current issue", "Archive", "Craft", "Software", "Places", "Letters", "About"].map((n) => (
-              <a key={n} href="#" className="underline-grow hover:text-[#b24224]">{n}</a>
-            ))}
+            <Link href="/" className="underline-grow hover:text-[#b24224]">Current issue</Link>
+            <Link href="/posts" className="underline-grow hover:text-[#b24224]">Archive</Link>
+            <Link href="/issues" className="underline-grow hover:text-[#b24224]">Issues</Link>
+            <Link href="/posts" className="underline-grow hover:text-[#b24224]">Craft</Link>
+            <Link href="/posts" className="underline-grow hover:text-[#b24224]">Software</Link>
+            <Link href="/posts" className="underline-grow hover:text-[#b24224]">Places</Link>
+            <Link href="/about" className="underline-grow hover:text-[#b24224]">About</Link>
           </nav>
           <div className="flex items-center gap-3">
             <button className="grid h-8 w-8 place-items-center rounded-full border border-[#d5c9b0] text-[#6c6354] hover:border-[#141210] hover:text-[#141210]">
@@ -125,9 +132,9 @@ export default function Home() {
                 <span className="flex items-center gap-1"><Icon name="clock" className="h-3.5 w-3.5" /> {featured.read}</span>
               </div>
 
-              <a href="#" className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#b24224] px-6 py-3 text-sm font-semibold text-[#f5efe2] transition hover:bg-[#8b2e15]">
+              <Link href={`/posts/${featured.slug}`} className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#b24224] px-6 py-3 text-sm font-semibold text-[#f5efe2] transition hover:bg-[#8b2e15]">
                 Read the essay <Icon name="arrow-up" className="h-4 w-4" />
-              </a>
+              </Link>
             </div>
 
             <CoverArt className={`${featured.art} order-1 aspect-[4/5] md:order-2`} label="Cover art · spring" />
@@ -163,9 +170,9 @@ export default function Home() {
                   <span>by {s.author}</span>
                   <span className="flex items-center gap-1"><Icon name="clock" className="h-3 w-3" /> {s.read}</span>
                 </div>
-                <a href="#" className="mt-3 inline-flex items-center gap-1 text-sm text-[#b24224] underline-grow">
+                <Link href={`/posts/${s.slug}`} className="mt-3 inline-flex items-center gap-1 text-sm text-[#b24224] underline-grow">
                   Read <Icon name="arrow-up" className="h-3.5 w-3.5" />
-                </a>
+                </Link>
               </article>
             ))}
           </div>
@@ -186,7 +193,7 @@ export default function Home() {
             of thing to make. That pleasure is what this issue is about.
           </p>
           <p className="mt-6 text-base text-[#2c2821]/80">
-            <a href="#" className="underline-grow text-[#b24224]">Continue reading &ldquo;A field guide to paper&rdquo; →</a>
+            <Link href="/posts/a-field-guide-to-paper" className="underline-grow text-[#b24224]">Continue reading &ldquo;A field guide to paper&rdquo; →</Link>
           </p>
         </div>
 
@@ -216,9 +223,9 @@ export default function Home() {
               </div>
 
               <div className="mt-12 flex items-center justify-between">
-                <a href="#" className="inline-flex items-center gap-2 rounded-full border border-[#141210]/15 px-5 py-3 text-sm hover:bg-[#141210] hover:text-[#f5efe2]">
+                <Link href="/posts" className="inline-flex items-center gap-2 rounded-full border border-[#141210]/15 px-5 py-3 text-sm hover:bg-[#141210] hover:text-[#f5efe2]">
                   Browse the full archive <Icon name="arrow" className="h-4 w-4" />
-                </a>
+                </Link>
                 <a href="#" className="flex items-center gap-2 text-sm text-[#6c6354] hover:text-[#b24224]">
                   <Icon name="rss" className="h-4 w-4" /> RSS feed
                 </a>
