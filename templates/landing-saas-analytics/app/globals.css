@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", serif;
+
+  --color-ink: #05060b;
+  --color-mist: #e7ecff;
+  --color-iris: #7c6bff;
+  --color-aqua: #34e5d5;
+  --color-lemon: #e7ff6a;
+  --color-rose: #ff7ab5;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #05060b;
+  color: #e7ecff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif { font-family: var(--font-serif); letter-spacing: -0.01em; }
+
+.aurora {
+  background:
+    radial-gradient(800px circle at 15% 0%, rgba(124,107,255,0.28), transparent 55%),
+    radial-gradient(700px circle at 85% 10%, rgba(52,229,213,0.22), transparent 55%),
+    radial-gradient(600px circle at 50% 80%, rgba(255,122,181,0.18), transparent 55%);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(231,236,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(231,236,255,0.06) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse at 50% 0%, #000 30%, transparent 75%);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 40s linear infinite; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+.dot-pulse { animation: pulse-dot 2s ease-in-out infinite; }
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.float-y { animation: float-y 5s ease-in-out infinite; }

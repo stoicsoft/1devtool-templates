@@ -13,33 +13,113 @@
       "status": "available"
     },
     {
+      "id": "landing-ai-saas",
+      "category": "landing",
+      "name": "Landing - AI SaaS",
+      "description": "Premium AI workspace landing with chat-demo dashboard, gradient glows, multi-section flow, and pricing. Built for AI products like Aether — a StoicSoft brand.",
+      "preview": "previews/landing-ai-saas.jpg",
+      "directory": "templates/landing-ai-saas",
+      "tags": ["next.js", "tailwind", "landing", "ai", "saas"],
+      "status": "available"
+    },
+    {
+      "id": "landing-dev-tool",
+      "category": "landing",
+      "name": "Landing - Developer Tool",
+      "description": "Terminal-aesthetic landing for developer tools, CLIs, and template marketplaces. Inspired by 1DevTool — open-source registry of production-grade Next.js templates.",
+      "preview": "previews/landing-dev-tool.jpg",
+      "directory": "templates/landing-dev-tool",
+      "tags": ["next.js", "tailwind", "landing", "developer", "cli"],
+      "status": "available"
+    },
+    {
+      "id": "landing-server-monitoring",
+      "category": "landing",
+      "name": "Landing - Server Monitoring",
+      "description": "Infrastructure / uptime monitoring landing with live status dashboard, world map, alerts, and pricing. Inspired by ServerCompass — a StoicSoft product.",
+      "preview": "previews/landing-server-monitoring.jpg",
+      "directory": "templates/landing-server-monitoring",
+      "tags": ["next.js", "tailwind", "landing", "devops", "monitoring"],
+      "status": "available"
+    },
+    {
+      "id": "landing-portfolio",
+      "category": "landing",
+      "name": "Landing - Personal Portfolio",
+      "description": "Editorial cream-and-serif portfolio for a one-person studio or freelancer. Bento work grid, services, journal, now-page, and warm contact CTA.",
+      "preview": "previews/landing-portfolio.jpg",
+      "directory": "templates/landing-portfolio",
+      "tags": ["next.js", "tailwind", "landing", "portfolio", "personal"],
+      "status": "available"
+    },
+    {
+      "id": "landing-mobile-app",
+      "category": "landing",
+      "name": "Landing - Mobile App",
+      "description": "Consumer mobile-app showcase with phone mockups, vibrant gradient hero, App Store and Google Play CTAs, reviews, and pricing.",
+      "preview": "previews/landing-mobile-app.jpg",
+      "directory": "templates/landing-mobile-app",
+      "tags": ["next.js", "tailwind", "landing", "mobile", "app"],
+      "status": "available"
+    },
+    {
+      "id": "landing-ecommerce-product",
+      "category": "landing",
+      "name": "Landing - Ecommerce Product",
+      "description": "Minimalist physical-product launch landing with hero shot, craft section, reviews, and a checkout summary card. Cream-and-ink editorial aesthetic.",
+      "preview": "previews/landing-ecommerce-product.jpg",
+      "directory": "templates/landing-ecommerce-product",
+      "tags": ["next.js", "tailwind", "landing", "ecommerce", "product"],
+      "status": "available"
+    },
+    {
+      "id": "landing-restaurant",
+      "category": "landing",
+      "name": "Landing - Restaurant",
+      "description": "Warm restaurant / cafe landing with menu, hours, press quotes, and a built-in reservation form. Italic display serif on cream paper.",
+      "preview": "previews/landing-restaurant.jpg",
+      "directory": "templates/landing-restaurant",
+      "tags": ["next.js", "tailwind", "landing", "restaurant", "hospitality"],
+      "status": "available"
+    },
+    {
       "id": "landing-fitness-studio",
       "category": "landing",
       "name": "Landing - Fitness Studio",
-      "description": "Framer-inspired high-energy fitness landing page with schedule, programs, and membership sections.",
-      "preview": "previews/landing-page.png",
+      "description": "Cinematic dark fitness landing with running marquee, programs grid, schedule table, coaches grid, testimonials, and membership pricing.",
+      "preview": "previews/landing-fitness-studio.jpg",
       "directory": "templates/landing-fitness-studio",
-      "tags": ["next.js", "react", "landing", "fitness"],
+      "tags": ["next.js", "tailwind", "landing", "fitness"],
       "status": "available"
     },
     {
       "id": "landing-fintech-app",
       "category": "landing",
       "name": "Landing - Fintech App",
-      "description": "Framer-inspired fintech landing page featuring metrics, product highlights, and pricing tiers.",
-      "preview": "previews/landing-page.png",
+      "description": "Premium navy fintech landing with animated dashboard mockup, live ticker, bento product showcase, security badges, and pricing tiers.",
+      "preview": "previews/landing-fintech-app.jpg",
       "directory": "templates/landing-fintech-app",
-      "tags": ["next.js", "react", "landing", "fintech"],
+      "tags": ["next.js", "tailwind", "landing", "fintech"],
       "status": "available"
     },
     {
       "id": "landing-creative-agency",
       "category": "landing",
       "name": "Landing - Creative Agency",
-      "description": "Framer-inspired editorial-style agency landing page with portfolio blocks and services sections.",
-      "preview": "previews/landing-page.png",
+      "description": "Editorial cream agency landing with oversized display serif, asymmetric bento work grid, numbered services, dark process card, and warm CTA.",
+      "preview": "previews/landing-creative-agency.jpg",
       "directory": "templates/landing-creative-agency",
-      "tags": ["next.js", "react", "landing", "agency"],
+      "tags": ["next.js", "tailwind", "landing", "agency"],
+      "status": "available"
+    },
+    {
+      "id": "landing-saas-analytics",
+      "category": "landing",
+      "name": "Landing - SaaS Analytics",
+      "description": "SaaS analytics landing with dashboard hero, metric breakdown, integrations, pricing, and FAQ.",
+      "preview": "previews/landing-saas-analytics.jpg",
+      "directory": "templates/landing-saas-analytics",
+      "tags": ["next.js", "tailwind", "landing", "saas", "analytics"],
       "status": "available"
     },
     {
