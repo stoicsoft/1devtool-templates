@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sora", system-ui, sans-serif;
+  --font-sans: "Outfit", system-ui, sans-serif;
+
+  --color-ink: #08080a;
+  --color-surface: #0f0f12;
+  --color-surface-2: #17171c;
+  --color-line: #26262d;
+  --color-cream: #f7f3ec;
+  --color-ember: #ff4d26;
+  --color-ember-2: #ff9353;
+  --color-acid: #d7ff4d;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #08080a;
+  color: #f7f3ec;
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-display); letter-spacing: -0.02em; }
+
+/* Marquee */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 36s linear infinite;
+}
+
+/* Ember glow */
+.glow-ember {
+  background: radial-gradient(600px circle at 20% 10%, rgba(255, 77, 38, 0.35), transparent 60%),
+              radial-gradient(500px circle at 80% 30%, rgba(255, 147, 83, 0.22), transparent 55%);
+}
+
+/* Ticker */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.9); }
+}
+.dot-pulse { animation: pulse-dot 1.8s ease-in-out infinite; }
+
+/* Noise overlay */
+.noise {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}

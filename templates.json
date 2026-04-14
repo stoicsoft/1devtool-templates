@@ -13,6 +13,36 @@
       "status": "available"
     },
     {
+      "id": "landing-fitness-studio",
+      "category": "landing",
+      "name": "Landing - Fitness Studio",
+      "description": "Framer-inspired high-energy fitness landing page with schedule, programs, and membership sections.",
+      "preview": "previews/landing-page.png",
+      "directory": "templates/landing-fitness-studio",
+      "tags": ["next.js", "react", "landing", "fitness"],
+      "status": "available"
+    },
+    {
+      "id": "landing-fintech-app",
+      "category": "landing",
+      "name": "Landing - Fintech App",
+      "description": "Framer-inspired fintech landing page featuring metrics, product highlights, and pricing tiers.",
+      "preview": "previews/landing-page.png",
+      "directory": "templates/landing-fintech-app",
+      "tags": ["next.js", "react", "landing", "fintech"],
+      "status": "available"
+    },
+    {
+      "id": "landing-creative-agency",
+      "category": "landing",
+      "name": "Landing - Creative Agency",
+      "description": "Framer-inspired editorial-style agency landing page with portfolio blocks and services sections.",
+      "preview": "previews/landing-page.png",
+      "directory": "templates/landing-creative-agency",
+      "tags": ["next.js", "react", "landing", "agency"],
+      "status": "available"
+    },
+    {
       "id": "simple-nextjs-blog",
       "category": "blog",
       "name": "Simple Next.js Blog",
@@ -25,12 +55,12 @@
     {
       "id": "saas",
       "category": "saas",
-      "name": "SaaS",
-      "description": "Full-stack SaaS starter with auth, billing, and dashboard.",
+      "name": "SaaS Control Plane",
+      "description": "Next.js SaaS starter with dashboard, auth and billing seams, custom-domain onboarding, and Cloudflare DNS setup docs.",
       "preview": "previews/saas.png",
       "directory": "templates/saas",
-      "tags": ["next.js", "stripe", "auth"],
-      "status": "coming-soon"
+      "tags": ["next.js", "saas", "billing", "auth", "cloudflare"],
+      "status": "available"
     },
     {
       "id": "desktop-app",

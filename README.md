@@ -30,6 +30,21 @@ Use your own product slug instead of `1devtool`. Then update:
 - `tailwind.config.ts` for colors and fonts.
 - `public/favicon.svg` for the app icon.
 
+For `templates/saas`, start from the generated project root and replace `their_project` with your product slug:
+
+```bash
+perl -pi -e 's/their_project/acme/g' package.json .env.example src/lib/saas.ts middleware.ts src/app/layout.tsx docs/cloudflare-domain-setup.md
+```
+
+Use your own product slug instead of `acme`. Then update:
+
+- `src/lib/auth.ts` to connect your real auth/session provider.
+- `src/app/api/billing/checkout/route.ts` to connect Stripe, LemonSqueezy, or another billing provider.
+- `src/db/migrations/001_initial_schema.sql` and `src/db/queries.ts` for your real users, workspaces, subscriptions, and domains.
+- `src/lib/domains.ts` for your routing hostname and verification prefix.
+- `middleware.ts` for your production app hosts and custom-domain lookup.
+- `docs/cloudflare-domain-setup.md` with your real DNS target and support notes.
+
 ## Contributing
 
 1. Fork this repository.
@@ -49,8 +64,11 @@ Use your own product slug instead of `1devtool`. Then update:
 
 | Template | Status | Stack |
 |---|---|---|
-| Landing Page | Available | HTML + Tailwind CSS + JavaScript |
+| Landing Page | Available | Next.js + React |
 | 1DevTool Landing Template | Available | Next.js 16 + Tailwind CSS |
+| Landing - Fitness Studio | Available | Next.js + React |
+| Landing - Fintech App | Available | Next.js + React |
+| Landing - Creative Agency | Available | Next.js + React |
 | Blog | Available | Next.js 14 + Tailwind CSS + MDX |
-| SaaS | Coming Soon | Next.js + Stripe + Auth |
+| SaaS Control Plane | Available | Next.js + Tailwind CSS + Cloudflare domains |
 | Desktop App | Coming Soon | Electron + React |
