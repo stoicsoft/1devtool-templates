@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-ink: #040410;
+  --color-surface: #07081a;
+  --color-surface-2: #0e0f26;
+  --color-line: #1c1f3e;
+  --color-mist: #b6bad4;
+  --color-neon: #45f3a7;
+  --color-electric: #4d7aff;
+  --color-magenta: #ff4d8a;
+  --color-lime: #d4ff4a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #040410;
+  color: #eef0ff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.neon-bg {
+  background:
+    radial-gradient(700px circle at 15% 0%, rgba(69, 243, 167, 0.18), transparent 55%),
+    radial-gradient(700px circle at 85% 5%, rgba(77, 122, 255, 0.22), transparent 55%),
+    radial-gradient(500px circle at 50% 100%, rgba(255, 77, 138, 0.14), transparent 60%);
+}
+
+.cyber-grid {
+  background-image:
+    linear-gradient(to right, rgba(77, 122, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(77, 122, 255, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse at center top, black 30%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse at center top, black 30%, transparent 90%);
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+.scan-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, rgba(69, 243, 167, 0.25), transparent);
+  animation: scan 3.5s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(69, 243, 167, 0.2); }
+  50% { box-shadow: 0 0 40px rgba(69, 243, 167, 0.5); }
+}
+.glow-pulse { animation: glow 2.4s ease-in-out infinite; }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee { animation: marquee 42s linear infinite; }
+
+.neon-border {
+  box-shadow: 0 0 0 1px rgba(69, 243, 167, 0.25), 0 0 30px rgba(69, 243, 167, 0.12);
+}

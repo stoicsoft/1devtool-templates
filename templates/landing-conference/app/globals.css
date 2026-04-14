@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Archivo", system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+
+  --color-ink: #0a0a0a;
+  --color-surface: #111112;
+  --color-surface-2: #1a1a1c;
+  --color-line: #29292d;
+  --color-cream: #f3eede;
+  --color-citrus: #d4ff3d;
+  --color-coral: #ff6547;
+  --color-sky: #63b6ff;
+  --color-lilac: #c8a8ff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0a0a0a;
+  color: #f3eede;
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-display); letter-spacing: -0.02em; }
+.font-serif { font-family: var(--font-serif); }
+
+.gradient-hero {
+  background:
+    radial-gradient(800px circle at 10% 0%, rgba(212, 255, 61, 0.18), transparent 55%),
+    radial-gradient(700px circle at 90% 10%, rgba(255, 101, 71, 0.22), transparent 55%);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee { animation: marquee 40s linear infinite; }
+.marquee-slow { animation: marquee 72s linear infinite; }
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow { animation: spin-slow 20s linear infinite; }

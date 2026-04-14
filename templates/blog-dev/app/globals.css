@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-ink: #070809;
+  --color-surface: #0d0e11;
+  --color-surface-2: #141519;
+  --color-line: #222429;
+  --color-mist: #b4bac2;
+  --color-accent: #7cf2a0;
+  --color-keyword: #c792ea;
+  --color-string: #c3e88d;
+  --color-number: #f78c6c;
+  --color-func: #82aaff;
+  --color-comment: #6a6d75;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #070809;
+  color: #e6e9ed;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.gridlines {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.glow-top {
+  background: radial-gradient(800px circle at 50% -40%, rgba(124, 242, 160, 0.15), transparent 55%);
+}
+
+@keyframes blink {
+  50% { opacity: 0.2; }
+}
+.caret { animation: blink 1.05s steps(1) infinite; }
+
+.code-kw { color: #c792ea; }
+.code-str { color: #c3e88d; }
+.code-num { color: #f78c6c; }
+.code-fn { color: #82aaff; }
+.code-c { color: #6a6d75; }
+.code-id { color: #e6e9ed; }
+
+.hover-line {
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.hover-line:hover { border-color: #7cf2a0; background-color: rgba(124, 242, 160, 0.04); }

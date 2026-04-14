@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "EB Garamond", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #0a0a0a;
+  --color-surface: #121212;
+  --color-surface-2: #1a1a1a;
+  --color-line: #262626;
+  --color-mist: #bebebe;
+  --color-muted: #7a7a7a;
+  --color-accent: #e4c290;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0a0a0a;
+  color: #f0ece4;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif { font-family: var(--font-serif); }
+.font-mono { font-family: var(--font-mono); }
+
+.grain {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* "Photos" — painterly gradients */
+.ph-1 { background: linear-gradient(155deg, #1a1a1a 0%, #3a3322 50%, #8c6a2c 100%); }
+.ph-2 { background: linear-gradient(170deg, #1a2228 0%, #4a5c6a 60%, #c7b78c 100%); }
+.ph-3 { background: linear-gradient(145deg, #2a1a14 0%, #6a3a22 50%, #e4c290 100%); }
+.ph-4 { background: linear-gradient(165deg, #0a1a1a 0%, #2a4a42 50%, #a9c2b0 100%); }
+.ph-5 { background: linear-gradient(180deg, #1a0f12 0%, #4a2828 55%, #d69080 100%); }
+.ph-6 { background: linear-gradient(150deg, #222028 0%, #4a4458 60%, #b4a6c8 100%); }
+.ph-7 { background: linear-gradient(155deg, #0f0f0f 0%, #4a4a4a 50%, #b8b8b8 100%); }
+.ph-8 { background: linear-gradient(170deg, #241a12 0%, #5a422a 50%, #e4b680 100%); }
+.ph-9 { background: linear-gradient(145deg, #18221a 0%, #3a5a3a 50%, #a8c898 100%); }
+.ph-10 { background: linear-gradient(160deg, #2a1a1a 0%, #8a4a3a 50%, #e4a890 100%); }
+.ph-11 { background: linear-gradient(175deg, #131820 0%, #32486a 55%, #8eaad0 100%); }
+.ph-12 { background: linear-gradient(150deg, #1a120a 0%, #4a3020 50%, #c09060 100%); }
+
+.hover-scale {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hover-scale:hover { transform: scale(1.02); }
+
+.underline-grow {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: background-size 0.3s ease;
+  padding-bottom: 2px;
+}
+.underline-grow:hover { background-size: 100% 1px; }

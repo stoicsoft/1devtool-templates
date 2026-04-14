@@ -123,6 +123,96 @@
       "status": "available"
     },
     {
+      "id": "landing-podcast",
+      "category": "landing",
+      "name": "Landing - Podcast Show",
+      "description": "Audio-first podcast landing with animated player card, waveform episode list, host bios, subscribe platforms, and membership CTA. Inspired by Signal FM — a StoicSoft production.",
+      "preview": "previews/landing-podcast.jpg",
+      "directory": "templates/landing-podcast",
+      "tags": ["next.js", "tailwind", "landing", "podcast", "audio"],
+      "status": "available"
+    },
+    {
+      "id": "landing-newsletter",
+      "category": "landing",
+      "name": "Landing - Newsletter / Publication",
+      "description": "Editorial newspaper-style newsletter landing with masthead, current issue excerpt, archive, about page, and subscribe form. Cream paper aesthetic.",
+      "preview": "previews/landing-newsletter.jpg",
+      "directory": "templates/landing-newsletter",
+      "tags": ["next.js", "tailwind", "landing", "newsletter", "publication"],
+      "status": "available"
+    },
+    {
+      "id": "landing-conference",
+      "category": "landing",
+      "name": "Landing - Tech Conference",
+      "description": "Bold tech-event landing with oversized display type, speakers grid, two-day schedule, venue info, sponsors, and tiered tickets. Inspired by Shipped /2026.",
+      "preview": "previews/landing-conference.jpg",
+      "directory": "templates/landing-conference",
+      "tags": ["next.js", "tailwind", "landing", "conference", "event"],
+      "status": "available"
+    },
+    {
+      "id": "landing-real-estate",
+      "category": "landing",
+      "name": "Landing - Real Estate",
+      "description": "Photography-led property brokerage landing with listings grid, region blocks, services, testimonials, and inquiry form. Warm cream editorial palette.",
+      "preview": "previews/landing-real-estate.jpg",
+      "directory": "templates/landing-real-estate",
+      "tags": ["next.js", "tailwind", "landing", "real-estate", "property"],
+      "status": "available"
+    },
+    {
+      "id": "landing-law-firm",
+      "category": "landing",
+      "name": "Landing - Law Firm",
+      "description": "Navy-and-gold boutique law firm landing with practice areas, partner bios, selected matters, testimonials, and consultation form. Playfair display.",
+      "preview": "previews/landing-law-firm.jpg",
+      "directory": "templates/landing-law-firm",
+      "tags": ["next.js", "tailwind", "landing", "law", "professional"],
+      "status": "available"
+    },
+    {
+      "id": "landing-travel",
+      "category": "landing",
+      "name": "Landing - Travel / Tours",
+      "description": "Warm small-group-travel landing with postcard trip cards, sample itinerary, rules of how we travel, traveller stories, and booking. Tenor Sans + Instrument Serif.",
+      "preview": "previews/landing-travel.jpg",
+      "directory": "templates/landing-travel",
+      "tags": ["next.js", "tailwind", "landing", "travel", "tours"],
+      "status": "available"
+    },
+    {
+      "id": "landing-web3",
+      "category": "landing",
+      "name": "Landing - Web3 / Crypto",
+      "description": "Non-custodial payment rail landing with cyberpunk neon glows, animated payroll dashboard, live ticker, chains grid, tokenomics, and roadmap.",
+      "preview": "previews/landing-web3.jpg",
+      "directory": "templates/landing-web3",
+      "tags": ["next.js", "tailwind", "landing", "web3", "crypto"],
+      "status": "available"
+    },
+    {
+      "id": "landing-nonprofit",
+      "category": "landing",
+      "name": "Landing - Nonprofit",
+      "description": "Mission-driven reforestation nonprofit landing with live sapling counter, impact stats, field stories, donation tiers, and volunteer signup. Warm moss palette.",
+      "preview": "previews/landing-nonprofit.jpg",
+      "directory": "templates/landing-nonprofit",
+      "tags": ["next.js", "tailwind", "landing", "nonprofit", "charity"],
+      "status": "available"
+    },
+    {
+      "id": "landing-course",
+      "category": "landing",
+      "name": "Landing - Online Course / Cohort",
+      "description": "Six-week cohort course landing with curriculum cards, what&apos;s-included bento, instructor bios, graduate stories, and enrol form. Bricolage Grotesque display.",
+      "preview": "previews/landing-course.jpg",
+      "directory": "templates/landing-course",
+      "tags": ["next.js", "tailwind", "landing", "education", "course"],
+      "status": "available"
+    },
+    {
       "id": "simple-nextjs-blog",
       "category": "blog",
       "name": "Simple Next.js Blog",
@@ -130,6 +220,56 @@
       "preview": "previews/simple-nextjs-blog.jpg",
       "directory": "templates/simple-nextjs-blog",
       "tags": ["next.js", "mdx", "tailwind"],
+      "status": "available"
+    },
+    {
+      "id": "blog-magazine",
+      "category": "blog",
+      "name": "Blog - Editorial Magazine",
+      "description": "Newspaper-style culture magazine with masthead, featured cover story, three-column lead stories, columns grid, sidebar, and excerpt with dropcap. Warm cream paper aesthetic with Fraunces serif.",
+      "preview": "previews/blog-magazine.jpg",
+      "directory": "templates/blog-magazine",
+      "tags": ["next.js", "tailwind", "blog", "magazine", "editorial"],
+      "status": "available"
+    },
+    {
+      "id": "blog-dev",
+      "category": "blog",
+      "name": "Blog - Developer / Engineering",
+      "description": "Dark monospace developer blog with terminal navigation, syntax-highlighted Go code block, posts list with tag chips, sidebar with tags + series, and developer-focused subscribe panel. Geist + Geist Mono.",
+      "preview": "previews/blog-dev.jpg",
+      "directory": "templates/blog-dev",
+      "tags": ["next.js", "tailwind", "blog", "developer", "engineering"],
+      "status": "available"
+    },
+    {
+      "id": "blog-photography",
+      "category": "blog",
+      "name": "Blog - Photo Journal",
+      "description": "Dark minimal photographer&apos;s journal with mosaic feature plates, 3-column plate grid, about section with equipment list, prints showcase, and Sunday-feed subscribe. Painterly gradient placeholders for photos.",
+      "preview": "previews/blog-photography.jpg",
+      "directory": "templates/blog-photography",
+      "tags": ["next.js", "tailwind", "blog", "photography", "journal"],
+      "status": "available"
+    },
+    {
+      "id": "blog-essay",
+      "category": "blog",
+      "name": "Blog - Long-form Essay",
+      "description": "Paper-style long-form essay blog with Crimson Pro serif, masthead, featured essay with dropcap, year-grouped Roman-numeral archive, reading log, and quiet author bio. Built for the kind of writing that takes 24 minutes.",
+      "preview": "previews/blog-essay.jpg",
+      "directory": "templates/blog-essay",
+      "tags": ["next.js", "tailwind", "blog", "essay", "writing"],
+      "status": "available"
+    },
+    {
+      "id": "blog-personal",
+      "category": "blog",
+      "name": "Blog - Personal Garden",
+      "description": "Multi-section digital-garden personal blog with essays, notes, links, bookshelf (with rendered spines), /now page, and projects. iA Writer Quattro + Source Serif. The unhurried, internet-as-it-was variety.",
+      "preview": "previews/blog-personal.jpg",
+      "directory": "templates/blog-personal",
+      "tags": ["next.js", "tailwind", "blog", "personal", "digital-garden"],
       "status": "available"
     },
     {
