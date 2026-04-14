@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "name": "Frequencies",
+    "tagline": "A small band of tech podcasts we keep in the rotation",
+    "description": "Shows we listen to at the StoicSoft studio while commuting, walking, or pairing on a problem. Hand-picked, non-sponsored, honestly annotated.",
+    "totalCount": 58
+  },
+  "categories": [
+    { "id": "engineering", "label": "Engineering", "count": 14 },
+    { "id": "founders", "label": "Founders", "count": 12 },
+    { "id": "design", "label": "Design", "count": 8 },
+    { "id": "interviews", "label": "Interviews", "count": 10 },
+    { "id": "audio-docs", "label": "Audio docs", "count": 6 },
+    { "id": "livecoding", "label": "Livecoding", "count": 4 },
+    { "id": "indie", "label": "Indie &amp; craft", "count": 11 }
+  ],
+  "items": [
+    { "slug": "signal-fm", "name": "Signal FM", "category": "interviews", "tagline": "Weekly interviews with indie founders", "description": "Our own show — a weekly long conversation with builders inside the StoicSoft studio&rsquo;s orbit. Hosted by Clara and Dante.", "pricing": "Free · $5 member", "status": "Featured", "tags": ["indie", "interviews", "weekly"], "hue": "from-lime-300 to-purple-500", "cadence": "Weekly · Wednesday", "length": "45 — 60 min", "episodes": 84, "since": "2023" },
+    { "slug": "log-stoicsoft", "name": "log.stoicsoft.com · audio", "category": "engineering", "tagline": "Engineering posts, read out loud", "description": "The StoicSoft engineering blog, narrated by the authors. A good fit for the commute or a long walk. Publishes a day after the written post.", "pricing": "Free", "status": "Featured", "tags": ["engineering", "narrated"], "hue": "from-emerald-400 to-teal-600", "cadence": "Weekly · Thursday", "length": "12 — 20 min", "episodes": 140, "since": "2024" },
+    { "slug": "shipcraft-lectures", "name": "Shipcraft Lectures", "category": "founders", "tagline": "The audio side of the Shipcraft cohort", "description": "Jonas Park&rsquo;s lectures from the Shipcraft founder cohort, released weekly during active semesters and archived the rest of the year.", "pricing": "Free", "status": "New", "tags": ["founders", "teaching"], "hue": "from-indigo-500 to-sky-500", "cadence": "Seasonal · Friday", "length": "30 — 45 min", "episodes": 48, "since": "2022" },
+    { "slug": "field-and-form-recordings", "name": "Field &amp; Form Recordings", "category": "audio-docs", "tagline": "Audio essays from our quarterly", "description": "Selected essays from Field &amp; Form, the StoicSoft quarterly, recorded as long-form audio. Produced with care — studio mic, no ads.", "pricing": "Free", "tags": ["essays", "long-form"], "hue": "from-amber-500 to-rose-400", "cadence": "Monthly", "length": "20 — 40 min", "episodes": 34, "since": "2023" },
+    { "slug": "servercompass-pager", "name": "ServerCompass Pager", "category": "engineering", "tagline": "On-call war stories from real teams", "description": "Short interviews with SRE leads about the alerts that woke them up and what they did next. Built around the ServerCompass monitoring perspective.", "pricing": "Free", "tags": ["ops", "sre", "incidents"], "hue": "from-teal-400 to-cyan-500", "cadence": "Bi-weekly", "length": "25 — 35 min", "episodes": 28, "since": "2024" },
+    { "slug": "routine-mornings", "name": "Routine Mornings", "category": "indie", "tagline": "Ten-minute rituals for indie makers", "description": "A daily ten-minute podcast from the Routine app team. One prompt, one thought, delivered at 6am. Listen while the kettle boils.", "pricing": "Free", "status": "Popular", "tags": ["habits", "daily"], "hue": "from-violet-500 to-pink-500", "cadence": "Daily · 6am", "length": "8 — 12 min", "episodes": 412, "since": "2024" },
+    { "slug": "atelier-table", "name": "Atelier Table", "category": "design", "tagline": "Studio conversations, one at a time", "description": "One-studio, one-episode conversations with founders of the studios on our Atelier directory. Inside their process, without the press gloss.", "pricing": "Free", "tags": ["studios", "design"], "hue": "from-amber-400 to-rose-500", "cadence": "Monthly", "length": "50 — 70 min", "episodes": 16, "since": "2024" },
+    { "slug": "halo-quiet-hour", "name": "Halo Quiet Hour", "category": "indie", "tagline": "A bedtime audio companion", "description": "A weekly hour of ambient sound and slow reflection from the Halo habit app. The anti-podcast podcast.", "pricing": "Free · Pro $4 mo", "tags": ["ambient", "quiet"], "hue": "from-purple-500 to-fuchsia-400", "cadence": "Weekly · Sunday", "length": "60 min", "episodes": 52, "since": "2025" },
+    { "slug": "aether-retrospectives", "name": "Aether Retrospectives", "category": "engineering", "tagline": "Engineering post-mortems from the Aether team", "description": "Aether&rsquo;s engineering retrospectives — what we shipped, what we got wrong, what we changed. Honest to a fault.", "pricing": "Free", "tags": ["ai", "retro"], "hue": "from-cyan-400 to-violet-500", "cadence": "Monthly · last Tuesday", "length": "35 — 50 min", "episodes": 14, "since": "2025" },
+    { "slug": "indie-open-office", "name": "Indie Open Office", "category": "interviews", "tagline": "Live-coached founders solving their real problem", "description": "Once a month, an indie founder brings a real problem to a one-hour live coaching session with a StoicSoft curator. Raw, helpful.", "pricing": "Free", "tags": ["founders", "live"], "hue": "from-orange-500 to-rose-600", "cadence": "Monthly · 1st Thursday", "length": "60 min", "episodes": 22, "since": "2023" },
+    { "slug": "open-roots-field-notes", "name": "Open Roots Field Notes", "category": "audio-docs", "tagline": "Reforestation, in the field", "description": "Quarterly field recordings from the Open Roots replanting crews — saplings, soil, the wind in the Alentejo. Produced as audio documentary.", "pricing": "Free", "tags": ["nonprofit", "field"], "hue": "from-lime-500 to-green-600", "cadence": "Quarterly", "length": "20 — 30 min", "episodes": 8, "since": "2023" },
+    { "slug": "mei-wong-livecoding", "name": "Mei Wong · Livecoding", "category": "livecoding", "tagline": "A StoicSoft engineer, coding out loud", "description": "Mei Wong building small things in real time — Next.js, Postgres, and the occasional Rust detour. Lightly edited, timestamps in every episode.", "pricing": "Free", "tags": ["livecoding", "nextjs"], "hue": "from-sky-500 to-indigo-500", "cadence": "Bi-weekly · Saturday", "length": "75 — 90 min", "episodes": 26, "since": "2024" }
+  ],
+  "stats": [
+    { "k": "58", "v": "Shows in the rotation" },
+    { "k": "8", "v": "From the StoicSoft studio" },
+    { "k": "1 wk", "v": "Minimum listen before adding" },
+    { "k": "0", "v": "Paid placements" }
+  ]
+}

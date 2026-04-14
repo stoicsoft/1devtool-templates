@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+
+  --color-ink: #0a0b10;
+  --color-surface: #0f1016;
+  --color-surface-2: #171921;
+  --color-line: #242630;
+  --color-mist: #a7abb7;
+  --color-mint: #3ee0a5;
+  --color-lemon: #d4ff3d;
+  --color-coral: #ff6547;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0a0b10;
+  color: #eef0f5;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif { font-family: var(--font-serif); }
+
+.glow-bg {
+  background:
+    radial-gradient(700px circle at 15% 0%, rgba(62, 224, 165, 0.12), transparent 55%),
+    radial-gradient(700px circle at 85% 10%, rgba(212, 255, 61, 0.1), transparent 55%);
+}
+
+.dotgrid {
+  background-image: radial-gradient(rgba(62, 224, 165, 0.12) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.card-hover {
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(62, 224, 165, 0.4);
+}

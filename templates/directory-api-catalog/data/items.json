@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "name": "Endpoints",
+    "tagline": "A catalog of APIs builders at StoicSoft actually integrate",
+    "description": "Hand-reviewed public APIs with honest pricing, real auth notes, and the rate limits you&rsquo;ll hit. Submitted by StoicSoft engineers during real integrations.",
+    "totalCount": 192
+  },
+  "categories": [
+    { "id": "auth", "label": "Auth &amp; Identity", "count": 18 },
+    { "id": "payments", "label": "Payments", "count": 22 },
+    { "id": "comms", "label": "Email &amp; SMS", "count": 16 },
+    { "id": "data", "label": "Data &amp; Scraping", "count": 28 },
+    { "id": "ai", "label": "AI &amp; ML", "count": 24 },
+    { "id": "maps", "label": "Maps &amp; Location", "count": 12 },
+    { "id": "dev", "label": "Dev Infrastructure", "count": 32 },
+    { "id": "media", "label": "Media", "count": 18 }
+  ],
+  "items": [
+    { "slug": "servercompass-probes", "name": "ServerCompass Probes API", "category": "dev", "tagline": "Synthetic uptime probes as a service", "description": "Programmatic access to ServerCompass probes — create, list, and stream incident events. Built for teams replacing their cron-job monitoring setup.", "pricing": "$29 / mo", "status": "Featured", "tags": ["monitoring", "rest", "webhooks"], "auth": "API key", "rate": "1000 / min", "format": "REST + webhooks", "status_code": "200 OK", "hue": "from-emerald-400 to-teal-600", "sample": "GET /v1/probes/:id" },
+    { "slug": "aether-retrieval", "name": "Aether Retrieval API", "category": "ai", "tagline": "Grounded answers with citations", "description": "Drop in a retrieval layer with tenant-scoped vector namespaces. Returns cited chunks with confidence scores — the same layer that powers Aether.", "pricing": "$0.003 / query", "status": "Featured", "tags": ["rag", "ai", "search"], "auth": "Bearer token", "rate": "600 / min", "format": "REST", "status_code": "200 OK", "hue": "from-violet-500 to-cyan-400", "sample": "POST /v1/search" },
+    { "slug": "1devtool-registry", "name": "1DevTool Registry API", "category": "dev", "tagline": "Programmatic starter template registry", "description": "Query the template registry that backs 1DevTool. Public, cacheable, rate-limited but generous. Great for template gallery apps.", "pricing": "Free", "status": "New", "tags": ["templates", "rest"], "auth": "None (public)", "rate": "120 / min", "format": "REST", "status_code": "200 OK", "hue": "from-orange-400 to-rose-500", "sample": "GET /v1/templates" },
+    { "slug": "helix-payments", "name": "Helix Payments API", "category": "payments", "tagline": "Stablecoin payments, non-custodial", "description": "Create payment intents, settle in USDC, off-ramp to fiat in 48 markets. Keys stay with you — the API only orchestrates routing and receipts.", "pricing": "0.4% fee", "tags": ["stablecoin", "payroll"], "auth": "Signed request", "rate": "240 / min", "format": "REST + SDK", "status_code": "201 Created", "hue": "from-emerald-500 to-cyan-500", "sample": "POST /v1/payments" },
+    { "slug": "vaulta-treasury", "name": "Vaulta Treasury API", "category": "payments", "tagline": "Reconciliation + bank connectors", "description": "Consolidate balances, run reconciliation rules, and export audit trails — a fintech backend with opinionated defaults. A StoicSoft template product.", "pricing": "$49 / seat / mo", "tags": ["fintech", "banking"], "auth": "OAuth 2.0", "rate": "300 / min", "format": "REST + GraphQL", "status_code": "200 OK", "hue": "from-blue-500 to-sky-400", "sample": "GET /v1/accounts" },
+    { "slug": "open-roots-monitor", "name": "Open Roots Monitor API", "category": "data", "tagline": "Public reforestation monitoring data", "description": "Read-only access to our nonprofit partner&rsquo;s sapling survival dataset across Iberia. CC-BY 4.0 licensed, great for research or dashboards.", "pricing": "Free · CC-BY", "tags": ["nonprofit", "data"], "auth": "None (public)", "rate": "60 / min", "format": "REST + GeoJSON", "status_code": "200 OK", "hue": "from-lime-500 to-green-600", "sample": "GET /v1/parcels" },
+    { "slug": "signal-rss-feed", "name": "Signal FM RSS API", "category": "media", "tagline": "Episode metadata for a podcast", "description": "The RSS + JSON feed for Signal FM, the StoicSoft studio&rsquo;s weekly podcast. Includes transcripts and chapter markers.", "pricing": "Free", "tags": ["podcast", "rss"], "auth": "None (public)", "rate": "Unlimited", "format": "RSS + JSON", "status_code": "200 OK", "hue": "from-lime-300 to-purple-500", "sample": "GET /feed.json" },
+    { "slug": "halo-habits-api", "name": "Halo Habits API", "category": "data", "tagline": "Export your Halo habit history", "description": "A simple read API over your own Halo data. End-to-end encrypted sync means keys are held by the user, not the API.", "pricing": "Free · own data", "tags": ["habits", "mobile"], "auth": "User token", "rate": "30 / min", "format": "REST", "status_code": "200 OK", "hue": "from-purple-500 to-fuchsia-500", "sample": "GET /v1/me/streaks" },
+    { "slug": "field-stock-photos", "name": "Field Stock Photos", "category": "media", "tagline": "Portuguese cityscape stock library", "description": "The StoicSoft studio&rsquo;s own stock library — cityscapes from Lisbon, Porto, and Évora. Free for editorial under CC-BY.", "pricing": "Free · CC-BY", "tags": ["stock", "photography"], "auth": "None (public)", "rate": "240 / hr", "format": "REST + CDN", "status_code": "200 OK", "hue": "from-rose-400 to-amber-400", "sample": "GET /v1/photos" },
+    { "slug": "routine-api", "name": "Routine API", "category": "data", "tagline": "Habit + ritual tracking API", "description": "Create rituals, log streaks, and pair with a partner across devices. Powers the Routine indie app.", "pricing": "Free · Pro $4 mo", "tags": ["habits"], "auth": "API key", "rate": "120 / min", "format": "REST", "status_code": "200 OK", "hue": "from-indigo-500 to-sky-500", "sample": "POST /v1/rituals" },
+    { "slug": "margin-newsletter", "name": "The Margin API", "category": "media", "tagline": "Archive API for a weekly newsletter", "description": "Read access to every issue of The Margin, the Sunday newsletter from the StoicSoft studio. Includes search and topic tags.", "pricing": "Free", "status": "Popular", "tags": ["newsletter", "archive"], "auth": "None (public)", "rate": "300 / hr", "format": "REST", "status_code": "200 OK", "hue": "from-amber-500 to-rose-500", "sample": "GET /v1/issues/:n" },
+    { "slug": "elena-faro-prints", "name": "Elena Faro Prints API", "category": "media", "tagline": "Edition availability + pricing", "description": "Quick-lookup API over the current fine-art print editions. Built as a StoicSoft partner project.", "pricing": "Free", "tags": ["prints", "photography"], "auth": "None (public)", "rate": "60 / min", "format": "REST", "status_code": "200 OK", "hue": "from-amber-700 to-stone-500", "sample": "GET /v1/prints" }
+  ],
+  "stats": [
+    { "k": "192", "v": "APIs in the catalog" },
+    { "k": "48%", "v": "Free or generous free tier" },
+    { "k": "100%", "v": "Real-use tested" },
+    { "k": "REST", "v": "Mostly honest REST" }
+  ]
+}

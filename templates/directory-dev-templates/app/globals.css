@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #11131a;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.grid-paper {
+  background-image:
+    linear-gradient(to right, rgba(17, 19, 26, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 19, 26, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.card-hover { transition: border-color 0.25s ease, transform 0.25s ease; }
+.card-hover:hover { border-color: #11131a; transform: translateY(-2px); }

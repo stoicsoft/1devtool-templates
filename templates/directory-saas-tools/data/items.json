@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "name": "StackPicks",
+    "tagline": "The curated directory of SaaS tools operators actually use",
+    "description": "A hand-reviewed registry of software we run at StoicSoft, pair with ServerCompass, or see our customers trust. No affiliate links, no sponsored slots.",
+    "totalCount": 248
+  },
+  "categories": [
+    { "id": "analytics", "label": "Analytics", "count": 24 },
+    { "id": "auth", "label": "Auth & Identity", "count": 18 },
+    { "id": "billing", "label": "Billing & Payments", "count": 14 },
+    { "id": "cms", "label": "Content & CMS", "count": 22 },
+    { "id": "data", "label": "Data & ETL", "count": 31 },
+    { "id": "email", "label": "Email & Comms", "count": 19 },
+    { "id": "monitoring", "label": "Monitoring & Logs", "count": 28 },
+    { "id": "productivity", "label": "Productivity", "count": 36 },
+    { "id": "security", "label": "Security", "count": 21 },
+    { "id": "support", "label": "Support", "count": 15 }
+  ],
+  "items": [
+    { "slug": "servercompass", "name": "ServerCompass", "category": "monitoring", "tagline": "Infrastructure monitoring for small teams", "description": "A StoicSoft product: synthetic probes, RUM, SSL, and DNS watchers with alerts your on-call will actually act on. Flat per-check pricing, no region tax.", "pricing": "$29 / mo", "status": "Featured", "tags": ["monitoring", "ops", "alerts"], "hue": "from-emerald-400 to-teal-600", "users": "8,600 teams", "launched": "2023", "pick": "Editor&rsquo;s pick" },
+    { "slug": "1devtool", "name": "1DevTool", "category": "productivity", "tagline": "Production-grade starter templates", "description": "Open-source template registry plus desktop app. Clone any starter in 12 seconds, with a CLI that detects your package manager. Used across the StoicSoft studio.", "pricing": "Free · Pro $19", "status": "Featured", "tags": ["templates", "cli", "nextjs"], "hue": "from-orange-400 to-rose-500", "users": "42,000 clones / mo", "launched": "2024", "pick": "Editor&rsquo;s pick" },
+    { "slug": "aether", "name": "Aether", "category": "productivity", "tagline": "The AI workspace for operators", "description": "Retrieval-grounded answers across your docs, calls, tickets, and metrics — with citations your team can audit. Built by StoicSoft, used internally every Monday.", "pricing": "Free · Team $22", "status": "New", "tags": ["ai", "search", "ops"], "hue": "from-cyan-300 to-violet-600", "users": "1,840 workspaces", "launched": "2025" },
+    { "slug": "routine", "name": "Routine", "category": "productivity", "tagline": "Habit tracking without the shame spiral", "description": "Soft streaks, quiet hours, one-partner pairing. Built by an indie maker inside the StoicSoft collective, runs ad-free for under a dollar per user per year.", "pricing": "Free · Pro $4", "status": "Popular", "tags": ["habits", "mobile"], "hue": "from-violet-500 to-pink-500", "users": "62,400 users", "launched": "2024" },
+    { "slug": "halo-habits", "name": "Halo", "category": "productivity", "tagline": "Earnest habit rituals, iOS + Android", "description": "A StoicSoft consumer app. No badges, no leaderboards — just a well-designed nudge for the ritual you already want to keep.", "pricing": "Free · $4 mo", "status": "Popular", "tags": ["habits", "mobile", "privacy"], "hue": "from-purple-500 to-fuchsia-400", "users": "24k subs", "launched": "2025" },
+    { "slug": "quill-markdown", "name": "Quill", "category": "productivity", "tagline": "Markdown-first writing app for macOS", "description": "A focused writing environment for long-form essays and reading logs. Originally shipped by Anya Park inside the StoicSoft studio.", "pricing": "$38 one-time", "tags": ["writing", "macos"], "hue": "from-stone-500 to-amber-300", "users": "30k users", "launched": "2022" },
+    { "slug": "tide-state", "name": "Tide", "category": "productivity", "tagline": "A small, opinionated state library for React", "description": "A minimal reactive store used across four StoicSoft products. Retired in favour of the standard community tools, kept for historical context.", "pricing": "MIT", "status": "Archived", "tags": ["react", "open-source"], "hue": "from-slate-500 to-sky-600", "users": "4.2k stars", "launched": "2021" },
+    { "slug": "vaulta", "name": "Vaulta", "category": "billing", "tagline": "Financial OS for modern treasury", "description": "Reconciliation, payments, runway — one surface across your bank stack. A fictional template brand dogfooded by the StoicSoft finance team.", "pricing": "$49 / seat", "tags": ["billing", "treasury", "fintech"], "hue": "from-blue-500 to-sky-300", "users": "1,120 teams", "launched": "2025" },
+    { "slug": "helix-payroll", "name": "Helix", "category": "billing", "tagline": "Non-custodial stablecoin payroll", "description": "Signed on your hardware, settled on-chain, logged for your accountant. The StoicSoft experimental payments rail.", "pricing": "0.4% fee", "status": "New", "tags": ["billing", "web3"], "hue": "from-emerald-400 to-cyan-500", "users": "$1.4B volume", "launched": "2025" },
+    { "slug": "signal-fm", "name": "Signal FM", "category": "email", "tagline": "A weekly show for indie founders", "description": "Part of the StoicSoft studio output — 84 episodes on building independent software. Free RSS, $5 membership for ad-free feeds.", "pricing": "Free · $5 mo", "tags": ["podcast", "community"], "hue": "from-lime-300 to-purple-500", "users": "12k weekly", "launched": "2023" },
+    { "slug": "the-margin", "name": "The Margin", "category": "email", "tagline": "A Sunday newsletter on indie craft", "description": "One long read every Sunday from Clara at the StoicSoft studio. 9,420 subscribers, no sponsors, one-click unsubscribe.", "pricing": "Free", "tags": ["newsletter", "writing"], "hue": "from-amber-500 to-rose-400", "users": "9,420 readers", "launched": "2022" },
+    { "slug": "field-notebook", "name": "Field Notebook", "category": "productivity", "tagline": "A builder&rsquo;s paper notebook", "description": "StoicSoft&rsquo;s small-batch physical product — a cloth-bound, 192-page journal from our bindery in Porto. Shipped twice a year.", "pricing": "$32", "tags": ["paper", "ritual"], "hue": "from-stone-400 to-orange-400", "users": "4,800 sold", "launched": "2022" }
+  ],
+  "stats": [
+    { "k": "248", "v": "Tools in the registry" },
+    { "k": "11", "v": "Curators on rotation" },
+    { "k": "0", "v": "Sponsored listings, ever" },
+    { "k": "Wed", "v": "Updated weekly" }
+  ]
+}

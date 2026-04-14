@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "name": "Atelier",
+    "tagline": "A directory of design and development studios we&rsquo;d hire ourselves",
+    "description": "Hand-vetted independent agencies and studios that the StoicSoft team has either hired, partnered with, or watched ship for years. No paid placements, ever.",
+    "totalCount": 84
+  },
+  "categories": [
+    { "id": "brand", "label": "Brand", "count": 18 },
+    { "id": "product-design", "label": "Product design", "count": 14 },
+    { "id": "engineering", "label": "Engineering", "count": 16 },
+    { "id": "growth", "label": "Growth &amp; marketing", "count": 12 },
+    { "id": "research", "label": "Research", "count": 8 },
+    { "id": "video", "label": "Video &amp; motion", "count": 10 },
+    { "id": "writing", "label": "Editorial", "count": 6 }
+  ],
+  "items": [
+    { "slug": "stoicsoft-studio", "name": "StoicSoft Studio", "category": "engineering", "tagline": "Independent product engineering &amp; design", "description": "Twelve people across Lisbon, Madrid, and Lagos. We build software for small teams that want to ship like a small team. Maker of ServerCompass, Aether, and 1DevTool.", "rate": "$180 / hr · projects from $20k", "size": "12 humans", "location": "Lisbon, PT", "status": "Featured", "tags": ["engineering", "design", "product"], "hue": "from-emerald-400 to-teal-600", "founded": "2019", "languages": "EN · PT · ES" },
+    { "slug": "northframe-creative", "name": "Northframe Creative", "category": "brand", "tagline": "Editorial brand systems &amp; web", "description": "A 12-person studio focused on quiet, editorial-leaning brand systems and high-performance marketing sites. Long-time StoicSoft creative collaborator.", "rate": "$220 / hr · branding from $35k", "size": "12 humans", "location": "Mexico City · Lisbon", "status": "Featured", "tags": ["brand", "editorial", "web"], "hue": "from-amber-500 to-rose-500", "founded": "2017", "languages": "EN · ES" },
+    { "slug": "lumen-research", "name": "Lumen Research", "category": "research", "tagline": "Customer interviews, user research, decisions", "description": "A research collective we partner with on every major Aether feature. Quiet, careful work — long calls, longer transcripts, sharp memos.", "rate": "$280 / hr · sprints from $18k", "size": "5 humans", "location": "Berlin, DE", "tags": ["research", "ux"], "hue": "from-violet-500 to-pink-500", "founded": "2018", "languages": "EN · DE" },
+    { "slug": "tessera-engineering", "name": "Tessera Engineering", "category": "engineering", "tagline": "Backend &amp; data infrastructure", "description": "When ServerCompass needs help on the data plane, Tessera is who we call. Three engineers, ten years of Postgres + Kafka in production.", "rate": "$240 / hr · projects from $40k", "size": "3 humans", "location": "Remote · EU", "tags": ["backend", "postgres", "data"], "hue": "from-blue-500 to-indigo-600", "founded": "2020", "languages": "EN · NL" },
+    { "slug": "orbital-product-design", "name": "Orbital Product Design", "category": "product-design", "tagline": "End-to-end product design", "description": "Six product designers who pair-program their own components. They designed the Aether dashboard refresh in 2025.", "rate": "$200 / hr · projects from $25k", "size": "6 humans", "location": "Remote · global", "status": "New", "tags": ["product", "design"], "hue": "from-cyan-400 to-sky-600", "founded": "2021", "languages": "EN" },
+    { "slug": "halo-mobile-collective", "name": "Halo Mobile", "category": "engineering", "tagline": "iOS &amp; Android, deeply", "description": "A two-person mobile collective that built the Halo iOS app for the StoicSoft team. They write Swift like it&rsquo;s a craft, not a job.", "rate": "$160 / hr · projects from $30k", "size": "2 humans", "location": "Berlin, DE", "tags": ["ios", "android"], "hue": "from-purple-500 to-fuchsia-400", "founded": "2019", "languages": "EN · DE" },
+    { "slug": "field-form-editorial", "name": "Field &amp; Form Editorial", "category": "writing", "tagline": "Long-form copy &amp; voice work", "description": "An editorial outfit that helps quiet companies sound quiet. They write the words on most StoicSoft surfaces, and edit our magazine.", "rate": "$0.80 / word · retainers from $4k mo", "size": "4 humans", "location": "Lisbon · NYC", "tags": ["editorial", "voice"], "hue": "from-stone-400 to-amber-500", "founded": "2018", "languages": "EN · PT" },
+    { "slug": "parallel-launches", "name": "Parallel Launches", "category": "growth", "tagline": "Launch films &amp; activation campaigns", "description": "A small team that has run the launch week for three of our products. They make 60-second films and the email sequences that follow.", "rate": "$190 / hr · launches from $30k", "size": "5 humans", "location": "London, UK", "status": "Popular", "tags": ["launches", "marketing"], "hue": "from-rose-500 to-orange-500", "founded": "2020", "languages": "EN" },
+    { "slug": "kiln-motion", "name": "Kiln Motion", "category": "video", "tagline": "Motion design &amp; product film", "description": "Four-person motion studio. They produced the Aether explainer film and the Helix product reveal. Fast, restrained, on-brand.", "rate": "$170 / hr · projects from $18k", "size": "4 humans", "location": "Remote · UK / NL", "tags": ["motion", "film"], "hue": "from-orange-500 to-purple-600", "founded": "2019", "languages": "EN" },
+    { "slug": "open-roots-comms", "name": "Open Roots Communications", "category": "growth", "tagline": "Communications for nonprofits", "description": "The communications partner for Open Roots. They&rsquo;re a one-person studio and the only growth firm we recommend for nonprofit work.", "rate": "Sliding scale", "size": "1 human", "location": "Évora, PT", "tags": ["nonprofit", "communications"], "hue": "from-lime-500 to-green-600", "founded": "2021", "languages": "EN · PT · ES" },
+    { "slug": "elena-faro-photo", "name": "Elena Faro Photo", "category": "video", "tagline": "Editorial photography for product surfaces", "description": "Elena&rsquo;s commercial side. She&rsquo;s shot the founder portraits and field photography for half of the StoicSoft surfaces.", "rate": "$220 / hr · day rate $1.6k", "size": "1 human", "location": "Lisbon · Madrid", "tags": ["photography", "editorial"], "hue": "from-amber-700 to-stone-500", "founded": "2019", "languages": "EN · PT · ES" },
+    { "slug": "ribeiro-bindery", "name": "Ribeiro Bindery", "category": "product-design", "tagline": "Small-batch print &amp; binding", "description": "The family bindery in Porto that makes the Field notebooks. They take on small print runs for studios who want a real object.", "rate": "From €4 / unit", "size": "3 humans", "location": "Porto, PT", "tags": ["print", "physical"], "hue": "from-orange-700 to-amber-500", "founded": "1976", "languages": "PT · EN" }
+  ],
+  "stats": [
+    { "k": "84", "v": "Studios on the list" },
+    { "k": "100%", "v": "Personally vetted" },
+    { "k": "0", "v": "Sponsorships ever" },
+    { "k": "10 yr", "v": "Median agency tenure" }
+  ]
+}

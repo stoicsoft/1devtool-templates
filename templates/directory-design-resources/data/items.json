@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "name": "Material",
+    "tagline": "The design shelf — fonts, icons, UI kits, and objects we reach for",
+    "description": "A small curated shelf from the StoicSoft design team. Everything here is tested in real product work and either bought, licensed, or kept bookmarked.",
+    "totalCount": 168
+  },
+  "categories": [
+    { "id": "fonts", "label": "Fonts", "count": 42 },
+    { "id": "icons", "label": "Icons", "count": 26 },
+    { "id": "ui-kits", "label": "UI kits", "count": 18 },
+    { "id": "colors", "label": "Colors", "count": 12 },
+    { "id": "stock", "label": "Stock &amp; photos", "count": 22 },
+    { "id": "objects", "label": "Tools &amp; objects", "count": 28 },
+    { "id": "references", "label": "References", "count": 20 }
+  ],
+  "items": [
+    { "slug": "fraunces-typeface", "name": "Fraunces", "category": "fonts", "tagline": "Display serif by Undercase Type", "description": "The serif we use across StoicSoft&rsquo;s editorial surfaces — Field &amp; Form magazine, the Builders directory, the essay blog template.", "pricing": "Free · OFL", "status": "Featured", "tags": ["serif", "display", "variable"], "hue": "from-amber-400 to-orange-500", "source": "Google Fonts", "used": "4 products" },
+    { "slug": "inter-typeface", "name": "Inter", "category": "fonts", "tagline": "Workhorse UI sans-serif", "description": "Our default UI sans across every product surface. Variable, well-hinted, opinionated in a good way.", "pricing": "Free · OFL", "status": "Featured", "tags": ["sans", "variable", "ui"], "hue": "from-slate-500 to-indigo-500", "source": "Google Fonts", "used": "all products" },
+    { "slug": "lucide-icons", "name": "Lucide", "category": "icons", "tagline": "Open-source icon set, 1,400+ glyphs", "description": "A community fork we use across ServerCompass and 1DevTool. Reviewed every release, snapped to our 24px grid.", "pricing": "Free · ISC", "tags": ["icons", "svg"], "hue": "from-emerald-400 to-teal-500", "source": "lucide.dev", "used": "8 products" },
+    { "slug": "geist-mono", "name": "Geist Mono", "category": "fonts", "tagline": "Modern monospace by Vercel", "description": "The monospace pairing on our engineering blog template. Crisp, tight, readable at small sizes.", "pricing": "Free · OFL", "tags": ["mono", "code"], "hue": "from-neutral-700 to-stone-500", "source": "Google Fonts", "used": "2 products" },
+    { "slug": "stoicsoft-palette", "name": "StoicSoft palette", "category": "colors", "tagline": "Our shared design tokens", "description": "The tokens every StoicSoft product references — teal accents, cream papers, pragmatic grays. Open-sourced for remix.", "pricing": "Free · MIT", "status": "New", "tags": ["tokens", "open-source"], "hue": "from-teal-400 to-cyan-500", "source": "github.com/stoicsoft", "used": "all products" },
+    { "slug": "field-ui-kit", "name": "Field UI kit", "category": "ui-kits", "tagline": "Figma components for Field &amp; Form", "description": "A magazine-leaning component library paired with our blog-magazine template. 84 components, auto-layout everywhere.", "pricing": "$39", "status": "Popular", "tags": ["figma", "editorial"], "hue": "from-orange-500 to-rose-500", "source": "StoicSoft studio", "used": "3 products" },
+    { "slug": "porto-photography", "name": "Porto Field Stock", "category": "stock", "tagline": "Portuguese cityscape photography", "description": "Our open stock library of Lisbon, Porto, and Évora — used in StoicSoft marketing surfaces. CC-BY 4.0.", "pricing": "Free · CC-BY", "tags": ["photography", "stock"], "hue": "from-rose-400 to-amber-400", "source": "StoicSoft studio", "used": "4 products" },
+    { "slug": "field-notebook-object", "name": "Field Notebook", "category": "objects", "tagline": "StoicSoft&rsquo;s paper notebook", "description": "A 192-page dot-grid notebook from our bindery in Porto. The physical object we pair with every template we ship.", "pricing": "$32", "tags": ["paper", "object"], "hue": "from-amber-500 to-stone-500", "source": "StoicSoft Field", "used": "studio staple" },
+    { "slug": "jetbrains-mono", "name": "JetBrains Mono", "category": "fonts", "tagline": "Monospace with programming ligatures", "description": "Our second monospace choice, used inside the IDE-like surfaces of 1DevTool and ServerCompass terminals.", "pricing": "Free · OFL", "tags": ["mono", "ligatures"], "hue": "from-violet-500 to-fuchsia-500", "source": "JetBrains", "used": "2 products" },
+    { "slug": "sketchbook-midori-a5", "name": "Midori A5 sketchbook", "category": "objects", "tagline": "The sketchbook on our designer&rsquo;s desk", "description": "Cream paper, perfect for pencil and felt-tip. What Clara Figueira uses for all early-stage sketches at the StoicSoft studio.", "pricing": "$24", "tags": ["paper", "sketchbook"], "hue": "from-stone-400 to-neutral-500", "source": "Midori", "used": "daily" },
+    { "slug": "scale-reference-book", "name": "Grid Systems · Josef Müller-Brockmann", "category": "references", "tagline": "The grid reference we keep at the desk", "description": "A cornerstone design reference. Read twice, referenced often at the StoicSoft studio. Worth the shelf space.", "pricing": "$28", "status": "Editor&rsquo;s pick", "tags": ["grid", "typography"], "hue": "from-zinc-500 to-slate-700", "source": "Niggli", "used": "weekly" },
+    { "slug": "radix-colors", "name": "Radix Colors", "category": "colors", "tagline": "Scales designed for software UI", "description": "The color scales we reach for when starting a new product. Carefully-tuned contrast, dark mode built-in.", "pricing": "Free · MIT", "tags": ["tokens", "colors"], "hue": "from-pink-500 to-violet-500", "source": "Radix UI", "used": "3 products" }
+  ],
+  "stats": [
+    { "k": "168", "v": "Items on the shelf" },
+    { "k": "62%", "v": "Free / open-licensed" },
+    { "k": "12", "v": "Dogfooded in live products" },
+    { "k": "Mon", "v": "Shelf refreshed weekly" }
+  ]
+}

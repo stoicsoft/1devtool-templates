@@ -273,6 +273,106 @@
       "status": "available"
     },
     {
+      "id": "directory-saas-tools",
+      "category": "directory",
+      "name": "Directory - SaaS Tools",
+      "description": "Dark curated-tools directory with JSON data loading, category chips, featured bento, item detail pages, and submission form. StoicSoft-branded with ServerCompass and 1DevTool features.",
+      "preview": "previews/directory-saas-tools.jpg",
+      "directory": "templates/directory-saas-tools",
+      "tags": ["next.js", "tailwind", "directory", "saas", "json-data"],
+      "status": "available"
+    },
+    {
+      "id": "directory-dev-templates",
+      "category": "directory",
+      "name": "Directory - Developer Starters",
+      "description": "Terminal-aesthetic code registry directory with paper-grid background, monospace accents, CLI install commands, and GitHub-style detail pages. 1DevTool-style.",
+      "preview": "previews/directory-dev-templates.jpg",
+      "directory": "templates/directory-dev-templates",
+      "tags": ["next.js", "tailwind", "directory", "developer", "cli"],
+      "status": "available"
+    },
+    {
+      "id": "directory-indie-makers",
+      "category": "directory",
+      "name": "Directory - Indie Makers",
+      "description": "Editorial cream-and-serif directory of independent makers with profile grid, hand-drawn dividers, and roster pages. Fraunces serif, warm paper aesthetic.",
+      "preview": "previews/directory-indie-makers.jpg",
+      "directory": "templates/directory-indie-makers",
+      "tags": ["next.js", "tailwind", "directory", "makers", "editorial"],
+      "status": "available"
+    },
+    {
+      "id": "directory-startup-jobs",
+      "category": "directory",
+      "name": "Directory - Startup Jobs",
+      "description": "Light-theme engineering job board with honest salary bands, location + remote filters, indigo-to-emerald gradient accents, and paid-posting flow.",
+      "preview": "previews/directory-startup-jobs.jpg",
+      "directory": "templates/directory-startup-jobs",
+      "tags": ["next.js", "tailwind", "directory", "jobs", "startup"],
+      "status": "available"
+    },
+    {
+      "id": "directory-design-resources",
+      "category": "directory",
+      "name": "Directory - Design Resources",
+      "description": "Visual shelf-style directory for fonts, icons, UI kits, and objects. Cream + vibrant gradients, large card previews, serif display headings.",
+      "preview": "previews/directory-design-resources.jpg",
+      "directory": "templates/directory-design-resources",
+      "tags": ["next.js", "tailwind", "directory", "design", "fonts"],
+      "status": "available"
+    },
+    {
+      "id": "directory-api-catalog",
+      "category": "directory",
+      "name": "Directory - API Catalog",
+      "description": "Dark developer-friendly API directory with HTTP method badges, sample endpoint preview, rate/auth fields, and cURL snippet on detail pages.",
+      "preview": "previews/directory-api-catalog.jpg",
+      "directory": "templates/directory-api-catalog",
+      "tags": ["next.js", "tailwind", "directory", "api", "developer"],
+      "status": "available"
+    },
+    {
+      "id": "directory-ai-tools",
+      "category": "directory",
+      "name": "Directory - AI Tools",
+      "description": "Neon purple-and-cyan AI tool atlas with strength/weakness rating pairs, curator confidence bars, and a &ldquo;four-week test&rdquo; review format.",
+      "preview": "previews/directory-ai-tools.jpg",
+      "directory": "templates/directory-ai-tools",
+      "tags": ["next.js", "tailwind", "directory", "ai", "tools"],
+      "status": "available"
+    },
+    {
+      "id": "directory-newsletters",
+      "category": "directory",
+      "name": "Directory - Newsletters",
+      "description": "Cream paper newsstand with Newsreader serif, masthead chrome, feature tiles, and issue-archive detail pages. Quarterly-magazine feel.",
+      "preview": "previews/directory-newsletters.jpg",
+      "directory": "templates/directory-newsletters",
+      "tags": ["next.js", "tailwind", "directory", "newsletter", "editorial"],
+      "status": "available"
+    },
+    {
+      "id": "directory-agencies",
+      "category": "directory",
+      "name": "Directory - Agencies & Studios",
+      "description": "Sophisticated navy-and-gold agency directory with Playfair Display serif, rate card sidebars, reference-call submission flow, and quiet studio detail pages.",
+      "preview": "previews/directory-agencies.jpg",
+      "directory": "templates/directory-agencies",
+      "tags": ["next.js", "tailwind", "directory", "agencies", "services"],
+      "status": "available"
+    },
+    {
+      "id": "directory-podcasts",
+      "category": "directory",
+      "name": "Directory - Podcasts",
+      "description": "Dark podcast rotation with animated equalizer bars, cover-art cards, episode preview sidebar, and Space Grotesk + Instrument Serif type pair.",
+      "preview": "previews/directory-podcasts.jpg",
+      "directory": "templates/directory-podcasts",
+      "tags": ["next.js", "tailwind", "directory", "podcast", "audio"],
+      "status": "available"
+    },
+    {
       "id": "saas",
       "category": "saas",
       "name": "SaaS Control Plane",

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "name": "Atlas",
+    "tagline": "An honest map of the AI tools operators actually ship with",
+    "description": "Hand-tested AI tools, rated by the StoicSoft team after at least four weeks in real product work. No benchmark-farming, no affiliate bumps.",
+    "totalCount": 112
+  },
+  "categories": [
+    { "id": "writing", "label": "Writing", "count": 18 },
+    { "id": "search", "label": "Search &amp; retrieval", "count": 14 },
+    { "id": "coding", "label": "Coding", "count": 16 },
+    { "id": "images", "label": "Images", "count": 12 },
+    { "id": "audio", "label": "Audio &amp; speech", "count": 10 },
+    { "id": "agents", "label": "Agents &amp; workflows", "count": 14 },
+    { "id": "data", "label": "Data &amp; analysis", "count": 11 },
+    { "id": "privacy", "label": "Privacy &amp; ops", "count": 17 }
+  ],
+  "items": [
+    { "slug": "aether-workspace", "name": "Aether", "category": "search", "tagline": "Retrieval-grounded AI workspace", "description": "Our own AI workspace — cites every answer with the doc lines it pulled from. The tool our operators run Monday planning on.", "pricing": "Free · Team $22", "status": "Featured", "tags": ["rag", "workspace"], "hue": "from-cyan-300 to-violet-600", "strength": "Citations", "weakness": "Not best for chat-only use", "model": "Frontier-routed" },
+    { "slug": "stoicsoft-copilot", "name": "StoicSoft Copilot", "category": "writing", "tagline": "Product-writing AI for small teams", "description": "A thin layer over Aether that specialises in product copy — changelogs, release notes, pricing page drafts. Used across every StoicSoft surface.", "pricing": "Included with Aether", "status": "Featured", "tags": ["writing", "marketing"], "hue": "from-violet-500 to-pink-500", "strength": "On-brand copy", "weakness": "Needs style samples", "model": "Aether-backed" },
+    { "slug": "helix-reconciler", "name": "Helix Reconciler", "category": "agents", "tagline": "AI agent for payments reconciliation", "description": "Reads bank statements, matches them to your ledger, flags the exceptions. Built inside Helix, our non-custodial payments rail.", "pricing": "0.4% matched", "status": "New", "tags": ["agents", "fintech"], "hue": "from-emerald-400 to-cyan-500", "strength": "Auditable trail", "weakness": "Needs clean ledger", "model": "Custom fine-tune" },
+    { "slug": "1devtool-pair", "name": "1DevTool Pair", "category": "coding", "tagline": "Pairs with you while you scaffold", "description": "An opinionated coding assistant tuned to our template registry. Shows you the starter that fits, instead of generating a whole new one.", "pricing": "Free", "status": "Popular", "tags": ["coding", "cli"], "hue": "from-orange-400 to-rose-500", "strength": "Template-aware", "weakness": "Opinionated", "model": "Frontier-routed" },
+    { "slug": "servercompass-ranger", "name": "ServerCompass Ranger", "category": "agents", "tagline": "On-call AI for incident triage", "description": "Summarises alerts, correlates probes, drafts the first runbook comment. Slack-native, built on top of the ServerCompass probe log.", "pricing": "$29 / mo", "tags": ["ops", "agents"], "hue": "from-teal-400 to-emerald-500", "strength": "Tight incident context", "weakness": "Needs history", "model": "Aether-backed" },
+    { "slug": "elena-faro-ai-crop", "name": "Faro Crop", "category": "images", "tagline": "AI cropping for photographers", "description": "A small tool that respects the rule of thirds better than the generic cropper. Built for the photojournal template.", "pricing": "Free · Pro $8 mo", "tags": ["images", "photography"], "hue": "from-amber-500 to-rose-400", "strength": "Thoughtful crops", "weakness": "Portraits only", "model": "On-device" },
+    { "slug": "margin-transcribe", "name": "Margin Transcribe", "category": "audio", "tagline": "Interview transcripts that read cleanly", "description": "Built for Signal FM episode transcripts. Handles two-speaker conversations, punctuation, and speaker labelling better than the defaults.", "pricing": "$0.12 / min", "tags": ["audio", "podcast"], "hue": "from-lime-300 to-purple-500", "strength": "Two-speaker shows", "weakness": "Expensive on long-form", "model": "Whisper-based" },
+    { "slug": "quill-write-mode", "name": "Quill Write Mode", "category": "writing", "tagline": "Distraction-free AI writing companion", "description": "Inside the Quill markdown editor. Sits quietly; only speaks when you press a key combo. Built for long-form essays.", "pricing": "$12 / yr", "tags": ["writing", "markdown"], "hue": "from-stone-500 to-amber-400", "strength": "Non-intrusive", "weakness": "No web UI", "model": "Open-weight" },
+    { "slug": "tide-classifier", "name": "Tide Classifier", "category": "data", "tagline": "Small-team data classification", "description": "Classifies CSVs, tickets, and Slack threads into categories you define. Built for small ops teams who can&rsquo;t afford a data team.", "pricing": "$29 / mo", "tags": ["data", "classification"], "hue": "from-sky-500 to-blue-500", "strength": "Fast to tune", "weakness": "Under 10k rows", "model": "Fine-tuneable" },
+    { "slug": "halo-reflect", "name": "Halo Reflect", "category": "writing", "tagline": "Journaling prompts that don&rsquo;t feel like a questionnaire", "description": "A weekly prompt engine inside the Halo habit app. The only AI feature we shipped that people write us to thank us for.", "pricing": "Free", "tags": ["journaling", "habits"], "hue": "from-purple-500 to-fuchsia-400", "strength": "Kind prompts", "weakness": "English-only", "model": "Open-weight" },
+    { "slug": "open-roots-vision", "name": "Open Roots Vision", "category": "images", "tagline": "Sapling survival classifier", "description": "A nonprofit-facing computer vision model that looks at field photos and estimates sapling survival rates. Open source, MIT.", "pricing": "Free · open-source", "tags": ["computer-vision", "nonprofit"], "hue": "from-green-500 to-lime-400", "strength": "Domain-specific", "weakness": "Iberia only", "model": "Custom-trained" },
+    { "slug": "privacy-ping", "name": "Privacy Ping", "category": "privacy", "tagline": "Scans your prompts before they leave", "description": "An on-device guardrail that masks PII before AI calls go to third-party providers. Built for StoicSoft internal use, open-sourced as MIT.", "pricing": "Free · MIT", "tags": ["privacy", "security"], "hue": "from-slate-500 to-zinc-400", "strength": "On-device", "weakness": "English-heavy", "model": "Small-local" }
+  ],
+  "stats": [
+    { "k": "112", "v": "Tools on the atlas" },
+    { "k": "28", "v": "Personally shipped with" },
+    { "k": "4 wks", "v": "Minimum test period" },
+    { "k": "0", "v": "Paid placements" }
+  ]
+}

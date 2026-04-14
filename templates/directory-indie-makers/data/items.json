@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "name": "Builders",
+    "tagline": "Independent makers, one profile at a time",
+    "description": "A hand-kept directory of people who run their own small software studios. Run by the StoicSoft collective, open to everyone we&rsquo;ve shared a long lunch with.",
+    "totalCount": 142
+  },
+  "categories": [
+    { "id": "founders", "label": "Founders", "count": 48 },
+    { "id": "engineers", "label": "Engineers", "count": 36 },
+    { "id": "designers", "label": "Designers", "count": 28 },
+    { "id": "writers", "label": "Writers", "count": 14 },
+    { "id": "photographers", "label": "Photographers", "count": 9 },
+    { "id": "researchers", "label": "Researchers", "count": 7 }
+  ],
+  "items": [
+    { "slug": "clara-figueira", "name": "Clara Figueira", "category": "designers", "tagline": "Design at the StoicSoft studio", "description": "Runs design across StoicSoft products. Writes The Margin on Sundays. Editor of Field &amp; Form. Lives in Lisbon.", "location": "Lisbon, PT", "status": "Featured", "tags": ["design", "writing"], "hue": "from-rose-300 to-orange-400", "years": "11 yrs", "products": "4 shipped", "pick": "Co-founder, StoicSoft" },
+    { "slug": "dante-okafor", "name": "Dante Okafor", "category": "engineers", "tagline": "Platform engineer · ServerCompass", "description": "Built and maintains the ServerCompass probe service. Wrote 62 starter templates for 1DevTool. Reads Postgres docs for fun.", "location": "Lagos, NG", "status": "Featured", "tags": ["go", "postgres", "ops"], "hue": "from-teal-400 to-cyan-600", "years": "9 yrs", "products": "7 shipped", "pick": "Co-founder, ServerCompass" },
+    { "slug": "mei-wong", "name": "Mei Wong", "category": "engineers", "tagline": "Product engineer · Aether", "description": "Shipped the retrieval layer behind Aether. Previously built Quill, a Markdown writer acquired in 2022. Published on the engineering blog.", "location": "Singapore", "status": "Featured", "tags": ["nextjs", "ai"], "hue": "from-violet-400 to-pink-400", "years": "8 yrs", "products": "5 shipped" },
+    { "slug": "anya-park", "name": "Anya Park", "category": "founders", "tagline": "Indie founder · Routine, anya.garden", "description": "Four days a week at the StoicSoft studio. Builds Routine, a habit tool with 2,400 quiet users. Tends anya.garden on Sundays.", "location": "Lisbon, PT", "status": "Popular", "tags": ["indie", "habits"], "hue": "from-amber-400 to-lime-500", "years": "10 yrs", "products": "3 shipped" },
+    { "slug": "jonas-park", "name": "Jonas Park", "category": "founders", "tagline": "Founder · Routine", "description": "A two-person indie team shipping a calm product. Teaches Shipcraft, a six-week cohort for indie founders.", "location": "Seoul, KR", "status": "New", "tags": ["indie", "teaching"], "hue": "from-indigo-500 to-sky-500", "years": "12 yrs", "products": "6 shipped" },
+    { "slug": "wren-holloway", "name": "Wren Holloway", "category": "writers", "tagline": "Essayist · quiet software", "description": "Writes a long essay every six weeks at wren.studio. Works alongside the StoicSoft engineers on the words in our products.", "location": "Porto, PT", "tags": ["writing", "essays"], "hue": "from-orange-500 to-rose-400", "years": "14 yrs", "products": "2 ongoing" },
+    { "slug": "amara-reyes", "name": "Amara Reyes", "category": "engineers", "tagline": "Product · Aether AI", "description": "Leads the retrieval + citations work. Previously at a large AI lab, now preferring a smaller table.", "location": "Oaxaca, MX", "status": "New", "tags": ["ai", "python"], "hue": "from-fuchsia-500 to-pink-600", "years": "7 yrs", "products": "4 shipped" },
+    { "slug": "elena-faro", "name": "Elena Faro", "category": "photographers", "tagline": "Working photographer · Sundays", "description": "A feature every Sunday on the photo journal. Print editions of 25 on Hahnemühle Photo Rag, shipped from the Lisbon studio.", "location": "Lisbon · Madrid", "tags": ["photography", "prints"], "hue": "from-amber-500 to-stone-500", "years": "6 yrs", "products": "142 features" },
+    { "slug": "nadia-reyes", "name": "Nadia Reyes", "category": "engineers", "tagline": "Reliability · ServerCompass", "description": "On-call rotation lead. Pages when things break. Wrote the five alerts that actually wake us up.", "location": "Mexico City, MX", "tags": ["ops", "sre"], "hue": "from-green-500 to-emerald-600", "years": "11 yrs", "products": "4 shipped" },
+    { "slug": "diogo-almeida", "name": "Diogo Almeida", "category": "founders", "tagline": "Treasurer · Open Roots", "description": "Keeps the books at Open Roots, the reforestation cooperative. Previously at a boutique law firm in Lisbon.", "location": "Évora, PT", "tags": ["nonprofit", "finance"], "hue": "from-lime-400 to-green-600", "years": "15 yrs", "products": "1 nonprofit" }
+  ],
+  "stats": [
+    { "k": "142", "v": "Builders in the directory" },
+    { "k": "32", "v": "Countries represented" },
+    { "k": "8/10", "v": "Still fully independent" },
+    { "k": "0", "v": "Sponsored profiles" }
+  ]
+}

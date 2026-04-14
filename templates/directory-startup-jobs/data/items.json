@@ -1,0 +1,34 @@
+{
+  "hero": {
+    "name": "Roster",
+    "tagline": "A small board of engineering jobs at indie-scale companies",
+    "description": "Hand-listed roles at companies under 50 people, with honest salary bands and a real interview process. No recruiter spam, no &ldquo;rockstar&rdquo;, no equity-only.",
+    "totalCount": 64
+  },
+  "categories": [
+    { "id": "frontend", "label": "Frontend", "count": 14 },
+    { "id": "backend", "label": "Backend", "count": 18 },
+    { "id": "platform", "label": "Platform &amp; Infra", "count": 12 },
+    { "id": "fullstack", "label": "Full-stack", "count": 9 },
+    { "id": "design", "label": "Design", "count": 6 },
+    { "id": "data", "label": "Data &amp; ML", "count": 5 }
+  ],
+  "items": [
+    { "slug": "servercompass-platform-eng", "name": "Platform Engineer", "company": "ServerCompass", "category": "platform", "tagline": "Run our probe service in production", "description": "Lead the next iteration of the synthetic probe layer. Go, Postgres, Cloudflare. Deep ownership over reliability.", "salary": "$140k — $180k", "equity": "0.4 — 0.8%", "location": "Remote · EU/US", "type": "Full-time", "tags": ["go", "postgres", "ops"], "status": "Featured", "hue": "from-emerald-400 to-teal-600", "team": "12 people", "remote": "Remote-first" },
+    { "slug": "1devtool-template-engineer", "name": "Template Engineer", "company": "1DevTool", "category": "frontend", "tagline": "Build &amp; maintain the open-source registry", "description": "Ship five new starter templates a quarter, review community submissions, keep the CLI fast. Next.js + Tailwind expertise required.", "salary": "$120k — $155k", "equity": "0.3 — 0.6%", "location": "Lisbon or remote", "type": "Full-time", "tags": ["nextjs", "tailwind", "open-source"], "status": "Featured", "hue": "from-orange-500 to-rose-500", "team": "8 people", "remote": "Hybrid · Lisbon" },
+    { "slug": "aether-product-engineer", "name": "Product Engineer", "company": "Aether", "category": "fullstack", "tagline": "Ship the retrieval &amp; citations layer", "description": "Own end-to-end product features in the AI workspace. Comfortable with TypeScript, Postgres, vector search, and saying no to scope.", "salary": "$135k — $170k", "equity": "0.4 — 0.7%", "location": "Remote · global", "type": "Full-time", "tags": ["typescript", "ai", "search"], "status": "New", "hue": "from-cyan-400 to-violet-500", "team": "11 people", "remote": "Remote-first" },
+    { "slug": "stoicsoft-design-engineer", "name": "Design Engineer", "company": "StoicSoft", "category": "design", "tagline": "Design &amp; ship across the studio", "description": "Cross-product designer who codes their own components. You&rsquo;ll touch every product we make — Aether, ServerCompass, 1DevTool, the lot.", "salary": "$130k — $165k", "equity": "0.3 — 0.5%", "location": "Lisbon", "type": "Full-time", "tags": ["design", "react"], "hue": "from-fuchsia-500 to-pink-500", "team": "5 people", "remote": "On-site" },
+    { "slug": "halo-mobile-eng", "name": "iOS Engineer", "company": "Halo", "category": "frontend", "tagline": "Lead the iOS roadmap", "description": "Two-person iOS team. Swift, Combine, full ownership of the App Store presence. We&rsquo;re a small consumer team — no Slack-meetings every day.", "salary": "$125k — $155k", "equity": "0.5 — 1.0%", "location": "Remote · EU", "type": "Full-time", "tags": ["swift", "ios"], "status": "Popular", "hue": "from-purple-500 to-fuchsia-400", "team": "4 people", "remote": "Remote-first" },
+    { "slug": "vaulta-backend", "name": "Backend Engineer", "company": "Vaulta", "category": "backend", "tagline": "Reconciliation engine, end to end", "description": "Build the matching engine that keeps thousands of treasury accounts honest. Postgres, event-sourced workflows, audit trails by default.", "salary": "$140k — $175k", "equity": "0.3 — 0.6%", "location": "Remote · EU/US", "type": "Full-time", "tags": ["postgres", "fintech"], "hue": "from-blue-500 to-sky-300", "team": "9 people", "remote": "Remote-first" },
+    { "slug": "open-roots-data", "name": "Field Data Engineer", "company": "Open Roots", "category": "data", "tagline": "Sapling survival monitoring", "description": "Help our reforestation cooperative collect, validate, and publish ten years of monitoring data per parcel. Python, plus six weeks a year on the field.", "salary": "€55k — €72k", "equity": "Cooperative share", "location": "Évora, PT", "type": "Full-time", "tags": ["python", "nonprofit"], "hue": "from-lime-500 to-green-600", "team": "12 people", "remote": "On-site" },
+    { "slug": "aether-frontend", "name": "Frontend Engineer", "company": "Aether", "category": "frontend", "tagline": "Polish the workspace UI", "description": "React, TypeScript, the kind of perfectionism that produces 60fps drag-and-drop. Pair-programs three days a week with the design engineer.", "salary": "$120k — $150k", "equity": "0.3 — 0.5%", "location": "Remote · EU/US", "type": "Full-time", "tags": ["react", "typescript"], "hue": "from-violet-500 to-indigo-500", "team": "11 people", "remote": "Remote-first" },
+    { "slug": "1devtool-cli-eng", "name": "CLI Engineer · Part-time", "company": "1DevTool", "category": "backend", "tagline": "20hrs/wk on the CLI tooling", "description": "Quietly improve the npx 1devtool create flow — error handling, package manager detection, registry caching. Shipping, not meetings.", "salary": "$80 / hour", "equity": "—", "location": "Remote · global", "type": "Part-time", "tags": ["nodejs", "cli"], "status": "New", "hue": "from-amber-400 to-orange-600", "team": "8 people", "remote": "Remote-first" },
+    { "slug": "signal-fm-producer", "name": "Audio Producer", "company": "Signal FM", "category": "fullstack", "tagline": "Edit + publish the weekly show", "description": "Audio engineering, episode editing, transcript polishing, member Discord moderation. One day a week, ongoing contractor.", "salary": "$5k / month", "equity": "—", "location": "Remote · EU", "type": "Contract", "tags": ["audio", "podcast"], "hue": "from-lime-300 to-purple-500", "team": "3 people", "remote": "Remote-first" }
+  ],
+  "stats": [
+    { "k": "64", "v": "Open roles right now" },
+    { "k": "$132k", "v": "Median posted salary" },
+    { "k": "8/10", "v": "Remote-first" },
+    { "k": "0", "v": "Equity-only listings" }
+  ]
+}

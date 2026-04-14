@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #16141f;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: var(--font-display); font-variation-settings: "opsz" 72, "SOFT" 0; }
+
+.shelf-bg {
+  background:
+    radial-gradient(500px circle at 15% 0%, rgba(249, 115, 22, 0.05), transparent 55%),
+    radial-gradient(500px circle at 85% 5%, rgba(168, 85, 247, 0.05), transparent 55%);
+}
+
+.card-hover { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.card-hover:hover { transform: translateY(-2px); box-shadow: 0 25px 50px -20px rgba(22, 20, 31, 0.15); }

@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "name": "The Newsstand",
+    "tagline": "A quiet reading list of newsletters worth keeping",
+    "description": "Hand-picked newsletters we subscribe to at the StoicSoft studio. No paid placements, no sponsored bumps, no referral rings. Added when we&rsquo;ve read a dozen issues.",
+    "totalCount": 76
+  },
+  "categories": [
+    { "id": "essays", "label": "Essays", "count": 18 },
+    { "id": "software", "label": "Software &amp; craft", "count": 14 },
+    { "id": "business", "label": "Business", "count": 12 },
+    { "id": "design", "label": "Design", "count": 10 },
+    { "id": "culture", "label": "Culture", "count": 8 },
+    { "id": "books", "label": "Books", "count": 6 },
+    { "id": "field-notes", "label": "Field notes", "count": 8 }
+  ],
+  "items": [
+    { "slug": "the-margin", "name": "The Margin", "category": "essays", "tagline": "Sunday letters on independent craft", "description": "Clara Figueira&rsquo;s weekly note from the StoicSoft studio. Quiet, unsponsored, never a listicle. 172 issues and counting.", "pricing": "Free", "status": "Featured", "tags": ["weekly", "essays"], "hue": "from-amber-500 to-rose-400", "cadence": "Weekly · Sunday", "readers": "9,420", "since": "2022" },
+    { "slug": "log-stoicsoft", "name": "log.stoicsoft.com", "category": "software", "tagline": "Engineering notes from the studio", "description": "Wednesday engineering notes from the team behind ServerCompass, Aether, and 1DevTool. Dense, honest, no listicles.", "pricing": "Free", "status": "Featured", "tags": ["weekly", "engineering"], "hue": "from-emerald-400 to-teal-600", "cadence": "Weekly · Wednesday", "readers": "24,840", "since": "2023" },
+    { "slug": "wren-essays", "name": "Wren Holloway", "category": "essays", "tagline": "Long essays on the slow work", "description": "Six to nine long essays a year from Wren at the StoicSoft studio. When it shows up, you clear your evening.", "pricing": "Free", "status": "New", "tags": ["long-form", "craft"], "hue": "from-orange-500 to-amber-500", "cadence": "When there&rsquo;s something to say", "readers": "6,240", "since": "2019" },
+    { "slug": "shipcraft-notes", "name": "Shipcraft Notes", "category": "business", "tagline": "The indie-founder cohort dispatch", "description": "Jonas Park&rsquo;s accompanying notes to the Shipcraft cohort. Honest about revenue, pricing decisions, and when to quit.", "pricing": "Free", "tags": ["indie", "founders"], "hue": "from-indigo-500 to-sky-500", "cadence": "Bi-weekly · Thursday", "readers": "4,180", "since": "2022" },
+    { "slug": "field-and-form-digest", "name": "Field &amp; Form Digest", "category": "culture", "tagline": "The Friday letter from our quarterly", "description": "A short Friday companion to Field &amp; Form, the StoicSoft studio&rsquo;s quarterly magazine. Links, fragments, one recommendation.", "pricing": "Free", "tags": ["weekly", "editorial"], "hue": "from-rose-400 to-amber-600", "cadence": "Weekly · Friday", "readers": "3,140", "since": "2017" },
+    { "slug": "routine-diary", "name": "Routine Diary", "category": "essays", "tagline": "Anya Park on the slow software life", "description": "Anya Park&rsquo;s journal from anya.garden — notes between essays, a touch more personal than the main blog.", "pricing": "Free", "tags": ["personal", "habits"], "hue": "from-violet-500 to-pink-500", "cadence": "Monthly", "readers": "2,640", "since": "2020" },
+    { "slug": "servercompass-status", "name": "ServerCompass Monthly", "category": "software", "tagline": "What broke, what we fixed", "description": "A very public monthly incident report from the ServerCompass team — every outage, every mitigation, every lesson learned.", "pricing": "Free", "tags": ["postmortem", "ops"], "hue": "from-teal-400 to-cyan-500", "cadence": "Monthly · 1st", "readers": "18,420", "since": "2023" },
+    { "slug": "signal-show-notes", "name": "Signal FM Show Notes", "category": "culture", "tagline": "Weekly show notes from our podcast", "description": "The companion newsletter to Signal FM. Transcripts, timestamps, and one follow-up question from each guest.", "pricing": "Free · $5 member", "tags": ["podcast", "interviews"], "hue": "from-lime-400 to-purple-500", "cadence": "Weekly · Wednesday", "readers": "12,040", "since": "2023" },
+    { "slug": "elena-faro-sunday", "name": "Elena Faro · Sundays", "category": "culture", "tagline": "A photograph a week, with a paragraph", "description": "Elena&rsquo;s Sunday dispatch — one plate from her photo journal and a short note about the frame before it was made.", "pricing": "Free", "tags": ["photography", "weekly"], "hue": "from-stone-500 to-amber-700", "cadence": "Weekly · Sunday", "readers": "2,840", "since": "2021" },
+    { "slug": "material-shelf", "name": "Material Weekly", "category": "design", "tagline": "A new font, icon, or object every Monday", "description": "Clara&rsquo;s companion newsletter to the Material shelf directory. One new resource every Monday morning.", "pricing": "Free", "tags": ["design", "resources"], "hue": "from-orange-500 to-violet-500", "cadence": "Weekly · Monday", "readers": "5,120", "since": "2024" },
+    { "slug": "open-roots-quarterly", "name": "Open Roots Quarterly", "category": "field-notes", "tagline": "The reforestation cooperative&rsquo;s letter", "description": "Four letters a year from Open Roots — sapling counts, field-day stories, honest accounting of where donations went.", "pricing": "Free", "tags": ["nonprofit", "field"], "hue": "from-lime-500 to-green-600", "cadence": "Quarterly", "readers": "3,860", "since": "2020" },
+    { "slug": "aether-changelog", "name": "Aether Changelog", "category": "software", "tagline": "The honest product release letter", "description": "Aether&rsquo;s product email — what shipped, what got deleted, what we changed our mind about. No marketing gloss.", "pricing": "Free", "tags": ["product", "ai"], "hue": "from-violet-500 to-cyan-400", "cadence": "Bi-weekly · Friday", "readers": "14,220", "since": "2025" }
+  ],
+  "stats": [
+    { "k": "76", "v": "Newsletters on the stand" },
+    { "k": "9 / 10", "v": "Free, ad-free" },
+    { "k": "Mondays", "v": "Stand refreshed weekly" },
+    { "k": "0", "v": "Paid placements" }
+  ]
+}
