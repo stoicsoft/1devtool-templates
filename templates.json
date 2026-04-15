@@ -273,6 +273,36 @@
       "status": "available"
     },
     {
+      "id": "document-product-docs",
+      "category": "document",
+      "name": "Document - Product Docs",
+      "description": "Elegant GitBook-style product documentation starter with markdown pages, generated sidebars, page outlines, search chrome, and original 1DevTool copy.",
+      "preview": "previews/document-product-docs.png",
+      "directory": "templates/document-product-docs",
+      "tags": ["next.js", "tailwind", "document", "markdown", "docs"],
+      "status": "available"
+    },
+    {
+      "id": "document-api-reference",
+      "category": "document",
+      "name": "Document - API Reference",
+      "description": "Markdown API reference starter with endpoint pages, generated navigation, right-side TOC, code blocks, and ServerCompass developer copy.",
+      "preview": "previews/document-api-reference.png",
+      "directory": "templates/document-api-reference",
+      "tags": ["next.js", "tailwind", "document", "api", "markdown"],
+      "status": "available"
+    },
+    {
+      "id": "document-runbook",
+      "category": "document",
+      "name": "Document - Operations Runbook",
+      "description": "Markdown runbook documentation starter for incident response, alerts, postmortems, and escalation policies with ServerCompass operations copy.",
+      "preview": "previews/document-runbook.png",
+      "directory": "templates/document-runbook",
+      "tags": ["next.js", "tailwind", "document", "runbook", "markdown"],
+      "status": "available"
+    },
+    {
       "id": "directory-saas-tools",
       "category": "directory",
       "name": "Directory - SaaS Tools",

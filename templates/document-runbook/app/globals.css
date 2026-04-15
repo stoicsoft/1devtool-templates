@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter";
+  --font-mono: "IBM Plex Mono";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f4;
+  color: #171915;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.surface-grid {
+  background-image:
+    linear-gradient(to right, rgba(23, 25, 21, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 25, 21, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.brand-ring {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent), 0 20px 60px rgba(23, 25, 21, 0.08);
+}
+
+.doc-body {
+  color: #252822;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.doc-body > * + * {
+  margin-top: 1rem;
+}
+
+.doc-body h2,
+.doc-body h3 {
+  color: #171915;
+  scroll-margin-top: 96px;
+}
+
+.doc-body h2 {
+  margin-top: 2.4rem;
+  border-top: 1px solid #deded7;
+  padding-top: 1.5rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+.doc-body h3 {
+  margin-top: 1.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.doc-body p,
+.doc-body li {
+  color: #4f544d;
+}
+
+.doc-body strong {
+  color: #171915;
+  font-weight: 700;
+}
+
+.doc-body a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.doc-body ul,
+.doc-body ol {
+  padding-left: 1.4rem;
+}
+
+.doc-body li + li {
+  margin-top: 0.35rem;
+}
+
+.doc-body code {
+  border: 1px solid #deded7;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #171915;
+  padding: 0.08rem 0.35rem;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.86em;
+}
+
+.doc-body pre {
+  overflow-x: auto;
+  border: 1px solid #242820;
+  border-radius: 8px;
+  background: #10120f;
+  padding: 1rem;
+}
+
+.doc-body pre code {
+  border: 0;
+  background: transparent;
+  color: #f6f7f2;
+  padding: 0;
+  font-size: 0.86rem;
+}
+
+.doc-body blockquote {
+  border-left: 3px solid var(--accent);
+  background: #ffffff;
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  color: #4f544d;
+}
+
+.doc-body table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.doc-body th,
+.doc-body td {
+  border-bottom: 1px solid #deded7;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.doc-body th {
+  color: #171915;
+  font-weight: 700;
+}
+
+.doc-body img {
+  border-radius: 8px;
+  border: 1px solid #deded7;
+}
+
+/* Callout boxes — GitHub-style alerts rendered from markdown */
+.doc-body .callout {
+  margin: 1.5rem 0;
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, #ffffff);
+  border-left-width: 3px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  padding: 0.9rem 1.1rem 1rem;
+}
+
+.doc-body .callout-label {
+  text-transform: uppercase;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-dark);
+  margin-bottom: 0.45rem;
+}
+
+.doc-body .callout-body > *:first-child { margin-top: 0; }
+.doc-body .callout-body > *:last-child { margin-bottom: 0; }
+.doc-body .callout-body p { color: #2a2d27; }
+
+.doc-body .callout-tip {
+  background: #e9fbf0;
+  border-color: #a9dec0;
+}
+.doc-body .callout-tip .callout-label { color: #0d6b3a; }
+
+.doc-body .callout-warning {
+  background: #fff6e4;
+  border-color: #e9c07a;
+}
+.doc-body .callout-warning .callout-label { color: #7a4a00; }
+
+.doc-body .callout-important {
+  background: #f1ebff;
+  border-color: #b8a6ed;
+}
+.doc-body .callout-important .callout-label { color: #4228a0; }
+
+.doc-body .callout-caution {
+  background: #ffe9e9;
+  border-color: #e9a0a0;
+}
+.doc-body .callout-caution .callout-label { color: #8a1f1f; }

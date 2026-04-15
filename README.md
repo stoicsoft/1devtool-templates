@@ -11,7 +11,7 @@ and initializes a new git repository for the created project.
 - Registry manifest: `templates.json`
 - Preview images: `previews/*.png`
 - Template sources: `templates/<template-id>/`
-- Template categories: set `"category"` in `templates.json` so 1DevTool can group related templates, for example multiple `landing` templates and multiple `blog` templates.
+- Template categories: set `"category"` in `templates.json` so 1DevTool can group related templates, for example multiple `landing`, `blog`, and `document` templates.
 
 ## Configure a Template After Creation
 
@@ -45,6 +45,12 @@ Use your own product slug instead of `acme`. Then update:
 - `middleware.ts` for your production app hosts and custom-domain lookup.
 - `docs/cloudflare-domain-setup.md` with your real DNS target and support notes.
 
+For `templates/document-*`, update the generated project from the project root:
+
+- `lib/site.js` for product name, docs URL, repository label, CTA links, image, stats, and theme tokens.
+- `docs/**/*.md` for markdown content. Frontmatter controls page title, description, sidebar section, and sort order.
+- `app/globals.css` for document typography, code block styling, tables, and callouts.
+
 ## Contributing
 
 1. Fork this repository.
@@ -70,5 +76,6 @@ Use your own product slug instead of `acme`. Then update:
 | Landing - Fintech App | Available | Next.js + React |
 | Landing - Creative Agency | Available | Next.js + React |
 | Blog | Available | Next.js 14 + Tailwind CSS + MDX |
+| Document | Available | Next.js + Tailwind CSS + Markdown |
 | SaaS Control Plane | Available | Next.js + Tailwind CSS + Cloudflare domains |
 | Desktop App | Coming Soon | Electron + React |

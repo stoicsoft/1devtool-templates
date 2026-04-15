@@ -3,12 +3,13 @@
     "name": "Starters",
     "tagline": "A registry of production-grade code starters",
     "description": "Hand-reviewed Next.js, Electron, and React Native templates. All MIT. All clone-in-twelve-seconds with 1devtool create.",
-    "totalCount": 84
+    "totalCount": 87
   },
   "categories": [
     { "id": "landing", "label": "Landing", "count": 22 },
     { "id": "saas", "label": "SaaS", "count": 14 },
     { "id": "blog", "label": "Blog", "count": 9 },
+    { "id": "document", "label": "Document", "count": 3 },
     { "id": "directory", "label": "Directory", "count": 11 },
     { "id": "desktop", "label": "Desktop", "count": 6 },
     { "id": "dashboard", "label": "Dashboard", "count": 12 },
@@ -19,6 +20,9 @@
     { "slug": "saas-control-plane", "name": "saas-control-plane", "category": "saas", "tagline": "Next.js SaaS control plane", "description": "Auth, billing seams, custom-domain onboarding, and a Cloudflare DNS setup guide baked in. The starter behind ServerCompass.", "pricing": "MIT", "status": "Featured", "tags": ["nextjs", "auth", "billing"], "stars": "1.8k", "clones": "6.2k", "version": "v2.4.1", "author": "StoicSoft" },
     { "slug": "blog-magazine", "name": "blog-magazine", "category": "blog", "tagline": "Newspaper-style quarterly", "description": "Masthead, cover story, columns, and archive — all loaded from markdown. Fraunces + Inter on cream paper.", "pricing": "MIT", "status": "New", "tags": ["markdown", "tailwind"], "stars": "420", "clones": "1.1k", "version": "v1.2.0", "author": "StoicSoft" },
     { "slug": "blog-dev", "name": "blog-dev", "category": "blog", "tagline": "Engineering blog, monospace-forward", "description": "Terminal chrome, tag sidebar, series index, syntax-highlighted code blocks. Used by log.stoicsoft.com.", "pricing": "MIT", "tags": ["markdown", "developer"], "stars": "980", "clones": "3.4k", "version": "v2.0.0", "author": "StoicSoft" },
+    { "slug": "document-product-docs", "name": "document-product-docs", "category": "document", "tagline": "Markdown product docs", "description": "GitBook-style documentation shell with generated sidebars, page outlines, code blocks, and original 1DevTool copy.", "pricing": "MIT", "status": "New", "tags": ["markdown", "docs"], "stars": "260", "clones": "690", "version": "v1.0.0", "author": "StoicSoft" },
+    { "slug": "document-api-reference", "name": "document-api-reference", "category": "document", "tagline": "ServerCompass API reference", "description": "Endpoint-first docs template with authentication, webhooks, rate limits, and custom-domain examples in markdown.", "pricing": "MIT", "status": "New", "tags": ["api", "markdown"], "stars": "210", "clones": "520", "version": "v1.0.0", "author": "StoicSoft" },
+    { "slug": "document-runbook", "name": "document-runbook", "category": "document", "tagline": "Operations runbooks", "description": "Incident response docs for alerts, status updates, postmortems, and escalation policies. Built for ServerCompass teams.", "pricing": "MIT", "tags": ["ops", "runbook"], "stars": "180", "clones": "410", "version": "v1.0.0", "author": "StoicSoft" },
     { "slug": "landing-ai-saas", "name": "landing-ai-saas", "category": "landing", "tagline": "AI workspace landing", "description": "Chat-demo dashboard, gradient glow hero, multi-section flow, pricing. Built on the Aether product template.", "pricing": "MIT", "status": "Popular", "tags": ["nextjs", "ai"], "stars": "1.2k", "clones": "4.8k", "version": "v1.4.2", "author": "StoicSoft" },
     { "slug": "landing-server-monitoring", "name": "landing-server-monitoring", "category": "landing", "tagline": "Infrastructure monitoring landing", "description": "Live status dashboard, world map, sparkline probes, alerts drawer. The exact structure of servercompass.app.", "pricing": "MIT", "tags": ["nextjs", "ops"], "stars": "640", "clones": "1.9k", "version": "v1.1.0", "author": "StoicSoft" },
     { "slug": "directory-saas-tools", "name": "directory-saas-tools", "category": "directory", "tagline": "SaaS tool directory with JSON data", "description": "A curated-tools directory pattern loaded from a single JSON file. Home grid, detail pages, submission form.", "pricing": "MIT", "status": "New", "tags": ["directory", "json"], "stars": "180", "clones": "420", "version": "v1.0.0", "author": "StoicSoft" },
@@ -29,7 +33,7 @@
     { "slug": "landing-conference", "name": "landing-conference", "category": "landing", "tagline": "Tech conference landing", "description": "Big display type, speakers grid, two-day schedule, tiered tickets. Modelled on the Shipped conference.", "pricing": "MIT", "tags": ["nextjs", "event"], "stars": "540", "clones": "1.3k", "version": "v1.2.0", "author": "StoicSoft" }
   ],
   "stats": [
-    { "k": "84", "v": "Starters in the registry" },
+    { "k": "87", "v": "Starters in the registry" },
     { "k": "180k+", "v": "Clones in the last 12 months" },
     { "k": "MIT", "v": "All templates, forever" },
     { "k": "12s", "v": "Median time from prompt to dev server" }

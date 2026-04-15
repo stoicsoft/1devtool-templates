@@ -1,0 +1,23 @@
+{
+  "name": "document-api-reference",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Markdown-powered API reference documentation site template for ServerCompass.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^12.0.0",
+    "next": "16.2.3",
+    "react": "19.2.5",
+    "react-dom": "19.2.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.19"
+  }
+}
