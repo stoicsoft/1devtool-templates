@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-paper: #ffffff;
+  --color-paper-2: #fafafa;
+  --color-ink: #0a0a0a;
+  --color-muted: #737373;
+  --color-subtle: #a3a3a3;
+  --color-line: #ededed;
+  --color-ok: #16a34a;
+  --color-warn: #d97706;
+  --color-alert: #dc2626;
+  --color-maint: #2563eb;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.bar-track {
+  display: grid;
+  grid-template-columns: repeat(60, minmax(0, 1fr));
+  gap: 2px;
+  height: 14px;
+}
+.bar-track > span {
+  display: block;
+  height: 100%;
+  border-radius: 1px;
+  background: var(--color-ok);
+  opacity: 0.9;
+}
+.bar-track > span.degraded { background: var(--color-warn); }
+.bar-track > span.outage { background: var(--color-alert); }
+.bar-track > span.none { background: var(--color-line); opacity: 1; }
+
+@media (prefers-color-scheme: dark) {
+  /* opt-in dark mode — kept light for minimal template */
+}

@@ -403,6 +403,66 @@
       "status": "available"
     },
     {
+      "id": "status-page-classic",
+      "category": "status-page",
+      "name": "Status Page - Classic",
+      "description": "Atlassian-style status page with operational banner, 90-day uptime bars per component, timeline incidents with timestamps, scheduled maintenance, and subscribe (email/Slack/RSS/webhook). ServerCompass branded.",
+      "preview": "previews/status-page-classic.jpg",
+      "directory": "templates/status-page-classic",
+      "tags": ["next.js", "tailwind", "status-page", "devops", "uptime"],
+      "status": "available"
+    },
+    {
+      "id": "status-page-minimal",
+      "category": "status-page",
+      "name": "Status Page - Minimal",
+      "description": "Stripe/Vercel-style minimal status page with typographic all-good banner, heavy whitespace, muted service list, and simple incident chronology. Geist font. 1DevTool branded.",
+      "preview": "previews/status-page-minimal.jpg",
+      "directory": "templates/status-page-minimal",
+      "tags": ["next.js", "tailwind", "status-page", "minimal", "stripe"],
+      "status": "available"
+    },
+    {
+      "id": "status-page-developer",
+      "category": "status-page",
+      "name": "Status Page - Developer",
+      "description": "GitHub/Cloudflare-style dark developer status page with 12-region health grid, service sparklines, live API route metrics table, curl snippet, and incident feed with severity tags. StoicSoft branded.",
+      "preview": "previews/status-page-developer.jpg",
+      "directory": "templates/status-page-developer",
+      "tags": ["next.js", "tailwind", "status-page", "developer", "regions"],
+      "status": "available"
+    },
+    {
+      "id": "changelog-linear",
+      "category": "changelog",
+      "name": "Changelog - Linear Style",
+      "description": "Linear-style modern changelog with dark theme, per-entry gradient covers with inline SVG art (preview UI, search palette, terminal), category chips, version + author rail, featured bullets and improvements/fixes columns. 1DevTool branded.",
+      "preview": "previews/changelog-linear.jpg",
+      "directory": "templates/changelog-linear",
+      "tags": ["next.js", "tailwind", "changelog", "linear", "product-updates"],
+      "status": "available"
+    },
+    {
+      "id": "changelog-release-notes",
+      "category": "changelog",
+      "name": "Changelog - API Release Notes",
+      "description": "Stripe-style dated-version API release notes with sticky version rail, verb pills (Added/Changed/Deprecated/Fixed), request/response code diffs with token coloring, and upgrade guide with curl snippet. ServerCompass branded.",
+      "preview": "previews/changelog-release-notes.jpg",
+      "directory": "templates/changelog-release-notes",
+      "tags": ["next.js", "tailwind", "changelog", "api", "release-notes"],
+      "status": "available"
+    },
+    {
+      "id": "changelog-dev-log",
+      "category": "changelog",
+      "name": "Changelog - Dev Log",
+      "description": "Terminal-aesthetic dev log with scan-line effect, mono-only typography, week-grouped commit entries with +/~/!/- prefixes, project/sha/branch/author rail, uses.txt section, and tail -f subscribe panel. StoicSoft branded.",
+      "preview": "previews/changelog-dev-log.jpg",
+      "directory": "templates/changelog-dev-log",
+      "tags": ["next.js", "tailwind", "changelog", "terminal", "devlog"],
+      "status": "available"
+    },
+    {
       "id": "saas",
       "category": "saas",
       "name": "SaaS Control Plane",

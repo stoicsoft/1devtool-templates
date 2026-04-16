@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --color-paper: #fafaf7;
+  --color-ink: #0f1420;
+  --color-muted: #5b6478;
+  --color-line: #e6e7ea;
+  --color-ok: #19a974;
+  --color-ok-soft: #d7f2e6;
+  --color-warn: #d48a06;
+  --color-warn-soft: #fdf1d7;
+  --color-alert: #c73434;
+  --color-alert-soft: #fbe0e0;
+  --color-maint: #2f6fed;
+  --color-maint-soft: #dfe8fb;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+@keyframes pulse-ok {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(25, 169, 116, 0.45); }
+  50% { box-shadow: 0 0 0 8px rgba(25, 169, 116, 0); }
+}
+.pulse-ok { animation: pulse-ok 2.4s ease-out infinite; }
+
+.uptime-grid {
+  display: grid;
+  grid-template-columns: repeat(90, minmax(0, 1fr));
+  gap: 2px;
+}
+.uptime-grid > span {
+  height: 28px;
+  border-radius: 2px;
+  background: var(--color-ok);
+}
+.uptime-grid > span.degraded { background: var(--color-warn); }
+.uptime-grid > span.outage { background: var(--color-alert); }
+.uptime-grid > span.maint { background: var(--color-maint); }

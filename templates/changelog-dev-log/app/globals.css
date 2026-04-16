@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Geist:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-bg: #0b0d10;
+  --color-bg-2: #111418;
+  --color-panel: #161a20;
+  --color-line: #23282f;
+  --color-line-2: #2e343e;
+  --color-text: #e8ebf0;
+  --color-muted: #8a919c;
+  --color-subtle: #5a6069;
+  --color-green: #6ee7a3;
+  --color-green-dim: #3f9d6d;
+  --color-amber: #ffc66b;
+  --color-red: #f07b83;
+  --color-cyan: #6ec1ff;
+  --color-violet: #a58dff;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-sans { font-family: var(--font-sans); }
+
+.scan {
+  position: relative;
+}
+.scan::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(180deg, rgba(255,255,255,0.015) 0 2px, transparent 2px 4px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dash {
+  background-image: linear-gradient(90deg, var(--color-line) 50%, transparent 50%);
+  background-size: 6px 1px;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+}
+
+@keyframes caret {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.caret { animation: caret 1s step-end infinite; }
+
+.commit-line::before {
+  content: "•";
+  color: var(--color-green);
+  margin-right: 10px;
+}
+.commit-line.add::before { content: "+"; color: var(--color-green); }
+.commit-line.mod::before { content: "~"; color: var(--color-amber); }
+.commit-line.fix::before { content: "!"; color: var(--color-red); }
+.commit-line.rm::before  { content: "-"; color: var(--color-red); }

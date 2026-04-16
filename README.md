@@ -77,5 +77,7 @@ For `templates/document-*`, update the generated project from the project root:
 | Landing - Creative Agency | Available | Next.js + React |
 | Blog | Available | Next.js 14 + Tailwind CSS + MDX |
 | Document | Available | Next.js + Tailwind CSS + Markdown |
+| Status Page (Classic, Minimal, Developer) | Available | Next.js + Tailwind CSS |
+| Changelog (Linear, Release Notes, Dev Log) | Available | Next.js + Tailwind CSS |
 | SaaS Control Plane | Available | Next.js + Tailwind CSS + Cloudflare domains |
 | Desktop App | Coming Soon | Electron + React |

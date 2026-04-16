@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #080b12;
+  --color-surface: #0c1019;
+  --color-surface-2: #131826;
+  --color-line: #1c2233;
+  --color-line-2: #242b3d;
+  --color-text: #e5e9f3;
+  --color-muted: #8b93a7;
+  --color-subtle: #5d6578;
+  --color-ok: #22c55e;
+  --color-warn: #f59e0b;
+  --color-alert: #ef4444;
+  --color-maint: #60a5fa;
+  --color-accent: #a78bfa;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.glow {
+  background:
+    radial-gradient(600px circle at 20% -10%, rgba(167, 139, 250, 0.18), transparent 60%),
+    radial-gradient(700px circle at 80% 0%, rgba(34, 197, 94, 0.14), transparent 60%);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.pulse-live { animation: pulse-live 1.8s ease-in-out infinite; }
+
+.spark {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 24px;
+}
+.spark > span {
+  width: 3px;
+  border-radius: 1px;
+  background: currentColor;
+  opacity: 0.9;
+}

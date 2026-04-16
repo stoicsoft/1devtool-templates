@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #07080f;
+  --color-surface: #0d0f1a;
+  --color-surface-2: #141827;
+  --color-line: #1c2036;
+  --color-line-2: #262c46;
+  --color-text: #ecedf3;
+  --color-muted: #9097af;
+  --color-subtle: #60657d;
+  --color-indigo: #7c7bf0;
+  --color-violet: #b18afe;
+  --color-emerald: #4cd4a5;
+  --color-amber: #f3b658;
+  --color-rose: #f46b7f;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-ink);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.cover-indigo {
+  background:
+    radial-gradient(60% 120% at 20% 30%, rgba(124, 123, 240, 0.55), transparent 60%),
+    radial-gradient(80% 120% at 85% 70%, rgba(177, 138, 254, 0.55), transparent 60%),
+    linear-gradient(135deg, #1b1f3d, #0d0f1a);
+}
+.cover-emerald {
+  background:
+    radial-gradient(60% 120% at 30% 20%, rgba(76, 212, 165, 0.55), transparent 60%),
+    radial-gradient(80% 120% at 80% 80%, rgba(124, 123, 240, 0.35), transparent 60%),
+    linear-gradient(135deg, #0f2a24, #0d0f1a);
+}
+.cover-amber {
+  background:
+    radial-gradient(60% 120% at 25% 30%, rgba(243, 182, 88, 0.45), transparent 60%),
+    radial-gradient(80% 120% at 85% 70%, rgba(244, 107, 127, 0.45), transparent 60%),
+    linear-gradient(135deg, #2a1f14, #0d0f1a);
+}
+.cover-rose {
+  background:
+    radial-gradient(60% 120% at 25% 25%, rgba(244, 107, 127, 0.5), transparent 60%),
+    radial-gradient(80% 120% at 80% 75%, rgba(177, 138, 254, 0.45), transparent 60%),
+    linear-gradient(135deg, #2a1423, #0d0f1a);
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 40%, transparent 80%);
+}
+
+.prose-cl p { color: var(--color-muted); line-height: 1.7; }
+.prose-cl strong { color: var(--color-text); font-weight: 600; }
+.prose-cl ul { margin-top: 0.75rem; padding-left: 1.25rem; list-style: disc; color: var(--color-muted); }
+.prose-cl ul li { margin-top: 0.25rem; line-height: 1.65; }
+.prose-cl ul li strong { color: var(--color-text); }
