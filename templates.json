@@ -403,6 +403,36 @@
       "status": "available"
     },
     {
+      "id": "dashboard-admin-console",
+      "category": "dashboard",
+      "name": "Dashboard - Admin Console",
+      "description": "Linear/Attio-style 3-column admin console with icon rail, workspace panel, issue table, and activity feed. KPI cards with sparklines, filter pills, view switcher, right activity rail. Indigo accent, Inter + JetBrains Mono. 1DevTool branded.",
+      "preview": "previews/dashboard-admin-console.jpg",
+      "directory": "templates/dashboard-admin-console",
+      "tags": ["next.js", "tailwind", "dashboard", "admin", "linear"],
+      "status": "available"
+    },
+    {
+      "id": "dashboard-analytics",
+      "category": "dashboard",
+      "name": "Dashboard - Analytics",
+      "description": "Grafana/Datadog-style dark analytics dashboard with 4 KPI cards + sparklines, large multi-series line chart, probe world map, stacked bar chart, failing-endpoints table, and recent alerts feed. All charts hand-drawn SVG. ServerCompass branded.",
+      "preview": "previews/dashboard-analytics.jpg",
+      "directory": "templates/dashboard-analytics",
+      "tags": ["next.js", "tailwind", "dashboard", "analytics", "metrics"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-access-control",
+      "category": "admin-panel",
+      "name": "Admin Panel - Access Control",
+      "description": "Identity and access admin panel with approvals queue, privileged-account KPIs, SCIM drift triage, policy actions, and a right-side audit stream. Light theme with Sora + IBM Plex Mono.",
+      "preview": "previews/admin-panel-access-control.jpg",
+      "directory": "templates/admin-panel-access-control",
+      "tags": ["next.js", "tailwind", "admin-panel", "iam", "security"],
+      "status": "available"
+    },
+    {
       "id": "status-page-classic",
       "category": "status-page",
       "name": "Status Page - Classic",

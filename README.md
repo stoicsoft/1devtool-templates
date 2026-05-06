@@ -1,83 +1,193 @@
 # 1DevTool Templates
 
-Community-maintained project templates for 1DevTool.
+Public template registry for 1DevTool Desktop.
 
-Templates in this repo are used by the **Templates** gallery inside 1DevTool Desktop.
-When a template is selected, 1DevTool clones this repository, copies the template directory,
-and initializes a new git repository for the created project.
+The desktop app reads [`templates.json`](./templates.json), loads preview images from [`previews/`](./previews), and when a user selects an available template it downloads this repository, copies the configured template directory, and initializes a new git repository if Git is available on the machine.
 
-## How It Works
+Changes merged into `main` become available in the Templates gallery without a desktop app release. The app caches the manifest for about 5 minutes, so updates may not appear instantly in already-open sessions.
 
-- Registry manifest: `templates.json`
-- Preview images: `previews/*.png`
-- Template sources: `templates/<template-id>/`
-- Template categories: set `"category"` in `templates.json` so 1DevTool can group related templates, for example multiple `landing`, `blog`, and `document` templates.
+## Repository Layout
 
-## Configure a Template After Creation
-
-Some templates include placeholder tokens so users can personalize the generated project quickly.
-
-For `templates/1devtool-landing-template`, start from the generated project root and replace `their_project` with your product slug:
-
-```bash
-perl -pi -e 's/their_project/1devtool/g' package.json src/lib/site.ts
+```text
+.
+├── README.md
+├── templates.json
+├── previews/
+│   └── <template-id>.(png|jpg|webp)
+└── templates/
+    └── <template-id>/
 ```
 
-Use your own product slug instead of `1devtool`. Then update:
+## How 1DevTool Uses This Repo
 
-- `src/lib/site.ts` for product name, URL, hero copy, stats, features, pricing, and FAQ.
-- `public/product-preview.png` for the hero/social preview image.
-- `tailwind.config.ts` for colors and fonts.
-- `public/favicon.svg` for the app icon.
+- The manifest is fetched from `https://raw.githubusercontent.com/stoicsoft/1devtool-templates/main/templates.json`.
+- Preview images are loaded from raw GitHub using the relative paths in each manifest entry.
+- `status: "available"` templates can be created by users.
+- `status: "coming-soon"` templates are shown in the gallery but cannot be selected.
+- Only the folder referenced by `directory` is copied into the new project.
+- `directory` must resolve inside `templates/`; paths outside that tree are rejected by the app.
 
-For `templates/saas`, start from the generated project root and replace `their_project` with your product slug:
+## Manifest Contract
 
-```bash
-perl -pi -e 's/their_project/acme/g' package.json .env.example src/lib/saas.ts middleware.ts src/app/layout.tsx docs/cloudflare-domain-setup.md
+Top-level fields:
+
+- `version`: keep this at `1`.
+- `repo`: keep this as `stoicsoft/1devtool-templates`.
+
+Template entry fields:
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| `id` | Yes | Stable unique slug. Use lowercase kebab-case. |
+| `category` | Yes in practice | Technically optional for backward compatibility, but do not omit it in this repo. The app only infers a small legacy set when it is missing. |
+| `name` | Yes | Display name in the gallery. |
+| `description` | Yes | Short card description. |
+| `preview` | Yes for single-image cards | Relative path like `previews/my-template.jpg`. |
+| `previews` | Optional alternative | Array form for multiple screenshots. The first image is the cover image; extra images are shown as thumbnails/lightbox previews in the gallery. |
+| `directory` | Yes | Relative path to the template source, usually `templates/<id>`. |
+| `tags` | Yes | Used for search and filter chips. |
+| `status` | Yes | Must be `available` or `coming-soon`. |
+
+Single-preview entry:
+
+```json
+{
+  "id": "landing-my-product",
+  "category": "landing",
+  "name": "Landing - My Product",
+  "description": "Marketing site for a developer product.",
+  "preview": "previews/landing-my-product.jpg",
+  "directory": "templates/landing-my-product",
+  "tags": ["next.js", "tailwind", "landing", "developer-tools"],
+  "status": "available"
+}
 ```
 
-Use your own product slug instead of `acme`. Then update:
+Multi-preview entry:
 
-- `src/lib/auth.ts` to connect your real auth/session provider.
-- `src/app/api/billing/checkout/route.ts` to connect Stripe, LemonSqueezy, or another billing provider.
-- `src/db/migrations/001_initial_schema.sql` and `src/db/queries.ts` for your real users, workspaces, subscriptions, and domains.
-- `src/lib/domains.ts` for your routing hostname and verification prefix.
-- `middleware.ts` for your production app hosts and custom-domain lookup.
-- `docs/cloudflare-domain-setup.md` with your real DNS target and support notes.
+```json
+{
+  "id": "dashboard-my-product",
+  "category": "dashboard",
+  "name": "Dashboard - My Product",
+  "description": "Admin dashboard with analytics, tables, and settings.",
+  "previews": [
+    "previews/dashboard-my-product-1.jpg",
+    "previews/dashboard-my-product-2.jpg",
+    "previews/dashboard-my-product-3.jpg"
+  ],
+  "directory": "templates/dashboard-my-product",
+  "tags": ["next.js", "tailwind", "dashboard", "analytics"],
+  "status": "available"
+}
+```
 
-For `templates/document-*`, update the generated project from the project root:
+Notes:
 
-- `lib/site.js` for product name, docs URL, repository label, CTA links, image, stats, and theme tokens.
-- `docs/**/*.md` for markdown content. Frontmatter controls page title, description, sidebar section, and sort order.
-- `app/globals.css` for document typography, code block styling, tables, and callouts.
+- The app accepts both legacy `preview` and newer `previews`.
+- For consistency with the current repo, use `preview` when you only have one image.
+- Preview paths are relative to the repo root, not to `templates.json`.
+
+## Add a New Template
+
+1. Pick a stable slug, usually matching the folder name and preview filename stem.
+2. Add the project under [`templates/`](./templates) as `templates/<template-id>/`.
+3. Add one or more preview images under [`previews/`](./previews).
+4. Add a manifest entry in [`templates.json`](./templates.json).
+5. If the template needs post-create setup instructions, add `templates/<template-id>/README.md`.
+6. Open a pull request.
+
+Recommended conventions:
+
+- Keep `id`, preview filename, and directory name aligned.
+- Use lowercase kebab-case for `id` and `category`.
+- Include enough sample content that the template looks complete in screenshots and after clone.
+- Do not commit secrets, API keys, or private credentials.
+- Prefer templates that run out of the box or have one obvious setup step documented in the template's own README.
+
+Before opening a PR, verify:
+
+- The template folder exists at the exact `directory` path in the manifest.
+- Every preview path exists and is committed.
+- `status` is `available` only when the template is actually ready to clone and use.
+- The project boots or builds using the instructions you ship with it.
+- The manifest JSON parses cleanly, for example with `jq empty templates.json`.
+
+## Add a New Category
+
+To add a new category, just use a new `category` string in a template entry.
+
+Example:
+
+```json
+{
+  "id": "directory-creator-marketplace",
+  "category": "directory",
+  "name": "Directory - Creator Marketplace",
+  "description": "Searchable marketplace directory with listing pages and submission flow.",
+  "preview": "previews/directory-creator-marketplace.jpg",
+  "directory": "templates/directory-creator-marketplace",
+  "tags": ["next.js", "tailwind", "directory", "marketplace"],
+  "status": "available"
+}
+```
+
+Category behavior in the desktop app:
+
+- Templates are grouped by the raw `category` value.
+- Unknown category labels are auto-formatted from the slug.
+- Example: `status-page` becomes `Status Page`.
+- You do not need an app change for most new categories.
+
+Important:
+
+- Always set `category` explicitly. If you omit it, the app only infers `landing`, `blog`, `desktop`, and `saas`; everything else can fall into `Other`.
+- If you want a custom human label instead of the default title-cased slug, update `CATEGORY_LABELS` in the desktop repo:
+  - [`TemplatesDialog.tsx`](https://github.com/stoicsoft/1devtool-desktop/blob/main/src/renderer/components/dialogs/TemplatesDialog.tsx)
+  - [`AddProjectDialog.tsx`](https://github.com/stoicsoft/1devtool-desktop/blob/main/src/renderer/components/dialogs/AddProjectDialog.tsx)
+
+Current category slugs in this repo:
+
+- `landing`
+- `blog`
+- `document`
+- `directory`
+- `admin-panel`
+- `dashboard`
+- `status-page`
+- `changelog`
+- `saas`
+- `desktop`
+
+## `available` vs `coming-soon`
+
+Use `available` when the template directory is ready for real users.
+
+Use `coming-soon` when you want a visible gallery card that is intentionally not selectable yet.
+
+Behavior:
+
+- `available`: card is selectable and the app can clone it.
+- `coming-soon`: card is visible with a badge and clone is disabled.
+
+## Template-Local Documentation
+
+If a template requires follow-up edits after creation, put those instructions inside the template itself.
+
+Examples already in this repo:
+
+- [`templates/1devtool-landing-template/README.md`](./templates/1devtool-landing-template/README.md)
+- [`templates/saas/README.md`](./templates/saas/README.md)
+- [`templates/document-product-docs/README.md`](./templates/document-product-docs/README.md)
+- [`templates/document-api-reference/README.md`](./templates/document-api-reference/README.md)
+- [`templates/document-runbook/README.md`](./templates/document-runbook/README.md)
 
 ## Contributing
 
 1. Fork this repository.
-2. Add your template under `templates/<name>/`.
-3. Add a preview image at `previews/<name>.png`.
-4. Add a new entry in `templates.json` with `"category"` and `"status": "available"`.
+2. Create a branch for your template or manifest change.
+3. Add the template, preview assets, and manifest entry.
+4. Verify the manifest and test the template locally.
 5. Open a pull request.
 
-## Template Requirements
-
-- Must include a runnable project (with `package.json` for Node-based templates).
-- Must work out of the box after clone.
-- Must include a preview image.
-- Must include clear project setup notes in template README (if needed).
-
-## Templates
-
-| Template | Status | Stack |
-|---|---|---|
-| Landing Page | Available | Next.js + React |
-| 1DevTool Landing Template | Available | Next.js 16 + Tailwind CSS |
-| Landing - Fitness Studio | Available | Next.js + React |
-| Landing - Fintech App | Available | Next.js + React |
-| Landing - Creative Agency | Available | Next.js + React |
-| Blog | Available | Next.js 14 + Tailwind CSS + MDX |
-| Document | Available | Next.js + Tailwind CSS + Markdown |
-| Status Page (Classic, Minimal, Developer) | Available | Next.js + Tailwind CSS |
-| Changelog (Linear, Release Notes, Dev Log) | Available | Next.js + Tailwind CSS |
-| SaaS Control Plane | Available | Next.js + Tailwind CSS + Cloudflare domains |
-| Desktop App | Coming Soon | Electron + React |
+After merge, the new template or category shows up in 1DevTool Desktop automatically once the manifest cache refreshes.

@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Fraunces", "Instrument Serif", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #0a2540;
+  --color-ink-2: #132d4f;
+  --color-ink-soft: #4a5d78;
+  --color-paper: #fafaf7;
+  --color-paper-2: #f3f1ea;
+  --color-line: #e3ded1;
+  --color-line-strong: #c9c2ae;
+  --color-gold: #d4a017;
+  --color-gold-soft: #f6e7b4;
+  --color-mist: #6b7a91;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #fafaf7;
+  color: #0a2540;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-serif { font-family: var(--font-serif); font-feature-settings: "ss01", "ss02"; }
+.font-mono { font-family: var(--font-mono); }
+
+.paper-grid {
+  background-image:
+    linear-gradient(to right, rgba(10, 37, 64, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 37, 64, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.crosshatch {
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(10, 37, 64, 0.04) 0,
+      rgba(10, 37, 64, 0.04) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+}
+
+.seal-ring {
+  background:
+    radial-gradient(circle at center, transparent 58%, rgba(212, 160, 23, 0.18) 58%, rgba(212, 160, 23, 0.18) 60%, transparent 60%);
+}
+
+.btn-press {
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+.btn-press:active { transform: translateY(1px); }
+
+.focus-ring:focus-visible {
+  outline: 2px solid #d4a017;
+  outline-offset: 2px;
+}
+
+.hr-rule {
+  background-image: linear-gradient(to right, transparent, #c9c2ae 20%, #c9c2ae 80%, transparent);
+  height: 1px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.blink { animation: blink 1.6s ease-in-out infinite; }

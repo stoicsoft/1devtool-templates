@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, monospace;
+
+  --color-paper: #fafafa;
+  --color-card: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-ink-2: #404040;
+  --color-muted: #737373;
+  --color-faint: #a3a3a3;
+  --color-line: #e7e7e7;
+  --color-line-2: #f1f1f1;
+  --color-accent: #4f46e5;
+  --color-accent-soft: #eef2ff;
+
+  --color-rose: #e11d48;
+  --color-amber: #d97706;
+  --color-emerald: #059669;
+  --color-sky: #0284c7;
+  --color-violet: #7c3aed;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.grid-lines {
+  background-image:
+    linear-gradient(to right, rgba(0,0,0,0.025) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Scrollbar polish for horizontal board */
+.board-scroll::-webkit-scrollbar { height: 8px; }
+.board-scroll::-webkit-scrollbar-track { background: transparent; }
+.board-scroll::-webkit-scrollbar-thumb { background: #e7e7e7; border-radius: 999px; }
+.board-scroll::-webkit-scrollbar-thumb:hover { background: #d4d4d4; }
+
+/* Card lift on hover */
+.task-card {
+  transition: box-shadow 150ms ease, transform 150ms ease, border-color 150ms ease;
+}
+.task-card:hover {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 20px -8px rgba(0,0,0,0.08);
+  border-color: #dcdcdc;
+}
+
+/* Progress shimmer */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.pulse-soft { animation: pulse-soft 2.2s ease-in-out infinite; }
