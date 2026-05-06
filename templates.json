@@ -433,6 +433,36 @@
       "status": "available"
     },
     {
+      "id": "admin-panel-user-management",
+      "category": "admin-panel",
+      "name": "Admin Panel - User Management",
+      "description": "Operations-focused user admin panel with member directory, role controls, invite flow, account states, MFA/SSO tracking, and lifecycle actions. Light theme with Inter + JetBrains Mono.",
+      "preview": "previews/admin-panel-user-management.jpg",
+      "directory": "templates/admin-panel-user-management",
+      "tags": ["next.js", "tailwind", "admin-panel", "users", "operations"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-billing-operations",
+      "category": "admin-panel",
+      "name": "Admin Panel - Billing Operations",
+      "description": "Billing operations admin panel with subscription management, invoice tracking, failed payment retry queue, MRR KPIs, and account health indicators. Light theme with DM Sans + Space Mono.",
+      "preview": "previews/admin-panel-billing-operations.jpg",
+      "directory": "templates/admin-panel-billing-operations",
+      "tags": ["next.js", "tailwind", "admin-panel", "billing", "subscriptions"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-audit-compliance",
+      "category": "admin-panel",
+      "name": "Admin Panel - Audit & Compliance",
+      "description": "Audit and compliance admin panel with event stream, severity filters, policy coverage cards, evidence export controls, and review queue. Light theme with Source Sans 3 + Source Code Pro.",
+      "preview": "previews/admin-panel-audit-compliance.jpg",
+      "directory": "templates/admin-panel-audit-compliance",
+      "tags": ["next.js", "tailwind", "admin-panel", "audit", "compliance"],
+      "status": "available"
+    },
+    {
       "id": "status-page-classic",
       "category": "status-page",
       "name": "Status Page - Classic",
