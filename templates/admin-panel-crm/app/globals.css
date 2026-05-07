@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-ink: #111827;
+  --color-ink-2: #1f2937;
+  --color-muted: #6b7280;
+  --color-mist: #9ca3af;
+  --color-line: #e5e7eb;
+  --color-line-2: #f3f4f6;
+  --color-bg: #ffffff;
+  --color-bg-2: #f9fafb;
+  --color-bg-3: #f3f4f6;
+
+  --color-accent: #2563eb;
+  --color-accent-2: #1d4ed8;
+  --color-accent-soft: #dbeafe;
+  --color-accent-ring: #bfdbfe;
+
+  --color-emerald: #059669;
+  --color-emerald-soft: #d1fae5;
+  --color-amber: #d97706;
+  --color-amber-soft: #fef3c7;
+  --color-rose: #dc2626;
+  --color-rose-soft: #fee2e2;
+  --color-violet: #7c3aed;
+  --color-violet-soft: #ede9fe;
+}
+
+html, body {
+  background: #ffffff;
+  color: #111827;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-mono { font-family: var(--font-mono); }
+
+.row-zebra:nth-child(even) { background: #fafafa; }
+
+.scroll-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 3px; }

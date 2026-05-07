@@ -533,6 +533,46 @@
       "status": "available"
     },
     {
+      "id": "admin-panel-ecommerce",
+      "category": "admin-panel",
+      "name": "Admin Panel - E-commerce",
+      "description": "E-commerce operations admin panel with order management, product catalog, customer tracking, and revenue analytics. Warm orange accent theme with DM Sans + Space Mono.",
+      "preview": "previews/admin-panel-ecommerce.jpg",
+      "directory": "templates/admin-panel-ecommerce",
+      "tags": ["next.js", "tailwind", "admin-panel", "ecommerce", "orders"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-crm",
+      "category": "admin-panel",
+      "name": "Admin Panel - CRM",
+      "description": "Customer relationship management admin panel with lead tracking, deal pipeline, contact directory, and task management. Blue accent theme with Inter + JetBrains Mono.",
+      "preview": "previews/admin-panel-crm.jpg",
+      "directory": "templates/admin-panel-crm",
+      "tags": ["next.js", "tailwind", "admin-panel", "crm", "sales"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-project-management",
+      "category": "admin-panel",
+      "name": "Admin Panel - Project Management",
+      "description": "Project management admin panel with project tracking, task boards, team workload, and sprint velocity. Purple accent theme with Sora + IBM Plex Mono.",
+      "preview": "previews/admin-panel-project-management.jpg",
+      "directory": "templates/admin-panel-project-management",
+      "tags": ["next.js", "tailwind", "admin-panel", "project", "tasks"],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-devops",
+      "category": "admin-panel",
+      "name": "Admin Panel - DevOps",
+      "description": "DevOps infrastructure admin panel with service health monitoring, deployment tracking, alert management, and system uptime. Cyan accent theme with Geist + Geist Mono.",
+      "preview": "previews/admin-panel-devops.jpg",
+      "directory": "templates/admin-panel-devops",
+      "tags": ["next.js", "tailwind", "admin-panel", "devops", "monitoring"],
+      "status": "available"
+    },
+    {
       "id": "desktop-app",
       "category": "desktop",
       "name": "Desktop App",
