@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+/* Warm, paper-like product surface: near-white page, white cards, clay accent. */
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+  --color-page: #fcfcfb;
+  --color-surface: #ffffff;
+  --color-sunk: #f6f6f4;
+  --color-hover: #f0efec;
+  --color-ivory: #f0eee6;
+  --color-ivory-2: #faf9f5;
+
+  --color-ink: #141413;
+  --color-ink-2: #3d3d3a;
+  --color-muted: #5e5d59;
+  --color-faint: #87867f;
+  --color-line: #e5e4df;
+  --color-line-2: #efeeea;
+
+  --color-clay: #c96442;
+  --color-clay-2: #b0522f;
+  --color-clay-soft: #f7ece7;
+  --color-mineral: #629987;
+  --color-mineral-soft: #e6efec;
+  --color-plum: #827dbd;
+  --color-plum-soft: #eceaf5;
+  --color-heather: #cbcadb;
+  --color-cactus: #bcd1ca;
+  --color-olive: #98801f;
+  --color-olive-soft: #f5f1e0;
+  --color-leaf: #1e9f3c;
+  --color-leaf-soft: #e6f4ea;
+  --color-berry: #cf2055;
+  --color-berry-soft: #fceaef;
+  --color-ochre: #c5621b;
+  --color-ochre-soft: #fbeee3;
+  --color-slate-ink: #1f1e1d;
+}
+
+html,
+body {
+  background: #fcfcfb;
+  color: #141413;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-serif { font-family: var(--font-serif); }
+.font-mono { font-family: var(--font-mono); letter-spacing: -0.01em; }
+
+.hairline { border-color: rgba(20, 20, 19, 0.1); }
+
+.scroll-thin::-webkit-scrollbar { width: 7px; height: 7px; }
+.scroll-thin::-webkit-scrollbar-thumb { background: #dcdad3; border-radius: 4px; }
+.scroll-thin::-webkit-scrollbar-thumb:hover { background: #c7c5bd; }
+.scroll-thin::-webkit-scrollbar-track { background: transparent; }
+
+.row-zebra:nth-child(even) { background: #faf9f7; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.rise { animation: rise 0.32s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.pulse-dot { animation: pulse-dot 1.8s ease-in-out infinite; }

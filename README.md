@@ -156,6 +156,11 @@ Current category slugs in this repo:
 - `dashboard`
 - `status-page`
 - `changelog`
+- `ai`
+- `auth`
+- `settings`
+- `onboarding`
+- `pricing`
 - `saas`
 - `desktop`
 

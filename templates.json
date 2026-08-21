@@ -9,37 +9,60 @@
       "description": "Next.js landing page adapted from the 1DevTool launch page structure, with a single config file and a replaceable product screenshot.",
       "preview": "previews/1devtool-landing-full-page.jpg",
       "directory": "templates/1devtool-landing-template",
-      "tags": ["next.js", "tailwind", "landing", "seo"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "seo"
+      ],
       "status": "available"
     },
     {
       "id": "landing-ai-saas",
       "category": "landing",
       "name": "Landing - AI SaaS",
-      "description": "Premium AI workspace landing with chat-demo dashboard, gradient glows, multi-section flow, and pricing. Built for AI products like Aether — a StoicSoft brand.",
+      "description": "Premium AI workspace landing with chat-demo dashboard, gradient glows, multi-section flow, and pricing. Built for AI products like Aether \u2014 a StoicSoft brand.",
       "preview": "previews/landing-ai-saas.jpg",
       "directory": "templates/landing-ai-saas",
-      "tags": ["next.js", "tailwind", "landing", "ai", "saas"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "ai",
+        "saas"
+      ],
       "status": "available"
     },
     {
       "id": "landing-dev-tool",
       "category": "landing",
       "name": "Landing - Developer Tool",
-      "description": "Terminal-aesthetic landing for developer tools, CLIs, and template marketplaces. Inspired by 1DevTool — open-source registry of production-grade Next.js templates.",
+      "description": "Terminal-aesthetic landing for developer tools, CLIs, and template marketplaces. Inspired by 1DevTool \u2014 open-source registry of production-grade Next.js templates.",
       "preview": "previews/landing-dev-tool.jpg",
       "directory": "templates/landing-dev-tool",
-      "tags": ["next.js", "tailwind", "landing", "developer", "cli"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "developer",
+        "cli"
+      ],
       "status": "available"
     },
     {
       "id": "landing-server-monitoring",
       "category": "landing",
       "name": "Landing - Server Monitoring",
-      "description": "Infrastructure / uptime monitoring landing with live status dashboard, world map, alerts, and pricing. Inspired by ServerCompass — a StoicSoft product.",
+      "description": "Infrastructure / uptime monitoring landing with live status dashboard, world map, alerts, and pricing. Inspired by ServerCompass \u2014 a StoicSoft product.",
       "preview": "previews/landing-server-monitoring.jpg",
       "directory": "templates/landing-server-monitoring",
-      "tags": ["next.js", "tailwind", "landing", "devops", "monitoring"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "devops",
+        "monitoring"
+      ],
       "status": "available"
     },
     {
@@ -49,7 +72,13 @@
       "description": "Editorial cream-and-serif portfolio for a one-person studio or freelancer. Bento work grid, services, journal, now-page, and warm contact CTA.",
       "preview": "previews/landing-portfolio.jpg",
       "directory": "templates/landing-portfolio",
-      "tags": ["next.js", "tailwind", "landing", "portfolio", "personal"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "portfolio",
+        "personal"
+      ],
       "status": "available"
     },
     {
@@ -59,7 +88,13 @@
       "description": "Consumer mobile-app showcase with phone mockups, vibrant gradient hero, App Store and Google Play CTAs, reviews, and pricing.",
       "preview": "previews/landing-mobile-app.jpg",
       "directory": "templates/landing-mobile-app",
-      "tags": ["next.js", "tailwind", "landing", "mobile", "app"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "mobile",
+        "app"
+      ],
       "status": "available"
     },
     {
@@ -69,7 +104,13 @@
       "description": "Minimalist physical-product launch landing with hero shot, craft section, reviews, and a checkout summary card. Cream-and-ink editorial aesthetic.",
       "preview": "previews/landing-ecommerce-product.jpg",
       "directory": "templates/landing-ecommerce-product",
-      "tags": ["next.js", "tailwind", "landing", "ecommerce", "product"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "ecommerce",
+        "product"
+      ],
       "status": "available"
     },
     {
@@ -79,7 +120,13 @@
       "description": "Warm restaurant / cafe landing with menu, hours, press quotes, and a built-in reservation form. Italic display serif on cream paper.",
       "preview": "previews/landing-restaurant.jpg",
       "directory": "templates/landing-restaurant",
-      "tags": ["next.js", "tailwind", "landing", "restaurant", "hospitality"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "restaurant",
+        "hospitality"
+      ],
       "status": "available"
     },
     {
@@ -89,7 +136,12 @@
       "description": "Cinematic dark fitness landing with running marquee, programs grid, schedule table, coaches grid, testimonials, and membership pricing.",
       "preview": "previews/landing-fitness-studio.jpg",
       "directory": "templates/landing-fitness-studio",
-      "tags": ["next.js", "tailwind", "landing", "fitness"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "fitness"
+      ],
       "status": "available"
     },
     {
@@ -99,7 +151,12 @@
       "description": "Premium navy fintech landing with animated dashboard mockup, live ticker, bento product showcase, security badges, and pricing tiers.",
       "preview": "previews/landing-fintech-app.jpg",
       "directory": "templates/landing-fintech-app",
-      "tags": ["next.js", "tailwind", "landing", "fintech"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "fintech"
+      ],
       "status": "available"
     },
     {
@@ -109,7 +166,12 @@
       "description": "Editorial cream agency landing with oversized display serif, asymmetric bento work grid, numbered services, dark process card, and warm CTA.",
       "preview": "previews/landing-creative-agency.jpg",
       "directory": "templates/landing-creative-agency",
-      "tags": ["next.js", "tailwind", "landing", "agency"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "agency"
+      ],
       "status": "available"
     },
     {
@@ -119,17 +181,29 @@
       "description": "SaaS analytics landing with dashboard hero, metric breakdown, integrations, pricing, and FAQ.",
       "preview": "previews/landing-saas-analytics.jpg",
       "directory": "templates/landing-saas-analytics",
-      "tags": ["next.js", "tailwind", "landing", "saas", "analytics"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "saas",
+        "analytics"
+      ],
       "status": "available"
     },
     {
       "id": "landing-podcast",
       "category": "landing",
       "name": "Landing - Podcast Show",
-      "description": "Audio-first podcast landing with animated player card, waveform episode list, host bios, subscribe platforms, and membership CTA. Inspired by Signal FM — a StoicSoft production.",
+      "description": "Audio-first podcast landing with animated player card, waveform episode list, host bios, subscribe platforms, and membership CTA. Inspired by Signal FM \u2014 a StoicSoft production.",
       "preview": "previews/landing-podcast.jpg",
       "directory": "templates/landing-podcast",
-      "tags": ["next.js", "tailwind", "landing", "podcast", "audio"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "podcast",
+        "audio"
+      ],
       "status": "available"
     },
     {
@@ -139,7 +213,13 @@
       "description": "Editorial newspaper-style newsletter landing with masthead, current issue excerpt, archive, about page, and subscribe form. Cream paper aesthetic.",
       "preview": "previews/landing-newsletter.jpg",
       "directory": "templates/landing-newsletter",
-      "tags": ["next.js", "tailwind", "landing", "newsletter", "publication"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "newsletter",
+        "publication"
+      ],
       "status": "available"
     },
     {
@@ -149,7 +229,13 @@
       "description": "Bold tech-event landing with oversized display type, speakers grid, two-day schedule, venue info, sponsors, and tiered tickets. Inspired by Shipped /2026.",
       "preview": "previews/landing-conference.jpg",
       "directory": "templates/landing-conference",
-      "tags": ["next.js", "tailwind", "landing", "conference", "event"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "conference",
+        "event"
+      ],
       "status": "available"
     },
     {
@@ -159,7 +245,13 @@
       "description": "Photography-led property brokerage landing with listings grid, region blocks, services, testimonials, and inquiry form. Warm cream editorial palette.",
       "preview": "previews/landing-real-estate.jpg",
       "directory": "templates/landing-real-estate",
-      "tags": ["next.js", "tailwind", "landing", "real-estate", "property"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "real-estate",
+        "property"
+      ],
       "status": "available"
     },
     {
@@ -169,7 +261,13 @@
       "description": "Navy-and-gold boutique law firm landing with practice areas, partner bios, selected matters, testimonials, and consultation form. Playfair display.",
       "preview": "previews/landing-law-firm.jpg",
       "directory": "templates/landing-law-firm",
-      "tags": ["next.js", "tailwind", "landing", "law", "professional"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "law",
+        "professional"
+      ],
       "status": "available"
     },
     {
@@ -179,7 +277,13 @@
       "description": "Warm small-group-travel landing with postcard trip cards, sample itinerary, rules of how we travel, traveller stories, and booking. Tenor Sans + Instrument Serif.",
       "preview": "previews/landing-travel.jpg",
       "directory": "templates/landing-travel",
-      "tags": ["next.js", "tailwind", "landing", "travel", "tours"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "travel",
+        "tours"
+      ],
       "status": "available"
     },
     {
@@ -189,7 +293,13 @@
       "description": "Non-custodial payment rail landing with cyberpunk neon glows, animated payroll dashboard, live ticker, chains grid, tokenomics, and roadmap.",
       "preview": "previews/landing-web3.jpg",
       "directory": "templates/landing-web3",
-      "tags": ["next.js", "tailwind", "landing", "web3", "crypto"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "web3",
+        "crypto"
+      ],
       "status": "available"
     },
     {
@@ -199,7 +309,13 @@
       "description": "Mission-driven reforestation nonprofit landing with live sapling counter, impact stats, field stories, donation tiers, and volunteer signup. Warm moss palette.",
       "preview": "previews/landing-nonprofit.jpg",
       "directory": "templates/landing-nonprofit",
-      "tags": ["next.js", "tailwind", "landing", "nonprofit", "charity"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "nonprofit",
+        "charity"
+      ],
       "status": "available"
     },
     {
@@ -209,7 +325,13 @@
       "description": "Six-week cohort course landing with curriculum cards, what&apos;s-included bento, instructor bios, graduate stories, and enrol form. Bricolage Grotesque display.",
       "preview": "previews/landing-course.jpg",
       "directory": "templates/landing-course",
-      "tags": ["next.js", "tailwind", "landing", "education", "course"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "education",
+        "course"
+      ],
       "status": "available"
     },
     {
@@ -219,7 +341,11 @@
       "description": "Full-featured blog with markdown posts, syntax highlighting, and RSS.",
       "preview": "previews/simple-nextjs-blog.jpg",
       "directory": "templates/simple-nextjs-blog",
-      "tags": ["next.js", "mdx", "tailwind"],
+      "tags": [
+        "next.js",
+        "mdx",
+        "tailwind"
+      ],
       "status": "available"
     },
     {
@@ -229,7 +355,13 @@
       "description": "Newspaper-style culture magazine with masthead, featured cover story, three-column lead stories, columns grid, sidebar, and excerpt with dropcap. Warm cream paper aesthetic with Fraunces serif.",
       "preview": "previews/blog-magazine.jpg",
       "directory": "templates/blog-magazine",
-      "tags": ["next.js", "tailwind", "blog", "magazine", "editorial"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "magazine",
+        "editorial"
+      ],
       "status": "available"
     },
     {
@@ -239,7 +371,13 @@
       "description": "Dark monospace developer blog with terminal navigation, syntax-highlighted Go code block, posts list with tag chips, sidebar with tags + series, and developer-focused subscribe panel. Geist + Geist Mono.",
       "preview": "previews/blog-dev.jpg",
       "directory": "templates/blog-dev",
-      "tags": ["next.js", "tailwind", "blog", "developer", "engineering"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "developer",
+        "engineering"
+      ],
       "status": "available"
     },
     {
@@ -249,7 +387,13 @@
       "description": "Dark minimal photographer&apos;s journal with mosaic feature plates, 3-column plate grid, about section with equipment list, prints showcase, and Sunday-feed subscribe. Painterly gradient placeholders for photos.",
       "preview": "previews/blog-photography.jpg",
       "directory": "templates/blog-photography",
-      "tags": ["next.js", "tailwind", "blog", "photography", "journal"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "photography",
+        "journal"
+      ],
       "status": "available"
     },
     {
@@ -259,7 +403,13 @@
       "description": "Paper-style long-form essay blog with Crimson Pro serif, masthead, featured essay with dropcap, year-grouped Roman-numeral archive, reading log, and quiet author bio. Built for the kind of writing that takes 24 minutes.",
       "preview": "previews/blog-essay.jpg",
       "directory": "templates/blog-essay",
-      "tags": ["next.js", "tailwind", "blog", "essay", "writing"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "essay",
+        "writing"
+      ],
       "status": "available"
     },
     {
@@ -269,7 +419,13 @@
       "description": "Multi-section digital-garden personal blog with essays, notes, links, bookshelf (with rendered spines), /now page, and projects. iA Writer Quattro + Source Serif. The unhurried, internet-as-it-was variety.",
       "preview": "previews/blog-personal.jpg",
       "directory": "templates/blog-personal",
-      "tags": ["next.js", "tailwind", "blog", "personal", "digital-garden"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "personal",
+        "digital-garden"
+      ],
       "status": "available"
     },
     {
@@ -279,7 +435,13 @@
       "description": "Elegant GitBook-style product documentation starter with markdown pages, generated sidebars, page outlines, search chrome, and original 1DevTool copy.",
       "preview": "previews/document-product-docs.png",
       "directory": "templates/document-product-docs",
-      "tags": ["next.js", "tailwind", "document", "markdown", "docs"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "document",
+        "markdown",
+        "docs"
+      ],
       "status": "available"
     },
     {
@@ -289,7 +451,13 @@
       "description": "Markdown API reference starter with endpoint pages, generated navigation, right-side TOC, code blocks, and ServerCompass developer copy.",
       "preview": "previews/document-api-reference.png",
       "directory": "templates/document-api-reference",
-      "tags": ["next.js", "tailwind", "document", "api", "markdown"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "document",
+        "api",
+        "markdown"
+      ],
       "status": "available"
     },
     {
@@ -299,7 +467,13 @@
       "description": "Markdown runbook documentation starter for incident response, alerts, postmortems, and escalation policies with ServerCompass operations copy.",
       "preview": "previews/document-runbook.png",
       "directory": "templates/document-runbook",
-      "tags": ["next.js", "tailwind", "document", "runbook", "markdown"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "document",
+        "runbook",
+        "markdown"
+      ],
       "status": "available"
     },
     {
@@ -309,7 +483,13 @@
       "description": "Dark curated-tools directory with JSON data loading, category chips, featured bento, item detail pages, and submission form. StoicSoft-branded with ServerCompass and 1DevTool features.",
       "preview": "previews/directory-saas-tools.jpg",
       "directory": "templates/directory-saas-tools",
-      "tags": ["next.js", "tailwind", "directory", "saas", "json-data"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "saas",
+        "json-data"
+      ],
       "status": "available"
     },
     {
@@ -319,7 +499,13 @@
       "description": "Terminal-aesthetic code registry directory with paper-grid background, monospace accents, CLI install commands, and GitHub-style detail pages. 1DevTool-style.",
       "preview": "previews/directory-dev-templates.jpg",
       "directory": "templates/directory-dev-templates",
-      "tags": ["next.js", "tailwind", "directory", "developer", "cli"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "developer",
+        "cli"
+      ],
       "status": "available"
     },
     {
@@ -329,7 +515,13 @@
       "description": "Editorial cream-and-serif directory of independent makers with profile grid, hand-drawn dividers, and roster pages. Fraunces serif, warm paper aesthetic.",
       "preview": "previews/directory-indie-makers.jpg",
       "directory": "templates/directory-indie-makers",
-      "tags": ["next.js", "tailwind", "directory", "makers", "editorial"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "makers",
+        "editorial"
+      ],
       "status": "available"
     },
     {
@@ -339,7 +531,13 @@
       "description": "Light-theme engineering job board with honest salary bands, location + remote filters, indigo-to-emerald gradient accents, and paid-posting flow.",
       "preview": "previews/directory-startup-jobs.jpg",
       "directory": "templates/directory-startup-jobs",
-      "tags": ["next.js", "tailwind", "directory", "jobs", "startup"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "jobs",
+        "startup"
+      ],
       "status": "available"
     },
     {
@@ -349,7 +547,13 @@
       "description": "Visual shelf-style directory for fonts, icons, UI kits, and objects. Cream + vibrant gradients, large card previews, serif display headings.",
       "preview": "previews/directory-design-resources.jpg",
       "directory": "templates/directory-design-resources",
-      "tags": ["next.js", "tailwind", "directory", "design", "fonts"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "design",
+        "fonts"
+      ],
       "status": "available"
     },
     {
@@ -359,7 +563,13 @@
       "description": "Dark developer-friendly API directory with HTTP method badges, sample endpoint preview, rate/auth fields, and cURL snippet on detail pages.",
       "preview": "previews/directory-api-catalog.jpg",
       "directory": "templates/directory-api-catalog",
-      "tags": ["next.js", "tailwind", "directory", "api", "developer"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "api",
+        "developer"
+      ],
       "status": "available"
     },
     {
@@ -369,7 +579,13 @@
       "description": "Neon purple-and-cyan AI tool atlas with strength/weakness rating pairs, curator confidence bars, and a &ldquo;four-week test&rdquo; review format.",
       "preview": "previews/directory-ai-tools.jpg",
       "directory": "templates/directory-ai-tools",
-      "tags": ["next.js", "tailwind", "directory", "ai", "tools"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "ai",
+        "tools"
+      ],
       "status": "available"
     },
     {
@@ -379,7 +595,13 @@
       "description": "Cream paper newsstand with Newsreader serif, masthead chrome, feature tiles, and issue-archive detail pages. Quarterly-magazine feel.",
       "preview": "previews/directory-newsletters.jpg",
       "directory": "templates/directory-newsletters",
-      "tags": ["next.js", "tailwind", "directory", "newsletter", "editorial"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "newsletter",
+        "editorial"
+      ],
       "status": "available"
     },
     {
@@ -389,7 +611,13 @@
       "description": "Sophisticated navy-and-gold agency directory with Playfair Display serif, rate card sidebars, reference-call submission flow, and quiet studio detail pages.",
       "preview": "previews/directory-agencies.jpg",
       "directory": "templates/directory-agencies",
-      "tags": ["next.js", "tailwind", "directory", "agencies", "services"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "agencies",
+        "services"
+      ],
       "status": "available"
     },
     {
@@ -399,7 +627,13 @@
       "description": "Dark podcast rotation with animated equalizer bars, cover-art cards, episode preview sidebar, and Space Grotesk + Instrument Serif type pair.",
       "preview": "previews/directory-podcasts.jpg",
       "directory": "templates/directory-podcasts",
-      "tags": ["next.js", "tailwind", "directory", "podcast", "audio"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "podcast",
+        "audio"
+      ],
       "status": "available"
     },
     {
@@ -409,7 +643,13 @@
       "description": "Linear/Attio-style 3-column admin console with icon rail, workspace panel, issue table, and activity feed. KPI cards with sparklines, filter pills, view switcher, right activity rail. Indigo accent, Inter + JetBrains Mono. 1DevTool branded.",
       "preview": "previews/dashboard-admin-console.jpg",
       "directory": "templates/dashboard-admin-console",
-      "tags": ["next.js", "tailwind", "dashboard", "admin", "linear"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "admin",
+        "linear"
+      ],
       "status": "available"
     },
     {
@@ -419,7 +659,13 @@
       "description": "Grafana/Datadog-style dark analytics dashboard with 4 KPI cards + sparklines, large multi-series line chart, probe world map, stacked bar chart, failing-endpoints table, and recent alerts feed. All charts hand-drawn SVG. ServerCompass branded.",
       "preview": "previews/dashboard-analytics.jpg",
       "directory": "templates/dashboard-analytics",
-      "tags": ["next.js", "tailwind", "dashboard", "analytics", "metrics"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "analytics",
+        "metrics"
+      ],
       "status": "available"
     },
     {
@@ -429,7 +675,13 @@
       "description": "Identity and access admin panel with approvals queue, privileged-account KPIs, SCIM drift triage, policy actions, and a right-side audit stream. Light theme with Sora + IBM Plex Mono.",
       "preview": "previews/admin-panel-access-control.jpg",
       "directory": "templates/admin-panel-access-control",
-      "tags": ["next.js", "tailwind", "admin-panel", "iam", "security"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "iam",
+        "security"
+      ],
       "status": "available"
     },
     {
@@ -439,7 +691,13 @@
       "description": "Operations-focused user admin panel with member directory, role controls, invite flow, account states, MFA/SSO tracking, and lifecycle actions. Light theme with Inter + JetBrains Mono.",
       "preview": "previews/admin-panel-user-management.jpg",
       "directory": "templates/admin-panel-user-management",
-      "tags": ["next.js", "tailwind", "admin-panel", "users", "operations"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "users",
+        "operations"
+      ],
       "status": "available"
     },
     {
@@ -449,7 +707,13 @@
       "description": "Billing operations admin panel with subscription management, invoice tracking, failed payment retry queue, MRR KPIs, and account health indicators. Light theme with DM Sans + Space Mono.",
       "preview": "previews/admin-panel-billing-operations.jpg",
       "directory": "templates/admin-panel-billing-operations",
-      "tags": ["next.js", "tailwind", "admin-panel", "billing", "subscriptions"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "billing",
+        "subscriptions"
+      ],
       "status": "available"
     },
     {
@@ -459,7 +723,13 @@
       "description": "Audit and compliance admin panel with event stream, severity filters, policy coverage cards, evidence export controls, and review queue. Light theme with Source Sans 3 + Source Code Pro.",
       "preview": "previews/admin-panel-audit-compliance.jpg",
       "directory": "templates/admin-panel-audit-compliance",
-      "tags": ["next.js", "tailwind", "admin-panel", "audit", "compliance"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "audit",
+        "compliance"
+      ],
       "status": "available"
     },
     {
@@ -469,7 +739,13 @@
       "description": "Atlassian-style status page with operational banner, 90-day uptime bars per component, timeline incidents with timestamps, scheduled maintenance, and subscribe (email/Slack/RSS/webhook). ServerCompass branded.",
       "preview": "previews/status-page-classic.jpg",
       "directory": "templates/status-page-classic",
-      "tags": ["next.js", "tailwind", "status-page", "devops", "uptime"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "status-page",
+        "devops",
+        "uptime"
+      ],
       "status": "available"
     },
     {
@@ -479,7 +755,13 @@
       "description": "Stripe/Vercel-style minimal status page with typographic all-good banner, heavy whitespace, muted service list, and simple incident chronology. Geist font. 1DevTool branded.",
       "preview": "previews/status-page-minimal.jpg",
       "directory": "templates/status-page-minimal",
-      "tags": ["next.js", "tailwind", "status-page", "minimal", "stripe"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "status-page",
+        "minimal",
+        "stripe"
+      ],
       "status": "available"
     },
     {
@@ -489,7 +771,13 @@
       "description": "GitHub/Cloudflare-style dark developer status page with 12-region health grid, service sparklines, live API route metrics table, curl snippet, and incident feed with severity tags. StoicSoft branded.",
       "preview": "previews/status-page-developer.jpg",
       "directory": "templates/status-page-developer",
-      "tags": ["next.js", "tailwind", "status-page", "developer", "regions"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "status-page",
+        "developer",
+        "regions"
+      ],
       "status": "available"
     },
     {
@@ -499,7 +787,13 @@
       "description": "Linear-style modern changelog with dark theme, per-entry gradient covers with inline SVG art (preview UI, search palette, terminal), category chips, version + author rail, featured bullets and improvements/fixes columns. 1DevTool branded.",
       "preview": "previews/changelog-linear.jpg",
       "directory": "templates/changelog-linear",
-      "tags": ["next.js", "tailwind", "changelog", "linear", "product-updates"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "changelog",
+        "linear",
+        "product-updates"
+      ],
       "status": "available"
     },
     {
@@ -509,7 +803,13 @@
       "description": "Stripe-style dated-version API release notes with sticky version rail, verb pills (Added/Changed/Deprecated/Fixed), request/response code diffs with token coloring, and upgrade guide with curl snippet. ServerCompass branded.",
       "preview": "previews/changelog-release-notes.jpg",
       "directory": "templates/changelog-release-notes",
-      "tags": ["next.js", "tailwind", "changelog", "api", "release-notes"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "changelog",
+        "api",
+        "release-notes"
+      ],
       "status": "available"
     },
     {
@@ -519,7 +819,13 @@
       "description": "Terminal-aesthetic dev log with scan-line effect, mono-only typography, week-grouped commit entries with +/~/!/- prefixes, project/sha/branch/author rail, uses.txt section, and tail -f subscribe panel. StoicSoft branded.",
       "preview": "previews/changelog-dev-log.jpg",
       "directory": "templates/changelog-dev-log",
-      "tags": ["next.js", "tailwind", "changelog", "terminal", "devlog"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "changelog",
+        "terminal",
+        "devlog"
+      ],
       "status": "available"
     },
     {
@@ -529,7 +835,13 @@
       "description": "Next.js SaaS starter with dashboard, auth and billing seams, custom-domain onboarding, and Cloudflare DNS setup docs.",
       "preview": "previews/saas.png",
       "directory": "templates/saas",
-      "tags": ["next.js", "saas", "billing", "auth", "cloudflare"],
+      "tags": [
+        "next.js",
+        "saas",
+        "billing",
+        "auth",
+        "cloudflare"
+      ],
       "status": "available"
     },
     {
@@ -539,7 +851,13 @@
       "description": "E-commerce operations admin panel with order management, product catalog, customer tracking, and revenue analytics. Warm orange accent theme with DM Sans + Space Mono.",
       "preview": "previews/admin-panel-ecommerce.jpg",
       "directory": "templates/admin-panel-ecommerce",
-      "tags": ["next.js", "tailwind", "admin-panel", "ecommerce", "orders"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "ecommerce",
+        "orders"
+      ],
       "status": "available"
     },
     {
@@ -549,7 +867,13 @@
       "description": "Customer relationship management admin panel with lead tracking, deal pipeline, contact directory, and task management. Blue accent theme with Inter + JetBrains Mono.",
       "preview": "previews/admin-panel-crm.jpg",
       "directory": "templates/admin-panel-crm",
-      "tags": ["next.js", "tailwind", "admin-panel", "crm", "sales"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "crm",
+        "sales"
+      ],
       "status": "available"
     },
     {
@@ -559,7 +883,13 @@
       "description": "Project management admin panel with project tracking, task boards, team workload, and sprint velocity. Purple accent theme with Sora + IBM Plex Mono.",
       "preview": "previews/admin-panel-project-management.jpg",
       "directory": "templates/admin-panel-project-management",
-      "tags": ["next.js", "tailwind", "admin-panel", "project", "tasks"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "project",
+        "tasks"
+      ],
       "status": "available"
     },
     {
@@ -569,7 +899,13 @@
       "description": "DevOps infrastructure admin panel with service health monitoring, deployment tracking, alert management, and system uptime. Cyan accent theme with Geist + Geist Mono.",
       "preview": "previews/admin-panel-devops.jpg",
       "directory": "templates/admin-panel-devops",
-      "tags": ["next.js", "tailwind", "admin-panel", "devops", "monitoring"],
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "devops",
+        "monitoring"
+      ],
       "status": "available"
     },
     {
@@ -579,8 +915,938 @@
       "description": "Electron + React desktop application starter.",
       "preview": "previews/desktop-app.png",
       "directory": "templates/desktop-app",
-      "tags": ["electron", "react"],
+      "tags": [
+        "electron",
+        "react"
+      ],
       "status": "coming-soon"
+    },
+    {
+      "id": "ai-chat-workspace",
+      "category": "ai",
+      "name": "AI - Chat Workspace",
+      "description": "Warm, paper-toned AI chat workspace with a streaming conversation, expandable tool calls, an artifact side panel, projects, and a searchable chat archive.",
+      "previews": [
+        "previews/ai-chat-workspace.jpg",
+        "previews/ai-chat-workspace-2.jpg",
+        "previews/ai-chat-workspace-3.jpg"
+      ],
+      "directory": "templates/ai-chat-workspace",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "chat",
+        "assistant"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-agent-console",
+      "category": "ai",
+      "name": "AI - Agent Console",
+      "description": "Operations console for autonomous agents: live run list, step-by-step tool-call traces, per-tool latency and error rates, and a streaming log viewer.",
+      "previews": [
+        "previews/ai-agent-console.jpg",
+        "previews/ai-agent-console-2.jpg",
+        "previews/ai-agent-console-3.jpg"
+      ],
+      "directory": "templates/ai-agent-console",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "agents",
+        "observability"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-prompt-library",
+      "category": "ai",
+      "name": "AI - Prompt Library",
+      "description": "Version-controlled prompt library with a side-by-side editor, variable highlighting, version diffs, and a golden-set test runner with pass rates.",
+      "previews": [
+        "previews/ai-prompt-library.jpg",
+        "previews/ai-prompt-library-2.jpg",
+        "previews/ai-prompt-library-3.jpg"
+      ],
+      "directory": "templates/ai-prompt-library",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "prompts",
+        "evaluation"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-model-playground",
+      "category": "ai",
+      "name": "AI - Model Playground",
+      "description": "Run one prompt across several models at once and compare output, latency, tokens, and cost side by side, with a scored comparison matrix and usage analytics.",
+      "previews": [
+        "previews/ai-model-playground.jpg",
+        "previews/ai-model-playground-2.jpg",
+        "previews/ai-model-playground-3.jpg"
+      ],
+      "directory": "templates/ai-model-playground",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "playground",
+        "llm"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-evals-dashboard",
+      "category": "ai",
+      "name": "AI - Evaluation Dashboard",
+      "description": "Model evaluation scorecard with a capability breakdown, release-over-release trend, grader inventory, expandable suites, and a regression tracker.",
+      "previews": [
+        "previews/ai-evals-dashboard.jpg",
+        "previews/ai-evals-dashboard-2.jpg",
+        "previews/ai-evals-dashboard-3.jpg"
+      ],
+      "directory": "templates/ai-evals-dashboard",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "evaluation",
+        "dashboard"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-knowledge-base",
+      "category": "ai",
+      "name": "AI - RAG Knowledge Base",
+      "description": "Retrieval admin for a RAG system: connected sources with freshness meters, chunk inspector with embedding status, and a retrieval playground with cited answers.",
+      "previews": [
+        "previews/ai-knowledge-base.jpg",
+        "previews/ai-knowledge-base-2.jpg",
+        "previews/ai-knowledge-base-3.jpg"
+      ],
+      "directory": "templates/ai-knowledge-base",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "rag",
+        "retrieval"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "landing-ai-assistant",
+      "category": "landing",
+      "name": "Landing - AI Assistant",
+      "description": "Editorial ivory landing page with serif display type: animated conversation demo, capability sections, workflow steps, testimonials, pricing, and FAQ.",
+      "preview": "previews/landing-ai-assistant.jpg",
+      "directory": "templates/landing-ai-assistant",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "ai",
+        "editorial"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "landing-research-lab",
+      "category": "landing",
+      "name": "Landing - Research Lab",
+      "description": "Research institute site with a filterable publication list, research pillars, researcher profiles, and open roles. Restrained cream-and-serif typography.",
+      "preview": "previews/landing-research-lab.jpg",
+      "directory": "templates/landing-research-lab",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "research",
+        "academic"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "blog-research-notes",
+      "category": "blog",
+      "name": "Blog - Research Notes",
+      "description": "Serif editorial blog for working notes and essays: tag filters, a featured post, long-form article layout with hover sidenotes, footnotes, inline charts, and a reading-progress bar.",
+      "previews": [
+        "previews/blog-research-notes.jpg",
+        "previews/blog-research-notes-2.jpg"
+      ],
+      "directory": "templates/blog-research-notes",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "blog",
+        "editorial",
+        "essays"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "document-model-docs",
+      "category": "document",
+      "name": "Document - Model API Docs",
+      "description": "Developer documentation site with grouped sidebar navigation, an on-this-page outline, tabbed multi-language code samples, callouts, and reference tables.",
+      "previews": [
+        "previews/document-model-docs.jpg",
+        "previews/document-model-docs-2.jpg"
+      ],
+      "directory": "templates/document-model-docs",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "docs",
+        "api",
+        "developer"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "console-api-platform",
+      "category": "dashboard",
+      "name": "Console - API Platform",
+      "description": "Developer console for an API product: request and spend overview, API key management with a one-time secret reveal, live rate-limit meters, and billing with usage breakdown.",
+      "previews": [
+        "previews/console-api-platform.jpg",
+        "previews/console-api-platform-2.jpg",
+        "previews/console-api-platform-3.jpg"
+      ],
+      "directory": "templates/console-api-platform",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "console",
+        "api",
+        "billing"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "pricing-plans",
+      "category": "pricing",
+      "name": "Pricing - Plans & Calculator",
+      "description": "Complete pricing page: monthly/yearly toggle, four plan cards, an interactive seat-and-usage estimate calculator, a full feature comparison matrix, and FAQ.",
+      "preview": "previews/pricing-plans.jpg",
+      "directory": "templates/pricing-plans",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "pricing",
+        "saas",
+        "conversion"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "directory-mcp-servers",
+      "category": "directory",
+      "name": "Directory - MCP Servers",
+      "description": "Searchable registry of Model Context Protocol servers with category chips, official and verified badges, tool counts, copyable install commands, and a submission checklist.",
+      "preview": "previews/directory-mcp-servers.jpg",
+      "directory": "templates/directory-mcp-servers",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "directory",
+        "mcp",
+        "developer-tools"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "auth-warm-minimal",
+      "category": "auth",
+      "name": "Auth - Warm Minimal",
+      "description": "Split-panel auth flow in a warm palette: sign in with social providers, a three-step sign-up with password strength and invite chips, and a six-box code verification screen.",
+      "previews": [
+        "previews/auth-warm-minimal.jpg",
+        "previews/auth-warm-minimal-2.jpg",
+        "previews/auth-warm-minimal-3.jpg"
+      ],
+      "directory": "templates/auth-warm-minimal",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "auth",
+        "signin",
+        "onboarding"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-support-inbox",
+      "category": "admin-panel",
+      "name": "Admin Panel - Support Inbox",
+      "description": "Three-pane support inbox: queues, ticket list with SLA and priority, a threaded conversation, AI-drafted replies with citation chips, and a customer context sidebar.",
+      "preview": "previews/admin-panel-support-inbox.jpg",
+      "directory": "templates/admin-panel-support-inbox",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "support",
+        "ai"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "settings-workspace",
+      "category": "settings",
+      "name": "Settings - Workspace",
+      "description": "Full settings surface set: profile and preferences, team roles, security policies with session management, a per-channel notification matrix, integrations, and billing.",
+      "preview": "previews/settings-workspace.jpg",
+      "directory": "templates/settings-workspace",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "settings",
+        "saas",
+        "account"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "dashboard-observability",
+      "category": "dashboard",
+      "name": "Dashboard - Observability",
+      "description": "Golden-signal observability dashboard with sparkline tiles, a service health table, an interactive trace waterfall, and a live alert feed.",
+      "preview": "previews/dashboard-observability.jpg",
+      "directory": "templates/dashboard-observability",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "observability",
+        "devops"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "onboarding-checklist",
+      "category": "onboarding",
+      "name": "Onboarding - Setup Checklist",
+      "description": "Product onboarding flow with a progress bar, required and optional steps, expandable task detail containing code snippets, dashboard templates, and invites.",
+      "preview": "previews/onboarding-checklist.jpg",
+      "directory": "templates/onboarding-checklist",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "onboarding",
+        "activation",
+        "saas"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "landing-open-source",
+      "category": "landing",
+      "name": "Landing - Open Source Project",
+      "description": "Open-source project page with an animated terminal demo, package-manager install tabs, a feature grid, a worked rule example, contributors, and sponsors.",
+      "preview": "previews/landing-open-source.jpg",
+      "directory": "templates/landing-open-source",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "open-source",
+        "developer-tools"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "trust-center",
+      "category": "document",
+      "name": "Document - Trust Center",
+      "description": "Security and compliance trust center: live status banner, certification grid, expandable control groups, a subprocessor table, downloadable reports, and a reviewer FAQ.",
+      "preview": "previews/trust-center.jpg",
+      "directory": "templates/trust-center",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "security",
+        "compliance",
+        "trust"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "document-handbook",
+      "category": "document",
+      "name": "Document - Company Handbook",
+      "description": "Internal handbook with searchable sidebar navigation and scroll-spy, written principles, a first-week plan, meeting rules, and time-off policy.",
+      "preview": "previews/document-handbook.jpg",
+      "directory": "templates/document-handbook",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "handbook",
+        "internal",
+        "docs"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "changelog-product-releases",
+      "category": "changelog",
+      "name": "Changelog - Product Releases",
+      "description": "Release timeline with change-type filters, breaking-change callouts, per-release authors, summaries, and email or RSS subscription.",
+      "preview": "previews/changelog-product-releases.jpg",
+      "directory": "templates/changelog-product-releases",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "changelog",
+        "releases",
+        "product"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-feature-flags",
+      "category": "admin-panel",
+      "name": "Admin Panel - Feature Flags",
+      "description": "Feature flag console with environment switcher, live rollout sliders, targeting rules, an in-code snippet, and an audit trail of recent changes.",
+      "preview": "previews/admin-panel-feature-flags.jpg",
+      "directory": "templates/admin-panel-feature-flags",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "feature-flags",
+        "devops"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-content-cms",
+      "category": "admin-panel",
+      "name": "Admin Panel - Content CMS",
+      "description": "Headless CMS admin: collections sidebar, entry list with workflow states, a distraction-free writing surface, and a metadata, tags, and SEO preview panel.",
+      "preview": "previews/admin-panel-content-cms.jpg",
+      "directory": "templates/admin-panel-content-cms",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "cms",
+        "editor"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "dashboard-cost-explorer",
+      "category": "dashboard",
+      "name": "Dashboard - Cloud Cost Explorer",
+      "description": "Cloud spend explorer with anomaly banners, a forecast chart against budget, service and team breakdowns, and checkable savings recommendations.",
+      "preview": "previews/dashboard-cost-explorer.jpg",
+      "directory": "templates/dashboard-cost-explorer",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "finops",
+        "cost"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "data-explorer",
+      "category": "dashboard",
+      "name": "Data - SQL Workbench",
+      "description": "Query workbench with a collapsible schema browser, line-numbered SQL editor, result grid, chart and query-plan tabs, and run history.",
+      "preview": "previews/data-explorer.jpg",
+      "directory": "templates/data-explorer",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "sql",
+        "database",
+        "developer-tools"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "careers-page",
+      "category": "landing",
+      "name": "Landing - Careers",
+      "description": "Careers page with filterable open roles, benefits that state their reasoning, a transparent five-step hiring process, and employee quotes.",
+      "preview": "previews/careers-page.jpg",
+      "directory": "templates/careers-page",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "careers",
+        "hiring",
+        "company"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "document-postmortem",
+      "category": "document",
+      "name": "Document - Incident Postmortem",
+      "description": "Blameless postmortem with impact metrics, an annotated minute-by-minute timeline, contributing factors, an owned action-item table, and lessons.",
+      "preview": "previews/document-postmortem.jpg",
+      "directory": "templates/document-postmortem",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "postmortem",
+        "incident",
+        "sre"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-workflow-builder",
+      "category": "ai",
+      "name": "AI - Workflow Builder",
+      "description": "Node-canvas builder for agent workflows: draggable block palette, animated edges between blocks, a per-block inspector with prompts and conditions, and a run log.",
+      "preview": "previews/ai-workflow-builder.jpg",
+      "directory": "templates/ai-workflow-builder",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "workflow",
+        "canvas"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-image-studio",
+      "category": "ai",
+      "name": "AI - Image Studio",
+      "description": "Image generation studio with prompt and negative-prompt controls, style chips, aspect-ratio picker, sampler parameters, a results grid with variations, and batch history.",
+      "preview": "previews/ai-image-studio.jpg",
+      "directory": "templates/ai-image-studio",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "image-generation",
+        "studio"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-voice-transcription",
+      "category": "ai",
+      "name": "AI - Voice Transcription",
+      "description": "Meeting transcription workspace with a scrubbable waveform, speaker diarization and talk-time split, flagged moments, an AI summary, and extracted action items.",
+      "preview": "previews/ai-voice-transcription.jpg",
+      "directory": "templates/ai-voice-transcription",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "transcription",
+        "audio"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-fine-tuning",
+      "category": "ai",
+      "name": "AI - Fine-tuning Dashboard",
+      "description": "Fine-tuning console with a run table, live train and validation loss curves, eval deltas against the base model, training config, and dataset inventory.",
+      "preview": "previews/ai-fine-tuning.jpg",
+      "directory": "templates/ai-fine-tuning",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "fine-tuning",
+        "training"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-moderation",
+      "category": "admin-panel",
+      "name": "Admin Panel - Moderation Queue",
+      "description": "Trust and safety review queue with severity triage, classifier signals, cited policy text, account history, similar resolved cases, and keyboard-driven decisions.",
+      "preview": "previews/admin-panel-moderation.jpg",
+      "directory": "templates/admin-panel-moderation",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "moderation",
+        "trust-safety"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "dashboard-experiments",
+      "category": "dashboard",
+      "name": "Dashboard - A/B Experiments",
+      "description": "Experiment dashboard with control and variant results, a confidence-interval visual, segment breakdowns with a multiple-comparisons caveat, daily lift, and guardrail metrics.",
+      "preview": "previews/dashboard-experiments.jpg",
+      "directory": "templates/dashboard-experiments",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "experiments",
+        "ab-testing"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "status-page-warm",
+      "category": "status-page",
+      "name": "Status Page - Warm Editorial",
+      "description": "Editorial status page with an overall banner, a live incident update timeline, 90-day component uptime bars, subscription options, and expandable incident history.",
+      "preview": "previews/status-page-warm.jpg",
+      "directory": "templates/status-page-warm",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "status-page",
+        "uptime",
+        "incidents"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "landing-waitlist",
+      "category": "landing",
+      "name": "Landing - Waitlist",
+      "description": "Waitlist landing where signup resolves into a queue position and referral link, alongside a product teaser panel and community unlock milestones.",
+      "preview": "previews/landing-waitlist.jpg",
+      "directory": "templates/landing-waitlist",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "landing",
+        "waitlist",
+        "launch"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "ai-trace-explorer",
+      "category": "ai",
+      "name": "AI - Trace Explorer",
+      "description": "LLM observability trace explorer with a recent-traces list and a routed per-trace detail page: a nested span waterfall, per-span token and cost accounting, and tool call input/output inspection.",
+      "previews": [
+        "previews/ai-trace-explorer.jpg",
+        "previews/ai-trace-explorer-detail.jpg"
+      ],
+      "directory": "templates/ai-trace-explorer",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "observability",
+        "tracing"
+      ],
+      "status": "available"
+    },
+    {
+      "id": "admin-panel-inventory",
+      "category": "admin-panel",
+      "name": "Admin Panel - Inventory",
+      "description": "Inventory control panel with stock KPIs and a product table, plus a routed per-product detail page with per-location stock bars, a movement ledger, a reorder suggestion, and supplier facts.",
+      "directory": "templates/admin-panel-inventory",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "inventory",
+        "operations"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/admin-panel-inventory.jpg",
+        "previews/admin-panel-inventory-detail.jpg"
+      ]
+    },
+    {
+      "id": "dashboard-revenue",
+      "category": "dashboard",
+      "name": "Dashboard - Revenue",
+      "description": "SaaS revenue dashboard with an MRR-movement chart and top accounts, plus a routed per-account detail page with an MRR trend, subscription, contacts, and recent invoices.",
+      "directory": "templates/dashboard-revenue",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "revenue",
+        "saas",
+        "analytics"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/dashboard-revenue.jpg",
+        "previews/dashboard-revenue-detail.jpg"
+      ]
+    },
+    {
+      "id": "ai-rag-playground",
+      "category": "ai",
+      "name": "AI - RAG Playground",
+      "description": "Retrieval-augmented generation playground with a grounded answer and scored retrieved chunks, plus a routed source-document reader that highlights the retrieved passages and links back to the answer.",
+      "directory": "templates/ai-rag-playground",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "rag",
+        "retrieval",
+        "search"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/ai-rag-playground.jpg",
+        "previews/ai-rag-playground-detail.jpg"
+      ]
+    },
+    {
+      "id": "settings-notifications",
+      "category": "settings",
+      "name": "Settings - Notifications",
+      "description": "Notification settings with connected channels and a per-event channel matrix, plus a routed per-channel detail page with a delivery log, addresses and devices, and per-event toggles.",
+      "directory": "templates/settings-notifications",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "settings",
+        "notifications",
+        "preferences"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/settings-notifications.jpg",
+        "previews/settings-notifications-detail.jpg"
+      ]
+    },
+    {
+      "id": "pricing-usage",
+      "category": "pricing",
+      "name": "Pricing - Usage Calculator",
+      "description": "Usage-based pricing page with an interactive cost calculator and plan comparison, plus a routed per-plan detail page with included-usage tiles, overage rates, feature groups, and an FAQ.",
+      "directory": "templates/pricing-usage",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "pricing",
+        "calculator",
+        "saas"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/pricing-usage.jpg",
+        "previews/pricing-usage-detail.jpg"
+      ]
+    },
+    {
+      "id": "onboarding-wizard",
+      "category": "onboarding",
+      "name": "Onboarding - Setup Wizard",
+      "description": "Multi-step onboarding wizard with a dark stepper, plus routed per-step pages (workspace, team, connect data, preferences, launch) that the stepper links between.",
+      "directory": "templates/onboarding-wizard",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "onboarding",
+        "wizard",
+        "setup"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/onboarding-wizard.jpg",
+        "previews/onboarding-wizard-detail.jpg"
+      ]
+    },
+    {
+      "id": "dashboard-incidents",
+      "category": "dashboard",
+      "name": "Dashboard - Incidents",
+      "description": "Incident response dashboard with response KPIs and an active-incidents list, plus a routed per-incident detail page with a severity banner, a live timeline, affected services, and responders.",
+      "directory": "templates/dashboard-incidents",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "incidents",
+        "on-call",
+        "sre"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/dashboard-incidents.jpg",
+        "previews/dashboard-incidents-detail.jpg"
+      ]
+    },
+    {
+      "id": "admin-panel-orders",
+      "category": "admin-panel",
+      "name": "Admin Panel - Orders",
+      "description": "Order management panel with daily KPIs and an orders table, plus a routed per-order detail page with line items, totals, shipping, a fulfillment timeline, and actions.",
+      "directory": "templates/admin-panel-orders",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "orders",
+        "ecommerce",
+        "fulfillment"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/admin-panel-orders.jpg",
+        "previews/admin-panel-orders-detail.jpg"
+      ]
+    },
+    {
+      "id": "ai-usage-dashboard",
+      "category": "ai",
+      "name": "AI - Usage Dashboard",
+      "description": "LLM usage dashboard with a spend-by-model chart and rate-limit meters, plus a routed per-model detail page with a daily spend chart, latency and error stats, model rate limits, and the keys using it.",
+      "directory": "templates/ai-usage-dashboard",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "ai",
+        "usage",
+        "cost",
+        "dashboard"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/ai-usage-dashboard.jpg",
+        "previews/ai-usage-dashboard-detail.jpg"
+      ]
+    },
+    {
+      "id": "dashboard-calendar",
+      "category": "dashboard",
+      "name": "Dashboard - Calendar",
+      "description": "Week calendar with a time grid of colored events, plus a routed per-event detail page with time and location, a video-call link, description, agenda, guests, and RSVP.",
+      "directory": "templates/dashboard-calendar",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "dashboard",
+        "calendar",
+        "scheduling"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/dashboard-calendar.jpg",
+        "previews/dashboard-calendar-detail.jpg"
+      ]
+    },
+    {
+      "id": "auth-otp-verify",
+      "category": "auth",
+      "name": "Auth - Code Verification",
+      "description": "Two-step verification flow: a six-digit code entry screen and a routed verified-success page with a session, device, and location summary and a continue CTA.",
+      "directory": "templates/auth-otp-verify",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "auth",
+        "otp",
+        "2fa",
+        "verification"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/auth-otp-verify.jpg",
+        "previews/auth-otp-verify-detail.jpg"
+      ]
+    },
+    {
+      "id": "admin-panel-kanban",
+      "category": "admin-panel",
+      "name": "Admin Panel - Kanban Board",
+      "description": "Kanban issue board with five status columns and labelled cards, plus a routed per-issue detail page with a description, sub-task checklist, activity feed, comments, and a properties rail.",
+      "directory": "templates/admin-panel-kanban",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "admin-panel",
+        "kanban",
+        "issues",
+        "project-management"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/admin-panel-kanban.jpg",
+        "previews/admin-panel-kanban-detail.jpg"
+      ]
+    },
+    {
+      "id": "document-rfc",
+      "category": "document",
+      "name": "Document - RFC / Design Doc",
+      "description": "Engineering RFC workspace: an index of proposals with status and metadata, plus a routed per-RFC document page with prose, a TL;DR callout, an architecture diagram, a decision matrix, and an on-this-page outline.",
+      "directory": "templates/document-rfc",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "document",
+        "rfc",
+        "design-doc",
+        "engineering"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/document-rfc.jpg",
+        "previews/document-rfc-detail.jpg"
+      ]
+    },
+    {
+      "id": "roadmap-public",
+      "category": "roadmap",
+      "name": "Roadmap - Public",
+      "description": "Public product roadmap with upvotable feature cards across status columns, plus a routed per-feature detail page with the vote count, description, a discussion thread, and similar requests.",
+      "directory": "templates/roadmap-public",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "roadmap",
+        "feedback",
+        "product"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/roadmap-public.jpg",
+        "previews/roadmap-public-detail.jpg"
+      ]
+    },
+    {
+      "id": "document-help-center",
+      "category": "document",
+      "name": "Document - Help Center",
+      "description": "Public help center with a search hero, category grid, and popular articles, plus a routed per-article page with numbered steps, a callout, a was-this-helpful widget, and related articles.",
+      "directory": "templates/document-help-center",
+      "tags": [
+        "next.js",
+        "tailwind",
+        "document",
+        "help-center",
+        "support",
+        "knowledge-base"
+      ],
+      "status": "available",
+      "previews": [
+        "previews/document-help-center.jpg",
+        "previews/document-help-center-detail.jpg"
+      ]
     }
   ]
 }

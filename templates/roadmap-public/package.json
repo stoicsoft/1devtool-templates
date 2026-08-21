@@ -1,0 +1,21 @@
+{
+  "name": "roadmap-public",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public product roadmap with upvotable feature cards across status columns and feedback categories (Next.js + Tailwind)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^16.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^4.0.0"
+  }
+}
